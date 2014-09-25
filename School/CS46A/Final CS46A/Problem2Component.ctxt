@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=bigCircles\ diameter
+comment0.target=Problem2Component(int,\ int)
+comment0.text=\r\n\ \ \ \ Draws\ a\ given\ number\ of\ big\ black\ circles,\ each\ of\ which\r\n\ \ \ \ contains\ two\ red\ circles\ with\ half\ the\ diameter.\ \r\n\ \ \ \ @param\ bigCircles\ the\ number\ of\ big\ circles\r\n\ \ \ \ @param\ diameter\ the\ diameter\ of\ the\ big\ circles\r\n
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+numComments=2

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Bug3()
+comment0.text=\r\n\ \ \ \ \ \ Constructs\ a\ bug\ at\ an\ auspicious\ location.\r\n
+comment1.params=n
+comment1.target=void\ moveForward(int)
+comment1.text=\r\n\ \ \ \ \ \ Moves\ this\ bug\ in\ the\ direction\ into\ which\ it\ faces.\r\n\ \ \ \ \ \ @param\ n\ the\ amount\ by\ which\ to\ move\r\n
+comment2.params=n
+comment2.target=void\ moveBackward(int)
+comment2.text=\r\n\ \ \ \ \ \ Moves\ this\ bug\ away\ from\ the\ direction\ into\ which\ it\ faces.\r\n\ \ \ \ \ \ @param\ n\ the\ amount\ by\ which\ to\ move\r\n
+comment3.params=
+comment3.target=void\ turnLeft()
+comment3.text=\r\n\ \ \ \ \ \ Turns\ this\ bug\ left.\r\n
+comment4.params=
+comment4.target=void\ turnRight()
+comment4.text=\r\n\ \ \ \ \ \ Turns\ this\ bug\ right.\r\n
+comment5.params=
+comment5.target=java.lang.String\ getPosition()
+comment5.text=\r\n\ \ \ \ \ \ Returns\ a\ string\ describing\ the\ bug's\ position\r\n
+numComments=6

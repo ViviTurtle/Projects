@@ -1,0 +1,58 @@
+// This class makes a bug that lives in a box and able to track its position, when it moves towards its edges of its home it turns
+public class Bug4
+{
+private double dx;
+private double dy;
+private double x;
+private double y;
+private double newDx;
+private double newDy;
+/*
+ * This constructs the bug in the center of its home facing northeast
+ * @param width the width of the home
+ * @param height the height of the home
+ */
+    public Bug4(double width, double height)
+    {
+        dx = 1;
+        dy = 1;
+        x = width/2; // the center of the x plane
+        y = height/2; //the center of the y plane
+        newDx = 0;
+        newDy = -1;
+    }
+    /*
+     * This method moves the bug
+     */
+    public void move()
+    {
+        x = x + 1*dx;
+        y = y + 1*dy;
+    }
+    /*
+     * This method turns the bug
+     */
+    public void turn()
+    {
+    newDx = dy;
+    newDy = -dx;
+    dx = newDx;
+    dy = newDy;
+    }
+    /*
+     * Gets the x position of the bug
+     * @return the x-coordinate
+     */
+    public double getX()
+    {
+        return x;
+    }
+    /*
+     *Gets the y position of the bug
+     *@returns the y-coordinate of the bug
+     */
+    public double getY()
+    {
+        return y;
+    }
+}

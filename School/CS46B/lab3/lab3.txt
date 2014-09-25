@@ -1,0 +1,79 @@
+        Anthony Langga (Scribe)/ Alvyn Ly (Driver) Lab 3
+
+A1) 9000 in 1961 and 65000 in 2003.
+
+A2) 615385
+
+A3)Done
+
+A4)a[0] = 9,9
+ a[1] = 10.0
+a[2] 10.1
+a[3] = 10.9
+
+A5) it is int HTML
+
+A6) 1944 94 2090909.09
+
+A7) We analyze the lines that have the data were looking for.
+
+A8)1944 94 &lt;2%gt; &nbsp; 200000
+
+A9) Interger.parseint(a[SOME_VALUE].STRING_VALUE.replace("," , "");
+
+A10)Done
+
+A11)
+1913 7 &nbsp 500000
+1914 7 &nbsp 500000
+1915 7 &nbsp 500000
+1916 15 &nbsp 2000000
+1917 67 &nbsp 2000000
+1918 77 &nbsp 1000000
+1919 73 &nbsp 1000000
+1920 73 &nbsp 1000000
+1921 73 &nbsp 1000000
+1922 58 &nbsp 200000
+1923 43.5 &nbsp 200000
+1924 46 &nbsp 500000
+1925 25 &nbsp 100000
+1926 25 &nbsp 100000
+1927 25 &nbsp 100000
+1928 25 &nbsp 100000
+1929 24 &nbsp 100000
+1930 25 &nbsp 100000
+1931 25 &nbsp 100000
+1932 63 &nbsp 1000000
+1933 63 &nbsp 1000000
+1934 63 &nbsp 1000000
+1935 63 &nbsp 1000000
+1936 79 &nbsp 5000000
+1937 79 &nbsp 5000000
+1938 79 &nbsp 5000000
+1939 79 &nbsp 5000000
+1940 81.1 &nbsp 5000000
+1941 81 &nbsp 50000000
+
+B1) Done
+
+B2) Done
+
+B3) Done
+
+B4) Done
+
+B5) You can look up the specific exception in its subclasses and change the exception in the code.
+
+B6) Done
+
+B7)Exception not thrown or declared.
+
+B8) 615385 yes it was the same .
+
+B9) 100
+
+B10) 100
+
+B11)I see the the array
+
+B12)

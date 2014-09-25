@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.util.ArrayList\ occupiedLocations()
+comment0.text=\r\n\ \ \ \ \ \ Returns\ all\ occupied\ locations.\r\n\ \ \ \ \ \ @return\ a\ list\ of\ all\ locations\ with\ non-zero\ values\r\n
+comment1.params=loc
+comment1.target=java.util.ArrayList\ validNeighbors(Location)
+comment1.text=\r\n\ \ \ \ \ \ Returns\ all\ valid\ neighboring\ locations\ of\ a\ given\ location.\r\n\ \ \ \ \ \ @param\ loc\ a\ valid\ location\ \r\n\ \ \ \ \ \ @return\ a\ list\ of\ all\ valid\ neighboring\ locations\ of\ loc\r\n
+comment2.params=loc
+comment2.target=int\ get(Location)
+comment2.text=\r\n\ \ \ \ \ \ Returns\ the\ value\ at\ a\ given\ location.\r\n\ \ \ \ \ \ @param\ loc\ a\ valid\ location\ \r\n\ \ \ \ \ \ @return\ the\ value\ at\ loc\r\n
+comment3.params=loc\ value
+comment3.target=void\ set(Location,\ int)
+comment3.text=\r\n\ \ \ \ \ \ Sets\ the\ value\ at\ a\ given\ location.\r\n\ \ \ \ \ \ @param\ loc\ a\ valid\ location\ \ \ \ \ \ \ \r\n\ \ \ \ \ \ @param\ value\ the\ value\ to\ set\ at\ loc\r\n
+numComments=4

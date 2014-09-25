@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=text
+comment0.target=Word2(java.lang.String)
+comment0.text=\r\n\ \ \ \ Constructs\ a\ word.\r\n\ \ \ \ @param\ text\ the\ characters\ in\ this\ word\r\n
+comment1.params=letter
+comment1.target=boolean\ isVowel(java.lang.String)
+comment1.text=\r\n\ \ \ \ Tests\ whether\ a\ letter\ is\ a\ vowel\r\n\ \ \ \ @param\ letter\ a\ string\ of\ length\ 1\r\n\ \ \ \ @return\ true\ if\ letter\ is\ a\ vowel\r\n
+comment2.params=
+comment2.target=int\ countVowels()
+comment2.text=\r\n\ Counts\ the\ number\ of\ vowels\r\n\ @return\ the\ amount\ of\ vowels\r\n
+comment3.params=
+comment3.target=int\ countVowelGroups()
+comment3.text=\r\n\ Counts\ the\ number\ of\ vowel\ Groups\r\n\ @return\ the\ amount\ vowel\ groups\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ initializes\ the\ String\ to\ be\ saved\r\n\ @param\ the\ text\r\n
+comment5.params=
+comment5.target=void\ printLeftTriangle()
+comment5.text=\r\n\ Prints\ a\ triangle\ using\ the\ text\ by\ subtracting\ the\ last\ letter\ on\ each\ line\r\n
+numComments=6

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GasCreditCard()
+comment0.text=\r\nThis\ contructs\ a\ new\ gas\ credit\ card\ where\ savings\ and\ gallons\ bought\ is\ zero\r\n
+comment1.params=gallons
+comment1.target=void\ buyGas(double)
+comment1.text=\r\n\ This\ method\ buys\ gas\ and\ tracks\ how\ many\ gallons\ have\ been\ bought\r\n\ @param\ gallons\ the\ amount\ of\ gallons\ bought\r\n
+comment2.params=
+comment2.target=double\ getSavings()
+comment2.text=\r\n\ This\ method\ calculates\ how\ much\ savings\ one\ has\ saved\ until\ now\r\n\ @return\ the\ amount\ of\ monety\ saved\ so\ far\r\n
+comment3.params=
+comment3.target=void\ resetMonth()
+comment3.text=\r\n\ This\ method\ resets\ the\ amount\ of\ gallons\ and\ savings\ one\ has\ bought\ this\ for\ the\ new\ month\r\n
+numComments=4

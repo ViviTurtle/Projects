@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CS 46B Exam 1 Fall 2012</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1 align="center">EXAM 1</h1>
+<h2 align="center">CS 46B Fall 2012</h2>
+<h2>Exam Rules</h2>
+<ul>
+  <li>You may use any books, notes, files. you may only use the D2L web site and laughton.com</li>
+  <li>It is a good idea to compile and run your programs if you have the time      to do it.</li>
+  <li>You may NOT communicate with anyone during the exam.</li>
+  <li>You may NOT use the work of anyone else without attribution.</li>
+  <li>You may NOT open any programs or web sites that allow communication with      someone else. No messenger, chat, email, discussion forum, etc.</li>
+  <li>The proctor will randomly inspect laptops. If your laptop is inspected,      you need take the hands off the keyboard immediately.</li>
+  <li>Save your solutions into Java source files (extension .java) or plain      text files (extension .txt). Be sure to save your work occasionally. </li>
+  <li>Submit your solution to the D2L drop box. You may submit as many      versions as you like—the last one will be graded.</li>
+</ul>
+<p>1. (5 points) Look at the partial Person class below. Complete the setAge method so that age can never be negative. If the parameter is negative, throw an IllegalArgumentException. Otherwise set the age. Upload the .java file</p>
+<pre>public class Person
+{
+    private int age;
+    
+    //other class stuff
+    
+    public void setAge(int theAge)
+    {
+       //... your code goes here
+    }
+}</pre>
+<p>2. (10 points) Here are a Moveable interface and an AbstractAnimal and Dog class.</p>
+
+<pre>public interface Moveable
+{
+   void move();
+}</pre>
+
+<pre>public abstract class AbstractAnimal implements Moveable
+{
+    // some implementation here
+}
+</pre>
+<pre>
+
+public class Dog extends AbstractAnimal
+{
+   public void move()
+   {
+      //implementation
+   }
+}</pre>
+
+<p>Look at each set of statements below. Tell if is valid or not (Is there a syntaxt error). Explain<span class="style1"> why or why not</span>. Put your answers in a text document called <strong>problem2.txt.</strong> (no word files)</p>
+
+<ol class="lower-alpha">
+<li><pre>AbstractAnimal animal = new AbstractAnimal();</pre></li>
+<li><pre>Dog fred = new Dog();</pre></li>
+<li><pre>Dog rover = new Dog();
+AbstractAnimal animal2 = rover;</pre></li>
+<li><pre>Moveable m = new Moveable();</pre></li>
+<li><pre>Moveable m2 = new Dog();</pre></li>
+</ol>
+
+<p>3. (5 points) Write a class StringLengthComparator that implements the Comparator interface and provide the required compare () method. The compare() method compares strings by length and will retrurn 0 if the two strings have the same length, a negative number if the first string is shorter and positive number if the first string is longer</p>
+<p>4. (5 points) . Arrays.sort(from the Java librabry) takes two parameters: an array of objects and a object that implements Comparator interface which tells how to order the element in the array. It then sorts the array based on the ordering supplied by the Comparator. Complete the LengthSorter class to sort and print an array of Strings ascending order based on  their length. Rewrite the StringLengthComparator from the previous question as an inner class. Pass the given array and an object of your Comparator class to the Arrays.sort method to sort the array.</p>
+<pre>import java.util.Arrays;
+import java.util.Comparator;
+
+public class LengthSorter
+{
+   public static void main(String[] args)
+   {
+      //... define inner Comparator class
+      
+      String[] names = { "Oklahoma", "Maryland", "California", "Nevada",
+                         "Texas", "Arizona"};
+      
+      //... code to sort the array.
+
+      System.out.println(Arrays.toString(names));
+   }
+}</pre>
+
+<p>5. (10 points) Complete the class below to read a file of baby name in the same format as this file, smallNames.txt, but your program should work with any file name. Print all girl names that start with the letter 'A'. Also print the total <strong>frequency</strong> of girls with names starting with 'A'. You will need to skip the boy data on each line before processing the girl data. Get the file name from the command line. If the file name is not present, print</p>
+
+<p>     File not found: (Name of file)</p>
+<p>This will require a try/catch block.</p>
+<pre>public class BabyNamesStartingWithA
+{
+    public static void main(String[] args)
+    {
+        if (args.length < 1)
+        {
+           System.out.println("Usage: java BabyNamesStartingWithA filename");
+        }
+        else
+        {
+           String filename = args[0];
+           //..your code goes here
+        }
+    }
+
+}</pre>
+<p>Here is the file for your convenience. Each line in the file contains seven entries:</p>
+<ul>
+  <li>The rank (from 1 to 1,000)</li>
+  <li>The name, <strong>frequency</strong>, and percentage of the male name of that rank</li>
+  <li>The name, <strong>frequency</strong>, and percentage of the female name of that rank</li>
+</ul>
+<pre>1  Michael  462085  2.2506  Jessica  302962  1.5436
+2  Christopher  361250  1.7595  Ashley  301702  1.5372
+3  Matthew  351477  1.7119  Emily  237133  1.2082
+4  Joshua  328955  1.6022  Sarah  224000  1.1413
+5  Jacob  298016  1.4515  Samantha  223913  1.1408
+6  Nicholas  275222  1.3405  Amanda  190901  0.9726
+7  Andrew  272600  1.3277  Brittany  190779  0.9720
+8  Daniel  271734  1.3235  Elizabeth  172383  0.8783
+9  Tyler  262218  1.2771  Taylor  168977  0.8609
+10  Joseph  260365  1.2681  Megan  160312  0.8168
+11  Brandon  259299  1.2629  Hannah  158647  0.8083
+12  David  253193  1.2332  Kayla  155844  0.7940
+13  James  244775  1.1922  Lauren  153530  0.7822
+14  Ryan  241105  1.1743  Stephanie  149725  0.7628
+15  John  239730  1.1676  Rachel  148907  0.7587
+16  Zachary  225188  1.0968  Jennifer  147948  0.7538
+17  Justin  220012  1.0716  Nicole  136033  0.6931
+18  William  217588  1.0598  Alexis  131117  0.6680
+19  Anthony  216088  1.0525  Victoria  117386  0.5981
+20  Robert  205313  1.0000  Amber  115551  0.5887</pre>
+<p>6. (10 points) Complete the  <strong>recursive</strong> method in the class below to find the sum of all the values in an Integer ArrayList. You must use recursion</p>
+<pre>import java.util.ArrayList;
+
+public class RecursiveSumDemo
+{
+    public static void main(String[] args)
+    {
+        ArrayList&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;();
+        list.add(2);
+        list.add(4);
+        list.add(8);
+        list.add(16);
+        list.add(32);
+        list.add(64);
+
+        System.out.println(sum(list));
+        System.out.println("Expected: 126");
+    }
+
+    public static int sum(ArrayList&lt;Integer&gt; list)
+    {
+       if (...) return ...; // Base case
+       ArrayList&lt;Integer&gt; smallerList = new ArrayList&lt;Integer&gt;();
+       /* copy all but the first element to smallerList
+          Add the first element to the sum of the smallerList
+      */
+       //... your code goes here
+    }
+}</pre>
+</body>
+</html>

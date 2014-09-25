@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=lat1\ lon1\ lat2\ lon2
+comment0.target=Distance2(double,\ double,\ double,\ double)
+comment1.params=
+comment1.target=double\ getDistance()
+numComments=2

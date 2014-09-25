@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=UnboundedGrid()
+comment0.text=\r\n\ This\ creates\ the\ unbounded\ grid\ by\ using\ two\ parallel\ Arrays\r\n
+comment1.params=loc
+comment1.target=int\ get(Location)
+comment1.text=\r\n\ This\ gets\ the\ value\ of\ a\ certain\ location\ in\ the\ grid\r\n\ @param\ loc\ the\ location\ of\ where\ the\ value\ should\ be\ found\r\n\ @return\ the\ value\ at\ the\ location\r\n
+comment2.params=loc\ value
+comment2.target=void\ set(Location,\ int)
+comment2.text=\r\n\ This\ sets\ a\ specific\ value\ on\ the\ grid\r\n\ @param\ loc\ the\ location\ of\ where\ to\ set\ the\ value\ on\ the\ grid\r\n\ @param\ value\ the\ value\ to\ set\ the\ location\r\n
+comment3.params=
+comment3.target=java.util.ArrayList\ occupiedLocations()
+comment3.text=\r\n\ \ \ \ Returns\ all\ occupied\ locations.\r\n\ \ \ \ @return\ a\ list\ of\ all\ locations\ with\ non-zero\ values\r\n
+comment4.params=loc
+comment4.target=java.util.ArrayList\ validNeighbors(Location)
+comment4.text=\r\n\ \ \ \ Returns\ all\ valid\ neighboring\ locations\ of\ a\ given\ location.\r\n\ \ \ \ @param\ loc\ a\ valid\ location\ \r\n\ \ \ \ @return\ a\ list\ of\ all\ valid\ neighboring\ locations\ of\ loc\r\n
+numComments=5

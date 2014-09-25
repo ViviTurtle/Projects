@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=letter
+comment0.target=boolean\ isVowel(java.lang.String)
+comment0.text=\r\n\ \ \ \ Tests\ whether\ a\ letter\ is\ a\ vowel\r\n\ \ \ \ @param\ letter\ a\ string\ of\ length\ 1\r\n\ \ \ \ @return\ true\ if\ letter\ is\ a\ vowel\r\n
+numComments=1

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=row\ column
+comment0.target=boolean\ fill(int,\ int)
+comment1.params=g
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment2.params=
+comment2.target=java.awt.Dimension\ getPreferredSize()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

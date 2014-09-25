@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ y\ aWidth\ aHeight\ c1\ c2\ c3
+comment0.target=VerticalFlag(int,\ int,\ int,\ int,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment0.text=\r\n\ This\ constructs\ the\ variables\ for\ the\ flag\r\n\ @param\ x\ top\ left\ x-coordinate\ of\ the\ flag\r\n\ @param\ y\ top\ coordinates\ of\ the\ flag\r\n\ @param\ aWidth\ Total\ width\ of\ the\ flag\r\n\ @param\ aHeight\ total\ Height\ of\ the\ flag\r\n\ @param\ c1\ color\ of\ the\ left\ rectangle\ of\ the\ flag\r\n\ @param\ c2\ color\ of\ the\ middle\ rectangle\ of\ the\ flag\r\n\ @param\ c3\ color\ of\ the\ right\ rectangle\ of\ the\ flag\r\n
+comment1.params=g2
+comment1.target=void\ draw(java.awt.Graphics2D)
+comment1.text=\r\n\ Draws\ the\ actual\ flag\r\n
+numComments=2

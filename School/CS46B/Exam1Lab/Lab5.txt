@@ -1,0 +1,56 @@
+   Exam 1 Lab 1 Anthony Langga (Scribe)/ Jeff Chen (Scribe)/ Alvyn Ly (Driver)
+
+1) Done
+
+2)Done
+
+3) This is wrong because it will return the floor of the division because both of those numbers are intergers.
+
+4) Done
+_________________________________________________________________
+2a)AbstractFiniteSet is no Abstract and does not override abstract method number() in Countable.
+
+2b) Done
+
+2c) Unreachable Statement
+
+2d)Done
+
+2e) Done
+__________________________________________________________________
+3) Done
+_________________________________________________________________
+4) ~ Done
+
+~ String.compareToString
+
+~ It is not larger then the second string if the second string is also an empty string
+
+~ If string1.equals(string2) return 0; else if string1.isEmpty() return 1' else if string2.isEmpty() return -1;
+return 0;
+
+________________________________________________________________
+5) if (a.isEmpty() || b.isEmpty()) {
+return amount;
+}
+
+~if (a.charAt(0) == b.charAt(0)) {
+amount++;
+return helper(a.substring(1), b.substring(1), amount); 
+}
+
+      if (a.length() > b.length()) {
+         if (a.contains(b.substring(0, 1))) {
+            amount++;
+            int start = a.indexOf(b.substring(0, 1));
+            return helper(a.substring(start), b.substring(1), amount);
+         }
+      } else if (b.length() > a.length()) {
+         if (b.contains(a.substring(0, 1))) {
+            amount++;
+            int start = b.indexOf(a.substring(0, 1));
+            return helper(b.substring(start), a.substring(1), amount);
+         }
+      }  
+      return helper(b.substring(1), a.substring(1), amount);
+6) It would make you add the percentage making you have the more then the minimum amount of people added.

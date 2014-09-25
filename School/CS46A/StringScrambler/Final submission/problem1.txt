@@ -1,0 +1,8 @@
+A) The compile time error is "longStrings cannot be deferenced from a static context. One way to fix this is to insert static in the longStrings method.
+
+B ) Attached
+C) 1) w = "Mary" count = 0
+     2) w = "had" count = 1
+     3) w= "little" count = 2
+     4) w = "lambs" count = 3
+D) The run-time error ist that it returns 4 because it includes "had" as a 4 letter word. To fix this you have to modify the longStrings Method. If you change words.length to w.length() (which compares the word and not the length of the array) then you will get the right answer.

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=values
+comment0.target=boolean\ firstMiddleLastAreSame(int[])
+comment0.text=\r\n\ \ \ \ Checks\ whether\ the\ first,\ middle,\ and\ last\ values\r\n\ \ \ \ of\ an\ array\ are\ the\ same.\r\n\ \ \ \ @param\ values\ an\ array\ with\ at\ least\ one\ element.\r\n\ \ \ \ @return\ true\ if\ the\ first,\ last,\ and\ either\ the\ middle\ value\r\n\ \ \ \ (if\ the\ array\ length\ is\ odd)\ or\ the\ middle\ two\ values\ (if\r\n\ \ \ \ the\ array\ length\ is\ even)\ are\ all\ the\ same.\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

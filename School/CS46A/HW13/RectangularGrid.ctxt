@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=RectangularGrid(int,\ int)
+comment0.text=\r\n\ Constructs\ the\ two\ dimensional\ grid.\r\n
+comment1.params=
+comment1.target=java.util.ArrayList\ occupiedLocations()
+comment1.text=\r\n\ \ \ \ Returns\ all\ occupied\ locations.\r\n\ \ \ \ @return\ a\ list\ of\ all\ locations\ with\ non-zero\ values\r\n
+comment2.params=loc
+comment2.target=java.util.ArrayList\ validNeighbors(Location)
+comment2.text=\r\n\ \ \ \ Returns\ all\ valid\ neighboring\ locations\ of\ a\ given\ location.\r\n\ \ \ \ @param\ loc\ a\ valid\ location\ \r\n\ \ \ \ @return\ a\ list\ of\ all\ valid\ neighboring\ locations\ of\ loc\r\n
+comment3.params=loc
+comment3.target=int\ get(Location)
+comment3.text=\r\n\ \ \ \ Returns\ the\ value\ at\ a\ given\ location.\r\n\ \ \ \ @param\ loc\ a\ valid\ location\ \r\n\ \ \ \ @return\ the\ value\ at\ loc\r\n
+comment4.params=loc\ value
+comment4.target=void\ set(Location,\ int)
+comment4.text=\r\n\ \ \ \ Sets\ the\ value\ at\ a\ given\ location.\r\n\ \ \ \ @param\ loc\ a\ valid\ location\ \ \ \ \ \ \ \r\n\ \ \ \ @param\ value\ the\ value\ to\ set\ at\ loc\r\n
+numComments=5

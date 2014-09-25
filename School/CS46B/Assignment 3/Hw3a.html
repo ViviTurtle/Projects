@@ -1,0 +1,78 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>ext:13021208225153965108571701118:1</title></head><body><p><b>Testing Hw3a</b></p>
+<p>Input test:</p><pre>I am Sam.  Sam I am.  Do you like green eggs and ham?
+</pre><p>Program output:</p><pre>Total letters: 36
+</pre><font color="green">pass</font><p>Input test1:</p><pre>Using possibly questionable writing mechanisms, I can't imagine that this stupendous paragraph could get anything other than a remarkable grade.  But, even if I forget, accidentally leaving the exclamation point off of the end of the third sentence, the system should still notice that and mark three sentences.
+
+
+
+
+Notice, whitespace doesn't change any values
+
+
+
+</pre><p>Program output:</p><pre>Total letters: 293
+</pre><font color="green">pass</font><p>Program output:</p><pre>Total letters: 0
+</pre><font color="green">pass</font><p>Input test3:</p><pre>Unfortunately...I use elipses.  It won't hurt my numbers...will it?  Oh darn...it will!
+</pre><p>Program output:</p><pre>Total letters: 61
+</pre><font color="green">pass</font><p><b>Student files</b></p>
+<p>Hw3a.java</p><table><tbody><tr><td style="padding-right: 1em;"><pre><span style="color: gray;">  1</span>
+<span style="color: gray;">  2</span>
+<span style="color: gray;">  3</span>
+<span style="color: gray;">  4</span>
+<span style="color: gray;">  5</span>
+<span style="color: gray;">  6</span>
+<span style="color: gray;">  7</span>
+<span style="color: gray;">  8</span>
+<span style="color: gray;">  9</span>
+<span style="color: gray;"> 10</span>
+<span style="color: gray;"> 11</span>
+<span style="color: gray;"> 12</span>
+<span style="color: gray;"> 13</span>
+<span style="color: gray;"> 14</span>
+<span style="color: gray;"> 15</span>
+<span style="color: gray;"> 16</span>
+<span style="color: gray;"> 17</span>
+<span style="color: gray;"> 18</span>
+<span style="color: gray;"> 19</span>
+<span style="color: gray;"> 20</span>
+<span style="color: gray;"> 21</span>
+<span style="color: gray;"> 22</span>
+<span style="color: gray;"> 23</span>
+<span style="color: gray;"> 24</span>
+<span style="color: gray;"> 25</span>
+<span style="color: gray;"> 26</span>
+<span style="color: gray;"> 27</span>
+<span style="color: gray;"> 28</span>
+<span style="color: gray;"> 29</span>
+</pre></td><td><pre>import java.io.*;
+import java.util.Scanner;
+public class Hw3a
+{
+   public static void main(String[] args)
+   {
+      int letters = 0;
+      Scanner in = new Scanner(System.in, "UTF-8");
+      in.useDelimiter("");
+      while (in.hasNext())
+      {
+         char ch = in.next().charAt(0);
+         if (Character.isLetter(ch))
+              {
+         letters++;
+                 }
+        
+      }
+      //For the draft, just calculate letters.
+      System.out.println("Total letters: " + letters);
+
+      //Stuff below is for the final version.
+      //System.out.println("Total words: " + words);
+      //System.out.println("Total sentences: " + sentences);
+      //System.out.println("Letters per word: " + );
+      //System.out.println("Words per sentence: " + );
+   }
+   
+}
+</pre></td></tr></tbody></table></body></html>

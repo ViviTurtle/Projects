@@ -1,0 +1,31 @@
+Enter your choice of ATM
+A.1
+Please enter your card
+A 1
+Card accepted. Please enter your password
+2312
+This is the wrong password, please try again
+baddws
+This is the wrong password, please try again
+3231
+Password accepted.
+Press 1 for Checking
+Press 2 for Saving
+1
+Please select amount you wish to withdraw
+1000
+This amount exceeds the total amount of money you can withdraw per day, please enter a new ammount or -1 to quit
+This amount exceeds the total amount of money you can withdraw per Transanction, please enter a new amount of -1 to quit
+250
+Transanction sucess, if you have more transanction please enter the amount or quit
+251
+This amount exceeds the total amount of money you can withdraw per day, please enter a new ammount or -1 to quit
+This amount exceeds the total amount of money you can withdraw per Transanction, please enter a new amount of -1 to quit
+200
+Transanction sucess, if you have more transanction please enter the amount or quit
+50
+Transanction sucess, if you have more transanction please enter the amount or quit
+1
+This amount exceeds the total amount of money you can withdraw per day, please enter a new ammount or -1 to quit
+-1
+

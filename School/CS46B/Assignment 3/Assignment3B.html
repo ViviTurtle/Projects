@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>ext:13021208381047065607692220778:2</title></head><body><p><b>Testing Hw3b</b></p>
+<p>Program output:</p><pre>daivd.taylor@sjsu.edu
+admin@sjsu.edu
+frank.in.stein@sjsu.edu
+root.beer@sjsu.edu
+</pre><font color="green">pass</font><p>Program output:</p><pre>Usage: Hw3b inputFileName
+</pre><font color="green">pass</font><p>Program output:</p><pre>Usage: Hw3b inputFileName
+</pre><font color="green">pass</font><p>Program output:</p><table style="font-size: 0.9em;"><tr><th>Actual</th><th>Expected</th></tr>
+<tr><td style="background: #EEE; margin: 0.5em; padding: 0.25em;"><pre><font color="blue">File not Found: thisFileNameIsMissingSoItCannotBeFount.txt</font>
+</pre></td><td style="background: #EEE; margin: 0.5em; padding: 0.25em;"><pre>File not found: thisFileNameIsMissingSoItCannotBeFount.txt
+</pre></td></tr>
+</table>
+<p><b>Student files</b></p>
+<p>Hw3b.java</p><table><tr><td style="padding-right: 1em;"><pre><span style="color: gray;">  1</span>
+<span style="color: gray;">  2</span>
+<span style="color: gray;">  3</span>
+<span style="color: gray;">  4</span>
+<span style="color: gray;">  5</span>
+<span style="color: gray;">  6</span>
+<span style="color: gray;">  7</span>
+<span style="color: gray;">  8</span>
+<span style="color: gray;">  9</span>
+<span style="color: gray;"> 10</span>
+<span style="color: gray;"> 11</span>
+<span style="color: gray;"> 12</span>
+<span style="color: gray;"> 13</span>
+<span style="color: gray;"> 14</span>
+<span style="color: gray;"> 15</span>
+<span style="color: gray;"> 16</span>
+<span style="color: gray;"> 17</span>
+<span style="color: gray;"> 18</span>
+<span style="color: gray;"> 19</span>
+<span style="color: gray;"> 20</span>
+<span style="color: gray;"> 21</span>
+<span style="color: gray;"> 22</span>
+<span style="color: gray;"> 23</span>
+<span style="color: gray;"> 24</span>
+<span style="color: gray;"> 25</span>
+<span style="color: gray;"> 26</span>
+<span style="color: gray;"> 27</span>
+<span style="color: gray;"> 28</span>
+<span style="color: gray;"> 29</span>
+<span style="color: gray;"> 30</span>
+<span style="color: gray;"> 31</span>
+<span style="color: gray;"> 32</span>
+<span style="color: gray;"> 33</span>
+<span style="color: gray;"> 34</span>
+</pre></td><td><pre>
+import java.io.*;
+import java.util.Scanner;
+
+public class Hw3b {
+
+    public static void main(String[] args) {
+
+        if (args.length != 1) {
+            System.out.println("Usage: Hw3b inputFileName");
+        } else {
+            try {
+                File inFile = new File(args[0]);
+                Scanner in = new Scanner(inFile, "UTF-8");
+                in.useDelimiter("[,\n ]+");
+                while (in.hasNext()) {
+
+                    String word = in.next();
+                    int count = 0;
+                    for (int i = 0; i &lt; word.length(); i++) {
+                        if (word.charAt(i) == '@') {
+                            count++;
+                        }
+                    }
+                    if (word.charAt(0) != '@' &amp;&amp; word.charAt(word.length() - 1) != '@' &amp;&amp; count == 1) {
+                        System.out.println(word);
+                    }
+                }
+            } catch (FileNotFoundException exception) {
+                System.out.println("File not Found: " + args[0]);
+            }
+        }
+    }
+}
+</pre></td></tr></table><p><b>Grader files</b></p>
+<p>inputFile1.txt</p><pre>My email is not daivd.taylor@sjsu.edu, because that is spelled wrong.
+But, it is pretty close.  Notice, it doesn't actually end with a comma.
+Also note, in our department we don't use emails like joe@sjsu@edu, or
+fancypants@, or @sjsu.edu, or joe@@sjsu.  None of the other email
+addresses in our department: admin@sjsu.edu, or frank.in.stein@sjsu.edu,
+or root.beer@sjsu.edu start or end with a punctuation mark either.
+</pre></body></html>

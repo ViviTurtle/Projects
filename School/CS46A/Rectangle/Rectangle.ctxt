@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=x\ y\ width\ height
+comment0.target=Rectangle(int,\ int,\ int,\ int)
+comment0.text=\r\n\ \ \ \ Constructs\ a\ rectangle.\r\n\ \ \ \ @param\ x\ \=\ the\ leftmost\ x-value\r\n\ \ \ \ @param\ y\ \=\ the\ topmost\ y-value\r\n\ \ \ \ @param\ width\ the\ width\r\n\ \ \ \ @param\ height\ the\ height\r\n
+comment1.params=other
+comment1.target=boolean\ contains(Rectangle)
+comment1.text=\r\n\ This\ method\ tests\ whether\ the\ second\ rectangle\ is\ contained\ in\ the\ first\ rectangle\r\n\ @param\ other\ the\ other\ Rectangle\r\n\ @return\ true\ or\ false\r\n
+comment2.params=other
+comment2.target=boolean\ intersects(Rectangle)
+comment2.text=\r\n\ This\ method\ tests\ whether\ the\ second\ rectangle\ is\ intersecting\ the\ first\ rectangle\r\n\ @param\ other\ the\ other\ Rectangle\r\n\ @return\ true\ or\ false\r\n
+comment3.params=other
+comment3.target=boolean\ isDisjointFrom(Rectangle)
+comment3.text=\r\n\ This\ method\ tests\ whether\ the\ second\ rectangle\ is\ disjointed\ from\ the\ first\ rectangle\r\n\ @param\ other\ the\ other\ Rectangle\r\n\ @return\ true\ or\ false\r\n
+numComments=4

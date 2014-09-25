@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=words\ len
+comment0.target=int\ longStrings(java.lang.String[],\ int)
+comment0.text=\r\n\ \ \ \ \ \ Counts\ how\ many\ strings\ have\ length\ >\=\ len.\r\n\ \ \ \ \ \ @param\ words\ the\ strings\ to\ check\ \r\n\ \ \ \ \ \ @param\ len\ the\ minimum\ length\ to\ count\r\n\ \ \ \ \ \ @return\ the\ number\ of\ strings\ with\ at\ least\ the\ given\ length\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

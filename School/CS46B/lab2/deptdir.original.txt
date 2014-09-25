@@ -1,0 +1,87 @@
+Horstmann
+Phone
+(408) 924-5085	
+Horstmann
+Email
+Cay.Horstmann@sjsu.edu
+O'Brien
+Email
+kathleen.a.obrien@sjsu.edu
+Pearce
+Phone
+(408) 924-5065	
+Pearce
+Email
+Jon.Pearce@sjsu.edu
+Kim
+Phone
+(408) 924-5122	
+Kim
+Email
+Suneuy.Kim@sjsu.edu
+Chun
+Phone
+(408) 924-5137	
+Chun
+Email
+Robert.Chun@sjsu.edu
+Khuri
+Phone
+(408) 924-5176
+Khuri
+Email
+Sami.Khuri@sjsu.edu
+Lin
+Phone
+(408) 924-5121	
+Lin
+Email
+Tsau-Young.Lin@sjsu.edu
+Meldal
+Phone
+(408) 924-4151	
+Meldal
+Email
+Sigurd.Meldal@sjsu.edu
+Moh
+Phone
+(408) 924-5088	
+Moh
+Email
+Melody.Moh@sjsu.edu
+Pollett
+Phone
+(408) 924-5145	
+Pollett
+Email
+Chris.Pollett@sjsu.edu
+Smith
+Phone
+(408) 924-5153	
+Smith
+Email
+Jeff.Smith@sjsu.edu
+Stamp
+Phone
+(408) 924-5094	
+Stamp
+Email
+Mark.Stamp@sjsu.edu
+Taylor
+Phone
+(408) 924-5124	
+Taylor
+Email
+David.Taylor@sjsu.edu
+Teoh
+Phone
+(408) 924-7227	
+Teoh
+Email
+Soon-Tee.Teoh@sjsu.edu
+Tseng
+Phone
+(408) 924-7255
+Tseng
+Email
+Chris.Tseng@sjsu.edu

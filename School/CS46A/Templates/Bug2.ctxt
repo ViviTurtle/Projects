@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Bug2()
+comment0.text=\r\n\ \ \ \ Constructs\ a\ bug\ at\ the\ origin,\ facing\ right.\r\n
+comment1.params=amount
+comment1.target=void\ move(double)
+comment1.text=\r\n\ \ \ \ Moves\ the\ bug\ by\ one\ unit\ in\ the\ current\ direction.\r\n\ \ \ \ @param\ amount\ the\ amount\ by\ which\ to\ move\ the\ bug\r\n
+comment2.params=angle
+comment2.target=void\ turn(int)
+comment2.text=\r\n\ \ \ \ Turns\ this\ bug\ by\ a\ given\ angle\ and\ keeps\ track\ of\ how\ much\ the\ bug\ has\ turned.\ \r\n\ \ \ \ @param\ angle\ the\ angle\ in\ degrees\r\n
+comment3.params=
+comment3.target=double\ getX()
+comment3.text=\r\n\ \ \ \ Gets\ the\ current\ x\ position\ of\ this\ bug.\r\n\ \ \ \ @return\ the\ x\ position\r\n
+comment4.params=
+comment4.target=double\ getY()
+comment4.text=\r\n\ \ \ \ Gets\ the\ current\ x\ position\ of\ this\ bug.\r\n\ \ \ \ @return\ the\ y\ position\r\n
+comment5.params=
+comment5.target=int\ getTurns()
+comment5.text=\r\n\ Gets\ the\ total\ degrees\ the\ bug\ has\ turned\r\n\ @return\ the\ degrees\ turned\r\n
+numComments=6

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=home
+comment0.target=Bug(Grid)
+comment0.text=\r\n\ \ \ \ Constructs\ a\ bug\ at\ the\ center\ of\ the\ grid,\ facing\ to\ the\ right.\r\n\ \ \ \ @param\ home\ the\ grid\ that's\ the\ bug's\ home\r\n
+comment1.params=
+comment1.target=void\ move()
+comment1.text=\r\n\ \ \ \ Moves\ the\ bug\ by\ one\ unit\ in\ the\ current\ direction.\r\n\ \ \ \ If\ the\ movement\ would\ cause\ the\ bug\ to\ leave\ the\ box,\ it\r\n\ \ \ \ should\ reverse\ direction\ and\ move\ in\ the\ reversed\ direction.\r\n
+comment2.params=
+comment2.target=void\ turn()
+comment2.text=\r\n\ \ \ \ Makes\ the\ bug\ turn\ 90\ degrees\ clockwise.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getPosition()
+comment3.text=\r\n\ \ \ \ Gets\ a\ string\ describing\ the\ current\ position\ of\ this\ bug.\r\n\ \ \ \ @return\ the\ position\ string,\ of\ the\ format\ (x,\ y)\r\n
+numComments=4

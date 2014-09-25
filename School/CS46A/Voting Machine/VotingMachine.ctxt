@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ voteForDemocrat()
+comment1.params=
+comment1.target=void\ voteForRepublican()
+comment2.params=
+comment2.target=double\ getDemocratVotes()
+comment3.params=
+comment3.target=void\ clear()
+comment4.params=
+comment4.target=double\ getRepublicanVotes()
+numComments=5

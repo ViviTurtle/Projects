@@ -1,0 +1,173 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>ext:13021217151935195511758137559:1</title></head><body><p><b>Running Hw3cTester</b></p>
+<pre>You may alway assume there is one space between any two words.
+For the draft, you only need to return an empty string, and that will get you 2 points.  Nothing below should fail.  The points listed are for the final versions./n
+Input: you get two points for handling it with no uppercase or punctuation
+Output: 
+Input: Do Cases for Another two
+Output: 
+<font color="green">Expected: </font>
+Input: end of word punctuation!! for two more.
+Output: 
+<font color="green">Expected: </font>
+Input: 'twas two more for start of word 'unctuation
+Output: 
+<font color="green">Expected: </font>
+Input: don't forget within a word m'kay
+Output: 
+<font color="green">Expected: </font>
+Input: If you want to sleep in, don't!! Get-r-going early.
+Output: 
+<font color="green">Expected: </font>
+</pre><p><b>Student files</b></p>
+<p>Hw3c.java</p><table><tbody><tr><td style="padding-right: 1em;"><pre><span style="color: gray;">  1</span>
+<span style="color: gray;">  2</span>
+<span style="color: gray;">  3</span>
+<span style="color: gray;">  4</span>
+<span style="color: gray;">  5</span>
+<span style="color: gray;">  6</span>
+<span style="color: gray;">  7</span>
+<span style="color: gray;">  8</span>
+<span style="color: gray;">  9</span>
+<span style="color: gray;"> 10</span>
+<span style="color: gray;"> 11</span>
+<span style="color: gray;"> 12</span>
+<span style="color: gray;"> 13</span>
+<span style="color: gray;"> 14</span>
+<span style="color: gray;"> 15</span>
+</pre></td><td><pre>public class Hw3c 
+{
+   public static String e2PL(String input)
+   {
+ return "";
+       //Because I am posting this late, you get it for free.
+       //return an empty string, and this test passes the draft.
+       //But, I do suggest that you look at the final version,
+       //as it has several cases to handle.
+
+       //I have eliminated the pL2E portion, I think just going
+       //in the one direction is sufficient practice with string
+       //manipulation.
+   }
+}
+</pre></td></tr></tbody></table><p><b>Grader files</b></p>
+<p>Hw3cTester.java</p><table><tbody><tr><td style="padding-right: 1em;"><pre><span style="color: gray;">  1</span>
+<span style="color: gray;">  2</span>
+<span style="color: gray;">  3</span>
+<span style="color: gray;">  4</span>
+<span style="color: gray;">  5</span>
+<span style="color: gray;">  6</span>
+<span style="color: gray;">  7</span>
+<span style="color: gray;">  8</span>
+<span style="color: gray;">  9</span>
+<span style="color: gray;"> 10</span>
+<span style="color: gray;"> 11</span>
+<span style="color: gray;"> 12</span>
+<span style="color: gray;"> 13</span>
+<span style="color: gray;"> 14</span>
+<span style="color: gray;"> 15</span>
+<span style="color: gray;"> 16</span>
+<span style="color: gray;"> 17</span>
+<span style="color: gray;"> 18</span>
+<span style="color: gray;"> 19</span>
+<span style="color: gray;"> 20</span>
+<span style="color: gray;"> 21</span>
+<span style="color: gray;"> 22</span>
+<span style="color: gray;"> 23</span>
+<span style="color: gray;"> 24</span>
+<span style="color: gray;"> 25</span>
+<span style="color: gray;"> 26</span>
+<span style="color: gray;"> 27</span>
+<span style="color: gray;"> 28</span>
+<span style="color: gray;"> 29</span>
+<span style="color: gray;"> 30</span>
+<span style="color: gray;"> 31</span>
+<span style="color: gray;"> 32</span>
+<span style="color: gray;"> 33</span>
+<span style="color: gray;"> 34</span>
+<span style="color: gray;"> 35</span>
+<span style="color: gray;"> 36</span>
+<span style="color: gray;"> 37</span>
+<span style="color: gray;"> 38</span>
+<span style="color: gray;"> 39</span>
+<span style="color: gray;"> 40</span>
+<span style="color: gray;"> 41</span>
+<span style="color: gray;"> 42</span>
+<span style="color: gray;"> 43</span>
+<span style="color: gray;"> 44</span>
+<span style="color: gray;"> 45</span>
+<span style="color: gray;"> 46</span>
+<span style="color: gray;"> 47</span>
+<span style="color: gray;"> 48</span>
+<span style="color: gray;"> 49</span>
+<span style="color: gray;"> 50</span>
+<span style="color: gray;"> 51</span>
+<span style="color: gray;"> 52</span>
+<span style="color: gray;"> 53</span>
+<span style="color: gray;"> 54</span>
+<span style="color: gray;"> 55</span>
+<span style="color: gray;"> 56</span>
+<span style="color: gray;"> 57</span>
+<span style="color: gray;"> 58</span>
+<span style="color: gray;"> 59</span>
+</pre></td><td><pre>public class Hw3cTester {
+   public static void main(String[] args)
+   {
+      System.out.println("You may alway assume there is one space between any two words.");
+      System.out.println("For the draft, you only need to return an " +
+			 "empty string, and that will get you 2 points.  " +
+			 "Nothing below should fail.  The points listed " +
+			 "are for the final versions./n");
+
+      
+      
+      String input = "you get two points for handling it with no uppercase or punctuation";
+      String output = Hw3c.e2PL(input);
+      String expected = "";
+      
+      System.out.println("Input: " + input);
+      System.out.println("Output: " + output.toLowerCase());
+      
+      input = "Do Cases for Another two";
+      output = Hw3c.e2PL(input);
+      expected = "";
+      System.out.println("Input: " + input);
+      System.out.println("Output: " + output);
+      System.out.println("Expected: " + expected);
+
+      input = "end of word punctuation!! for two more.";
+      output = Hw3c.e2PL(input);
+      System.out.println("Input: " + input);
+      System.out.println("Output: " + output);
+      System.out.println("Expected: " + expected);
+
+      input = "'twas two more for start of word 'unctuation";
+      output = Hw3c.e2PL(input);
+      System.out.println("Input: " + input);
+      System.out.println("Output: " + output);
+      System.out.println("Expected: " + expected);
+
+      
+      input = "don't forget within a word m'kay";
+      output = Hw3c.e2PL(input);
+      System.out.println("Input: " + input);
+      System.out.println("Output: " + output);
+      System.out.println("Expected: " + expected);
+
+      
+      
+      input = "If you want to sleep in, don't!! Get-r-going early.";
+      output = Hw3c.e2PL(input);
+
+      System.out.println("Input: " + input);
+      System.out.println("Output: " + output);
+      System.out.println("Expected: " + expected);
+
+   }
+   
+   
+  
+   
+}
+</pre></td></tr></tbody></table></body></html>

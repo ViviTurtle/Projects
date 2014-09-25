@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=Grids(int,\ int)
+comment1.params=grid\ placement
+comment1.target=int\ countNonZeroNeighbors(int[][],\ Location)
+comment1.text=\r\n\ This\ counts\ the\ amount\ of\ non\ Zero\ neighbord\ adjacent\ to\ a\ certain\ area\ in\ a\ frid\r\n\ @param\ grid\ the\ grid\ used\ to\ check\ for\ adjacent\ neighbors\r\n\ @param\ row\ the\ row\ of\ the\ certain\ box\r\n\ @param\ the\ column\ of\ the\ certain\ box\r\n\ @return\ counter\ which\ counts\ the\ amount\ of\ non\ zero\ neighbord.\r\n
+comment2.params=grid\ neighborCount
+comment2.target=java.util.ArrayList\ locationsWithNeighbors(int[][],\ int)
+comment3.params=grid\ locations\ value
+comment3.target=void\ setLocations(int[][],\ java.util.ArrayList,\ int)
+numComments=4

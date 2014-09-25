@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=problem\ reminder\ greeting
+comment0.target=Mail(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructs\ the\ Mail\ class\ when\ given\ three\ different\ strings\r\n\ @param\ problem\ the\ reason\ why\ the\ person\ ie\ being\ notified\r\n\ @param\ reminder\ why\ the\ letter\ is\ important\r\n\ @param\ greeting\ the\ signature\ of\ the\ writer\r\n
+comment1.params=name\ assignment
+comment1.target=java.lang.String\ createMessage(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Creates\ the\ actual\ message\ of\ the\ mail\r\n\ @param\ name\ the\ name\ of\ the\ person\ being\ notified\r\n\ @param\ assignment\ the\ name\ of\ the\ assignment\ of\ importance\r\n
+numComments=2

@@ -1,0 +1,102 @@
+                                      Lab 1 Anthony Langga (Scribe) / Max Tytel (Driver)
+
+A) ﻿
+
+AddressBook.java and ArraylistAddressBook.java and Item.java are in my project. ArrayListAddressBook has red next to them. 
+
+B1) ArraylistAddress Book is not abstract and does not override remove
+
+B2) The remove method.
+
+B3) It added the method remove and it throws an exception whenever it is called.
+
+B4) The abstract class error is gone.
+
+C1)The errors that are missing are, Constructtor item cannot be applied to given types, cannot find symbol for getName,  getKey, and getValue
+
+C2) They need to be fixed in the item class.
+
+C3) They generated each class.
+
+D1) Constructor item cannot be applied to given types.
+
+D2) public Item(String key, String value, String name)
+
+D3)    public Item(String key, String value, String name) {
+      this.key = key;
+      this.value = value;
+      this.name = name;
+
+E1) No main classes found.
+
+E2) javax.swing package description appears.
+
+E3) javax.swing package description appears again
+
+E4) No suggestions.
+
+E5) No, half the time the options didin’t appear. It only appears on this current last Approve option.
+
+E6) Done
+
+E7) Done
+
+F1) BUILD SUCCESSFUL (total time: 22 seconds)
+
+F2)    System.out.println(book.get("Horstmann","Phone"));
+
+F3)   book.put("Anthony", "Email", "Anthony.Langga@sjsu,edu");
+
+F4) It adds my email.
+
+G1) Cannot add variable collections.
+
+G2) It imported the collections pacakge.
+
+G3) No suitable methods found.
+
+G4) The items class.
+
+G5) item is not abstract and does not ovveride methods.
+
+G6) You let it generate the compareTo() method.
+
+G7) Done
+
+G8) We needed to declare getFirst in the interfac e.
+
+G9)Item@1c7e0e8
+
+H1) It returns an item, in which the user has no information from it,
+
+H2) Item.java
+
+H3) Done
+
+H4)   null
+(408) 924-4151	MeldalPhone
+
+H5)        /*
+        * This compares all items in an array to a particular item if they are the same or not.
+        * @param Item (an Item that needs to be compared to all items of an array.
+        * @return true if they are the same
+        */
+H6)
+false
+Expected: true
+false
+Expected: false
+
+H7) Done
+H8) It isn’t comparing the the arrays correctly.
+
+H9) Item.java
+
+H10) Done
+
+
+
+H11) true
+Expected: true
+false
+Expected: false

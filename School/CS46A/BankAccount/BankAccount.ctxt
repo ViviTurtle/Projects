@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BankAccount()
+comment0.text=\r\n\ \ \ \ \ \ Constructs\ a\ bank\ account\ with\ a\ zero\ balance.\r\n
+comment1.params=initialBalance
+comment1.target=BankAccount(double)
+comment1.text=\r\n\ \ \ \ \ \ Constructs\ a\ bank\ account\ with\ a\ given\ balance.\r\n\ \ \ \ \ \ @param\ initialBalance\ the\ initial\ balance\r\n
+comment2.params=amount
+comment2.target=void\ deposit(double)
+comment2.text=\r\n\ \ \ \ \ \ Deposits\ money\ into\ the\ bank\ account.\r\n\ \ \ \ \ \ @param\ amount\ the\ amount\ to\ deposit\r\n
+comment3.params=amount
+comment3.target=void\ withdraw(double)
+comment3.text=\r\n\ \ \ \ \ \ Withdraws\ money\ from\ the\ bank\ account.\r\n\ \ \ \ \ \ @param\ amount\ the\ amount\ to\ withdraw\r\n
+comment4.params=
+comment4.target=double\ getBalance()
+comment4.text=\r\n\ \ \ \ \ \ Gets\ the\ current\ balance\ of\ the\ bank\ account.\r\n\ \ \ \ \ \ @return\ the\ current\ balance\r\n
+comment5.params=n\ percent
+comment5.target=void\ addInterest(int,\ double)
+comment5.text=\r\n\ \ \ \ \ \ Adds\ a\ given\ percentage\ to\ the\ balance\ of\ this\ account,\ using\r\n\ \ \ \ \ \ compound\ interest\r\n\ \ \ \ \ \ @param\ n\ how\ often\ to\ add\ the\ interest\ (e.g.\ 10\ for\ ten\ times)\r\n\ \ \ \ \ \ @param\ percent\ the\ percentage\ to\ add,\ e.g.\ 5.5\ to\ add\ 5.5%\r\n
+numComments=6

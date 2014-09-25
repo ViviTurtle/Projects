@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=width\ height
+comment0.target=Bug4(int,\ int)
+comment0.text=\r\n\ This\ constructs\ the\ bug\ in\ the\ center\ of\ its\ home\ facing\ northeast\r\n\ @param\ width1\ the\ width\ of\ the\ home\r\n\ @param\ height1\ the\ height\ of\ the\ home\r\n
+comment1.params=n
+comment1.target=void\ move(int)
+comment1.text=\r\n\ This\ method\ moves\ the\ bug\ and\ also\ makes\ it\ turn\ when\ it\ moves\ towards\ the\ walls\ of\ its\ home\r\n\ @param\ n\ the\ amount\ the\ bug\ moves\r\n
+comment2.params=
+comment2.target=void\ turn()
+comment2.text=\r\n\ This\ method\ turns\ the\ bug\r\n
+comment3.params=
+comment3.target=int\ getX()
+comment3.text=\r\n\ Gets\ the\ x\ position\ of\ the\ bug\r\n\ @return\ the\ x-coordinate\r\n
+comment4.params=
+comment4.target=int\ getY()
+comment4.text=\r\nGets\ the\ y\ position\ of\ the\ bug\r\n@returns\ the\ y-coordinate\ of\ the\ bug\r\n
+numComments=5

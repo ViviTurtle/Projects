@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=maxx\ maxy
+comment0.target=RectangularGrid(int,\ int)
+comment1.params=x\ y
+comment1.target=boolean\ isValid(int,\ int)
+comment1.text=\r\n\ \ \ \ \ \ Checks\ whether\ a\ location\ is\ a\ valid\ location\ inside\ this\ grid.\r\n\ \ \ \ \ \ @param\ x\ the\ x-coordinate\ of\ the\ location\r\n\ \ \ \ \ \ @param\ y\ the\ y-coordinate\ of\ the\ location\r\n
+comment2.params=
+comment2.target=int\ getCenterX()
+comment2.text=\r\n\ \ \ \ \ \ Gets\ the\ x-coordinate\ of\ the\ center\ of\ this\ grid.\r\n\ \ \ \ \ \ @return\ the\ x-coordinate\ of\ the\ center\r\n
+comment3.params=
+comment3.target=int\ getCenterY()
+comment3.text=\r\n\ \ \ \ \ \ Gets\ the\ x-coordinate\ of\ the\ center\ of\ this\ grid.\r\n\ \ \ \ \ \ @return\ the\ x-coordinate\ of\ the\ center\r\n
+numComments=4

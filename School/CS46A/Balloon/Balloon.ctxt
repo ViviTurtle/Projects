@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Balloon()
+comment1.params=amount
+comment1.target=void\ addAir(double)
+comment1.text=\r\n\ Adds\ air\ to\ the\ Balloon\r\n\ @param\ amount\ the\ amount\ of\ air\ that\ is\ goign\ to\ be\ added\r\n
+comment2.params=
+comment2.target=double\ getVolume()
+comment2.text=\r\n\ Gets\ the\ current\ volume\ of\ air\ in\ the\ Balloon\r\n\ @return\ the\ amount\ of\ air\ in\ the\ balloon\r\n
+comment3.params=
+comment3.target=double\ getSurfaceArea()
+comment3.text=\r\n\ Gets\ the\ current\ Surface\ Area\ of\ the\ Balloon\r\n\ @return\ the\ surface\ area\ of\ the\ baloon\r\n
+comment4.params=
+comment4.target=double\ getRadius()
+comment4.text=\r\n\ Gets\ the\ current\ Radius\ of\ the\ Balloon\r\n\ @return\ the\ radius\ of\ the\ ballon\r\n
+numComments=5

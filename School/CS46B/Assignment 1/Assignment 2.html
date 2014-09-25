@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>Report</title></head><body><p><b>Running VectorComparatorTester</b></p>
+<pre>[(x=4.0, y=7.0), (x=-5.0, y=-5.0), (x=0.0, y=-1.0), (x=3.0, y=5.0), (x=6.0, y=4.0)]
+<font color="green">Expected:  [(x=4.0, y=7.0), (x=-5.0, y=-5.0), (x=0.0, y=-1.0), (x=3.0, y=5.0), (x=6.0, y=4.0)]</font>
+Nothing changes order with this dummy Comparator
+[(x=4.0, y=7.0), (x=-5.0, y=-5.0), (x=0.0, y=-1.0), (x=3.0, y=5.0), (x=6.0, y=4.0)]
+<font color="green">Expected:  [(x=4.0, y=7.0), (x=-5.0, y=-5.0), (x=0.0, y=-1.0), (x=3.0, y=5.0), (x=6.0, y=4.0)]</font>
+Nothing changes order with this dummy Comparator
+</pre><p><b>Student files</b></p>
+<p>VectorYComparator.java</p><table><tr><td style="padding-right: 1em;"><pre><span style="color: gray;">  1</span>
+<span style="color: gray;">  2</span>
+<span style="color: gray;">  3</span>
+<span style="color: gray;">  4</span>
+<span style="color: gray;">  5</span>
+<span style="color: gray;">  6</span>
+<span style="color: gray;">  7</span>
+<span style="color: gray;">  8</span>
+<span style="color: gray;">  9</span>
+<span style="color: gray;"> 10</span>
+<span style="color: gray;"> 11</span>
+<span style="color: gray;"> 12</span>
+<span style="color: gray;"> 13</span>
+<span style="color: gray;"> 14</span>
+<span style="color: gray;"> 15</span>
+<span style="color: gray;"> 16</span>
+<span style="color: gray;"> 17</span>
+<span style="color: gray;"> 18</span>
+<span style="color: gray;"> 19</span>
+<span style="color: gray;"> 20</span>
+</pre></td><td><pre>//No Package Statement Please!!!
+
+import java.util.Comparator;
+
+public class VectorYComparator implements Comparator 
+{
+    public int compare(Object other, Object other2)
+{
+Vector v1 = (Vector) other;
+Vector v2 = (Vector) other2;
+return 0;
+}
+
+
+}
+
+
+
+
+
+</pre></td></tr></table><p><b>Grader files</b></p>
+<p>Vector.java</p><table><tr><td style="padding-right: 1em;"><pre><span style="color: gray;">  1</span>
+<span style="color: gray;">  2</span>
+<span style="color: gray;">  3</span>
+<span style="color: gray;">  4</span>
+<span style="color: gray;">  5</span>
+<span style="color: gray;">  6</span>
+<span style="color: gray;">  7</span>
+<span style="color: gray;">  8</span>
+<span style="color: gray;">  9</span>
+<span style="color: gray;"> 10</span>
+<span style="color: gray;"> 11</span>
+<span style="color: gray;"> 12</span>
+<span style="color: gray;"> 13</span>
+<span style="color: gray;"> 14</span>
+<span style="color: gray;"> 15</span>
+<span style="color: gray;"> 16</span>
+<span style="color: gray;"> 17</span>
+<span style="color: gray;"> 18</span>
+<span style="color: gray;"> 19</span>
+<span style="color: gray;"> 20</span>
+<span style="color: gray;"> 21</span>
+<span style="color: gray;"> 22</span>
+<span style="color: gray;"> 23</span>
+<span style="color: gray;"> 24</span>
+<span style="color: gray;"> 25</span>
+<span style="color: gray;"> 26</span>
+<span style="color: gray;"> 27</span>
+<span style="color: gray;"> 28</span>
+<span style="color: gray;"> 29</span>
+<span style="color: gray;"> 30</span>
+<span style="color: gray;"> 31</span>
+<span style="color: gray;"> 32</span>
+<span style="color: gray;"> 33</span>
+<span style="color: gray;"> 34</span>
+<span style="color: gray;"> 35</span>
+<span style="color: gray;"> 36</span>
+<span style="color: gray;"> 37</span>
+</pre></td><td><pre>//You should all be familiar with this after Assignment 0...
+public class Vector 
+{
+   private double x, y;
+   
+   public Vector (double thisX, double thisY)
+   {
+      x = thisX;
+      y = thisY;
+   }
+   
+   public double getX()
+   {
+      return x;
+   }
+   
+   public double getY()
+   {
+      return y;
+   }
+   
+   public Vector add(Vector otherVector)
+   {
+      return new Vector(x+otherVector.x, y+otherVector.y);
+   }
+   
+   public double getMagnitude()
+   {
+      return Math.sqrt(x*x + y*y);
+   }
+
+   public String toString()
+   {
+      return "(x=" + x + ", y=" + y + ")";
+   }
+   
+}
+</pre></td></tr></table><p>VectorComparatorTester.java</p><table><tr><td style="padding-right: 1em;"><pre><span style="color: gray;">  1</span>
+<span style="color: gray;">  2</span>
+<span style="color: gray;">  3</span>
+<span style="color: gray;">  4</span>
+<span style="color: gray;">  5</span>
+<span style="color: gray;">  6</span>
+<span style="color: gray;">  7</span>
+<span style="color: gray;">  8</span>
+<span style="color: gray;">  9</span>
+<span style="color: gray;"> 10</span>
+<span style="color: gray;"> 11</span>
+<span style="color: gray;"> 12</span>
+<span style="color: gray;"> 13</span>
+<span style="color: gray;"> 14</span>
+<span style="color: gray;"> 15</span>
+<span style="color: gray;"> 16</span>
+<span style="color: gray;"> 17</span>
+<span style="color: gray;"> 18</span>
+<span style="color: gray;"> 19</span>
+<span style="color: gray;"> 20</span>
+<span style="color: gray;"> 21</span>
+<span style="color: gray;"> 22</span>
+<span style="color: gray;"> 23</span>
+<span style="color: gray;"> 24</span>
+<span style="color: gray;"> 25</span>
+<span style="color: gray;"> 26</span>
+<span style="color: gray;"> 27</span>
+<span style="color: gray;"> 28</span>
+<span style="color: gray;"> 29</span>
+<span style="color: gray;"> 30</span>
+<span style="color: gray;"> 31</span>
+<span style="color: gray;"> 32</span>
+<span style="color: gray;"> 33</span>
+<span style="color: gray;"> 34</span>
+<span style="color: gray;"> 35</span>
+<span style="color: gray;"> 36</span>
+<span style="color: gray;"> 37</span>
+<span style="color: gray;"> 38</span>
+<span style="color: gray;"> 39</span>
+<span style="color: gray;"> 40</span>
+<span style="color: gray;"> 41</span>
+<span style="color: gray;"> 42</span>
+<span style="color: gray;"> 43</span>
+<span style="color: gray;"> 44</span>
+<span style="color: gray;"> 45</span>
+<span style="color: gray;"> 46</span>
+</pre></td><td><pre>import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class VectorComparatorTester 
+{
+   public static void main(String[] args)
+   {
+      ArrayList&lt;Vector&gt; vectorList = new ArrayList&lt;Vector&gt;();
+      vectorList.add(new Vector(4, 7));
+      vectorList.add(new Vector(-5, -5));
+      vectorList.add(new Vector(0, -1));
+      vectorList.add(new Vector(3, 5));
+      vectorList.add(new Vector(6, 4));
+      
+      /*After reading about anonymous Inner Classes,
+	I had to write one to check it out.  I won't
+	use them for the rest of the semester.  I
+	actually find the callback syntax (though not
+	the reason) a bit confusing.  So, I thought
+	that perhaps this lovely model will help you
+	to get your vectorYComparator going.*/
+      //Here, we sort on x value, but not in the draft.
+      Collections.sort(vectorList, 
+              new Comparator()             
+              {
+                 public int compare(Object o1, Object o2) 
+                 {
+                    return 0;
+                 }
+              });
+      System.out.println(vectorList);
+      System.out.println("Expected:  [(x=4.0, y=7.0), "
+              + "(x=-5.0, y=-5.0), (x=0.0, y=-1.0), "
+              + "(x=3.0, y=5.0), (x=6.0, y=4.0)]");
+      System.out.println("Nothing changes order with this dummy Comparator");
+   
+      //Here, we sort on the y value, but not in the draft.
+      Collections.sort(vectorList, new VectorYComparator());
+         System.out.println(vectorList);
+      System.out.println("Expected:  [(x=4.0, y=7.0), "
+              + "(x=-5.0, y=-5.0), (x=0.0, y=-1.0), "
+              + "(x=3.0, y=5.0), (x=6.0, y=4.0)]");
+      System.out.println("Nothing changes order with this dummy Comparator");
+   }
+}
+</pre></td></tr></table></body></html>

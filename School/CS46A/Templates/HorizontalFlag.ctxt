@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ y\ aWidth\ c1\ c2\ c3
+comment0.target=HorizontalFlag(int,\ int,\ int,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment0.text=\r\n\ Contructs\ the\ Horizontal\ Flag\r\n\ @param\ x\ the\ top\ left\ x\ coordinate\ of\ the\ flag\r\n\ @param\ y\ the\ top\ left\ y\ coordinate\ of\ the\ flag\r\n\ @param\ aWidth\ the\ width\ of\ the\ flag\r\n\ @param\ c1\ the\ color\ of\ the\ top\ rectangle\ of\ the\ flag\r\n\ @param\ c2\ the\ color\ of\ the\ middle\ rectangle\ of\ the\ flag\r\n\ @param\ c3\ the\ color\ of\ the\ bottom\ rectangle\ of\ the\ flag\r\n
+comment1.params=g2
+comment1.target=void\ draw(java.awt.Graphics2D)
+comment1.text=\r\n\ Draws\ the\ actual\ flag\r\n\ @param\ g2\ returns\ graphics\ to\ be\ used\ in\ the\ method\r\n
+numComments=2

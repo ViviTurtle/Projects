@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>CS 47 - T. Howell - Homework Assignment #4</title>
+  
+  <meta name="author" content="default"></head><body>
+<h3>CS 47 - T. Howell - Spring, 2014</h3>
+<h1 style="text-align: center;">Homework Assignment #4<br>
+</h1>
+<span style="font-weight: bold; font-style: italic;">Due Monday,
+April 14, 2013. </span>
+<br> <br>
+You are to do 2 modified Practice Problems from the textbook given in Problems_4.rtf, one program, and one circuit design.  
+The solutions to the practice problems are 
+given at the back of each chapter.  After solving each problem yourself and checking your 
+answer against the solution provided, you are to do the modified problems and turn them in via your drop box. 
+
+<h2><span style="font-weight: bold;">Program 1</span> </h2>
+
+The program is to solve problems like Practice Problem 4.2.  The complete program called
+<span style="font-family: monospace; font-weight: bold;">
+disas
+</span>  
+will read two command line arguments, a starting address (given in 
+hexadecimal) and a string
+of hexadecimal digits representing Y86 machine instructions.  The output
+ will look like Y86 assembly code as given in the solutions on pp. 
+458-459.
+When finished, you can use the program to find the solutions for the 
+modified Practice Problem 4.2 and to check your answers to the modified
+Practice Problem 4.1.  Practice Problem 4.2 calls for error messages 
+when the Y86 instructions contain invalid values.  Your program should 
+provide error messages, but they need not exactly match the ones given 
+in the solutions. 
+<br> <br>
+This program is fairly long, so I have given you code for much of the input and output.  
+The part you need to write is called 
+<span style="font-family: monospace; font-weight: bold;">
+hw4.c
+</span>.   It contains a function
+named 
+<span style="font-family: monospace; font-weight: bold;">
+next().
+</span>
+I have given you a portion of its code as well.  The prototype looks like this. <br>
+<span style="font-family: monospace; font-weight: bold;">
+struct inst next(char *p);
+</span> <br>
+The function looks at the character string
+<span style="font-family: monospace; font-weight: bold;">
+p
+</span> 
+and picks off the machine code for one Y86 instruction.  It enters the 
+details of this instruction into a structure which contains 
+the following fields. 
+<br>
+<pre><span style="font-family: monospace; font-weight: bold;">
+struct inst {
+	int flag;			//Boolean: success = 0, failure = -1
+	int len;			//length in bytes
+	char *opname;			//pointer to Y86 instruction name (e.g. "rrmovl")
+	char rA;			//this is a hex digit (2), not a character ('2').
+	char rB;
+	int D;				//immediate value, address displacement, or jump destination
+};
+</span>  
+</pre>
+<br>
+This structure is the return value.  I have supplied the rest of the code in
+<span style="font-family: monospace; font-weight: bold;">
+disas.c
+</span>, 
+<span style="font-family: monospace; font-weight: bold;">
+hw4.c
+</span>,  
+and
+<span style="font-family: monospace; font-weight: bold;">
+hw4.h
+</span>.  
+<br> <br>
+<h2><span style="font-weight: bold;">Program 2</span> </h2>
+
+The program is a circuit design using logisim.  Use your favorite search engine to 
+find one of the download sites.  Download the program, install it,  and run through its tutorial.  
+I think you will find it easy to learn and use.  Your task is to design the box called "Cond" 
+in Fig 4.21 and Fig. 4.29.  
+It takes six bits of input: three condition code (CC) bits and three bits of ifun.  
+Note that ifun is nominally four bits, but only three are needed here to represent the 
+possible values of ifun (0 - 6).  There is only one bit of output called "Cnd".  "Cnd" is 1 if 
+the condition codes indicate that the jump should be taken (or the conditional move should be done).
+The logic to determine this is given in Fig. 3.12 on p. 190.  You need to refer to Fig. 4.3 to determine
+which jXX (or cmovXX) goes with each ifun.  Then look in Fig. 3.12 to get the formula for 
+the "jump condition" associated with the given jXX instruction.
+<br> <br>   
+For example, suppose ifun = 4.  Fig. 4.3 says the jXX with ifun = 4 is the jne instruction.  Fig. 3.12
+says the jump condition for jne is ~ZF.  You need to make the output bit "Cnd" be 1 whenever 
+the condition 
+<span style="font-family: monospace; font-weight: bold;">
+(ifun == 4 &amp; ~ZF) 
+</span>
+is true.  There will be seven such conditions, 
+one for each possible value of ifun.  
+You will use a seven-input OR gate to make "Cnd" be true when any one of the seven conditions is true.
+<br><br>
+How do you get a signal that is true when ifun == 4?  Use a circuit from the logisim library called a decoder.  
+It is in the "Plexers" menu.  I will provide a starting point with this portion of the circuit already created.
+The decoder takes the 3-bit ifun register as input and produces seven wires.  
+One wire is in the true state and the rest are false.  
+The true wire corresponds to the setting of the three ifun bits.  When they are 
+100 (binary for 4), the wire indicating ifun == 4 is true. 
+<br><br>
+Save your finished circuit as "Cond.circ".  You will submit it via your drop box.
+
+
+<br> <br>
+<h2><span style="font-weight: bold;">Submission
+requirements</span></h2>
+When you have completed 
+<span style="font-family: monospace;
+font-weight: bold;">hw4.c</span>
+by filling in the rest of the code for the function 
+<span style="font-family: monospace;
+font-weight: bold;">next</span>
+, you are to submit
+<span style="font-family: monospace;
+font-weight: bold;">hw4.c</span>
+to the grading server.  This file should contain 
+<pre>#include "hw4.h"</pre> 
+and the function
+<span style="font-family: monospace; font-weight: bold;">
+<pre>struct inst next(char *p){ }</pre>  
+</span>
+The server grade will be your program grade for this program.  
+You do not need to submit the complete program to your dropbox, but you may use it to help with the written problems.
+Problems 4.rtf containing your solutions to the assigned problems 
+must be placed into your drop box by the due date.
+Submit your Cond.circ circuit via the drop box.
+<br> <br>
+I believe I have specified these problems very precisely above, 
+but if you have any questions about them
+it is <span style="font-style: italic; font-weight: bold;">your responsibility</span>
+to ask me before the submission date.<br>
+<br>
+<span style="font-style: italic; font-weight: bold;">Failure to observe
+any of the submission requirements stated above may
+result in a grade of 0 on this homework!</span><br>
+<br>
+<br>
+
+</body></html>

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Greeter()
+comment0.text=\r\n\ \ \ \ \ \ Constructs\ a\ greeter\ that\ greets\ the\ world.\r\n
+comment1.params=aName
+comment1.target=Greeter(java.lang.String)
+comment1.text=\r\n\ \ \ \ \ \ Constructs\ a\ greeter.\r\n\ \ \ \ \ \ @param\ aName\ the\ name\ of\ the\ person\ to\ be\ greeted\r\n
+comment2.params=
+comment2.target=java.lang.String\ sayHello()
+comment2.text=\r\n\ \ \ \ \ \ Makes\ a\ "Hello"\ greeting.\r\n\ \ \ \ \ \ @return\ the\ greeting\r\n
+comment3.params=
+comment3.target=java.lang.String\ sayGoodbye()
+comment3.text=\r\n\ \ \ \ \ \ Makes\ a\ "Goodbye"\ greeting.\r\n\ \ \ \ \ \ @return\ the\ greeting\r\n
+numComments=4

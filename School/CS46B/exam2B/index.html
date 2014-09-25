@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CS 46B Exam 2B Fall 2012</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1 align="center">EXAM 2B</h1>
+<h2 align="center">CS 46B Fall 2012</h2>
+<h2>Exam Rules</h2>
+<ul>
+  <li>You may use any books, notes, files. you may only use the D2L web site and laughton.com</li>
+  <li>It is a good idea to compile and run your programs if you have the time      to do it.</li>
+  <li>You may NOT communicate with anyone during the exam.</li>
+  <li>You may NOT use the work of anyone else without attribution.</li>
+  <li>You may NOT open any programs or web sites that allow communication with      someone else. No messenger, chat, email, discussion forum, etc.</li>
+  <li>The proctor will randomly inspect laptops. If your laptop is inspected,      you need take the hands off the keyboard immediately.</li>
+  <li>Save your solutions into Java source files (extension .java) or plain      text files (extension .txt). Be sure to save your work occasionally. </li>
+  <li>Submit your solution to the D2L drop box. You may submit as many      versions as you like—the last one will be graded.</li>
+</ul>
+<p>Put the answers to the following three questions in one text file  called answers.txt. Don’t use a Microsoft Word file or a rich text file. Use  .txt</p>
+<p>1. (10 points) Draw  a diagram to show the LinkeList described below with its iterator after each step in the code  segment. Use the pipe | (above the backslash) as the iterator cursor. Write the numbers 1 to 10 in your text file and then show the linked list and the iterator position after the execution of line1, line 2, ... line 10 in the following code.</p>
+<pre>      LinkedList<String> animals = new LinkedList<String>();
+      animals.addLast("cat");
+      animals.addLast("lion");
+      animals.addLast("tiger");
+
+      //list at this point: cat lion tiger
+      //start your diagram with line 1 below
+      ListIterator<String> iterator = animals.listIterator(); <strong>//line 1</strong>
+      iterator.next(); <strong>//line 2</strong>
+      iterator.add("leopard"); <strong>//line 3</strong>
+      iterator.next(); <strong>//line 4</strong>
+      iterator.next(); <strong>//line 5</strong>
+      iterator.add("puma"); <strong>//line 6</strong>
+      iterator = animals.listIterator(); <strong>//line 7 </strong>
+      iterator.next(); <strong>//line 8</strong>
+      iterator.remove(); <strong>//line 9</strong>
+      while (iterator.hasNext())
+      {
+         System.out.print(iterator.next() + " "); 
+      } <strong>//line 10</strong> - after the loop finishes</pre>
+<p>2. (5 points) The following method calculates how many more times the largest number appears in the array than the smallest number. (I do not claim it is the most efficient algorithm). What is the Big-O efficiency of this algorithm? <strong>Explain your answer</strong>. Put the answer in the same text file as question 1.</p>
+<pre>    
+    private static int findRange(int[] values)
+    {
+       int max = values[0];
+       int min = values[0];
+       int maxCount = 0;
+       int minCount = 0;
+       
+       //find the max
+       for (int i = 0; i < values.length; i++)
+       {
+          if (values[i] > max)
+          {
+             max = values[i];
+          }    
+       }
+       
+       //find the min
+       for (int i = 0; i < values.length; i++)
+       {
+          if (values[i] < min)
+          {
+             min = values[i];
+          }    
+       }
+       
+       //find the number of max and min
+       for (int i = 0; i < values.length; i++)
+       {
+          if (values[i] == max)
+          {
+             maxCount++;
+          }
+          else if (values[i] == min)
+          {
+             minCount++;
+          }
+       }
+       
+       return maxCount - minCount;
+    }
+</pre>
+<p>&nbsp;</p>
+<p>3. (5 points) Suppose the strings &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot; are added to a queue in the given order. Then each is removed from the queue and pushed onto a  stack. Finally, they are all popped off  the  stack and printed. In which order are the strings printed? </p>
+<p>Put your answer in the same text file used for questions 1 and 2. I only need the answer. If you understand stacks and queues, there is no need to write any code, but you can code it up if you wish.</p>
+<p>4. (10 points) Complete the extract method in the class below. Find every n<sup>th</sup> element in a  linked list and add it to a new linkedl list . You will need to keep a counter to tell you which elements to add to the new linked list. Return the LinkedList of the found values. Do not change the original LinkedList in any way. Your method should work for Linkedlists of any elements, not just the Strings tested here.</p>
+<pre>
+import java.util.LinkedList;
+import java.util.ListIterator;
+
+/**
+ *
+ * @author Kathleen O'Brien
+ */
+public class LinkedListExtract
+{
+   public static void main(String[] args)
+   {
+      LinkedList<String> list = new LinkedList<String>();
+      for (int i = 1; i <= 20; i++)
+      {
+         list.addLast( "" + i);
+      }
+      LinkedList<String> extraction = extract(list, 5);
+      System.out.println(extraction);
+      System.out.println("Expected: [5, 10, 15, 20]");
+      System.out.println(list);
+      System.out.println("Expected: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]");
+      
+   }
+
+   private static LinkedList extract( LinkedList list, int n)
+   {
+      //your code goes here
+      
+      return null;
+   }
+}</pre>
+
+<p>&nbsp;</p>
+<p>5.(10 points) The union of two sets A and B is the set of all elements that are contained in either A or B or both. Complete the union method in the class below to find and return the <strong>union</strong> of two sets (You can use the methods of the Set interface, and/or an iterator). The method should not change either of the given Sets. The elements of the returned set shound print in the same order as the expected output.  Your method should work for Sets of any elements, not just the Strings tested here.</p>
+<p>SetUtil.java</p>
+<pre>
+//imports
+public class SetUtil
+{
+
+    public static Set union(Set A, Set B)
+    {
+       //your code goes here
+
+       return null
+    }
+}</pre>
+<p>SetTester.java</p>
+<pre>import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetTester
+{
+   public static void main(String[] args)
+   {
+      Set<String> A = new HashSet<String>();
+      Set<String> B = new TreeSet<String>();
+
+      A.add("puma");
+      A.add("leopard");
+      A.add("lynx");
+      A.add("lion");
+      A.add("tiger");
+
+      B.add("tiger");
+      B.add("cheetah");
+      B.add("puma");
+
+      Set cats =  SetUtil.union(A,B);
+      System.out.println(cats);
+      System.out.println("Expected: [cheetah, leopard, lion, lynx, puma, tiger]");
+
+      System.out.println(A);
+      System.out.println(B);
+   }
+}
+</pre>
+</body>
+</html>
