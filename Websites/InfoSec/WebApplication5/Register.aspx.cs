@@ -7,9 +7,18 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication5
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class Vulnerable3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Page.IsPostBack)
+            {
+
+               
+            }
+        }
+
+        protected void ddlMAJOR_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

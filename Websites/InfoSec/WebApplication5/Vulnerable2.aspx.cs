@@ -26,12 +26,11 @@ namespace WebApplication5
             temp = ddlComments.SelectedValue;
             pop_ddlCOMMENT();
             ddlComments.SelectedValue = temp;
-          
-            
+
+
         }
         protected void pop_ddlCOMMENT()
         {
-            string comment_ID;
             
             String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString"].ConnectionString;
             SqlConnection sqlConnection1 = new SqlConnection(connection);
@@ -44,13 +43,13 @@ namespace WebApplication5
             objDA.SelectCommand = cmd;
             sqlConnection1.Open();
             DataSet objDS = new DataSet();
-            comment_ID = cmd.ExecuteScalar().ToString();
+
 
             objDA.Fill(objDS);
             ddlComments.DataSource = objDS;
             sqlConnection1.Close();
             ddlComments.DataTextField = "COMMENT_ID";
-            ddlComments.DataValueField = "COMMENT_ID";
+            ddlComments.DataValueField = "COMMENT";
             ddlComments.DataBind();
 
         }
@@ -70,45 +69,23 @@ namespace WebApplication5
             objDA.SelectCommand = cmd;
             sqlConnection1.Open();
             DataSet objDS = new DataSet();
-            comment_ID =  cmd.ExecuteScalar().ToString();
+            comment_ID = cmd.ExecuteScalar().ToString();
 
             //objDA.Fill(objDS);
             if (!comment_ID.Equals("1"))
             {
                 Label2.Text = "Your comment ID is " + comment_ID;
             }
+            TextBox1.Text = "";
             sqlConnection1.Close();
             ddlComments.DataBind();
         }
- 
+
 
         protected void ddlComments_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String connection =  ConfigurationManager.ConnectionStrings["InfosecConnectionString"].ConnectionString;
-            SqlConnection sqlConnection1 = new SqlConnection(connection);
-            SqlCommand cmd = new SqlCommand();
 
-            cmd.CommandText = "SP_GET_COMMENT";
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Connection = sqlConnection1;
-            cmd.Parameters.Add("@COMMENT_ID", SqlDbType.BigInt);
-            cmd.Parameters["@COMMENT_ID"].Value = ddlComments.SelectedValue;
-            SqlDataAdapter objDA = new SqlDataAdapter();
-            objDA.SelectCommand = cmd;
-            sqlConnection1.Open();
-            DataSet objDS = new DataSet();
-
-            objDA.Fill(objDS);
-            if (objDS.Tables[0].Rows.Count > 0)
-            {
-                Label3.Text = objDS.Tables[0].Rows[0]["COMMENT"].ToString();
-               
-            }
-            sqlConnection1.Close();
-            TextBox1.Text = "";
-            // Data is accessible through the DataReader object here.
-          
-            
+            Label3.Text = ddlComments.SelectedValue;
 
         }
     }
