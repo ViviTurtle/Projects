@@ -32,6 +32,7 @@ namespace WebApplication5
         protected void pop_ddlCOMMENT()
         {
             string comment_ID;
+            
             String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString"].ConnectionString;
             SqlConnection sqlConnection1 = new SqlConnection(connection);
             SqlCommand cmd = new SqlCommand();

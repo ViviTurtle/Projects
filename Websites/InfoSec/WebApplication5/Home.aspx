@@ -36,7 +36,7 @@
             </p>
             <br />
             <p>
-                BuildItBreakit Competition in Progress
+                Flare-On Reverse Engineering Talk on 9/25
             </p>
         </div>
         <div class="coolbox">
