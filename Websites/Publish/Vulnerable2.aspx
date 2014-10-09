@@ -1,8 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="Vulnerable2.aspx.cs" Inherits="WebApplication5.Vulnerable2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <h1>Cross Site Scripting Module 2</h1>
-    <h3>Warning: This page is vulnerable to XSS!</h3>
-    <p class="span9 offset1">The Information Security club does not claim any damage caused by this website. This module is to be used simply for education purposes. By using this site you are abiding by these conditions and will not in anyway use the module for malicious use</p>
+    <h1>WARNING: THIS PAGE IS VULNERABLE TO XSS</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
         <style>

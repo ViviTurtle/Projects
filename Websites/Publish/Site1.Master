@@ -4,7 +4,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>InfoSec Club | Home</title>
@@ -17,34 +16,9 @@
     <link href="css/Ubuntu.css" rel="stylesheet" type="text/css">
     <link href="css/Open_Sans.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <style>
-        .background_color {
-            background-color: #EBEBEB;
-        }
-
-        html, body {
-            height: 100%;
-        }
-
-        .page-wrap {
-            min-height: 100%;
-            /* equal to footer height */
-            margin-bottom: -35px;
-        }
-
-            .page-wrap:after {
-                content: "";
-                display: block;
-            }
-
-            .site-footer, .page-wrap:after {
-                /* .push must be the same height as footer */
-                height: 35px;
-            }
-    </style>
 </head>
 
-<body class="background_color">
+<body>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
@@ -66,13 +40,11 @@
                         </li>
                         <li><a href="Contact.aspx">Contact</a>
                         </li>
-                        <li><a href="Vulnerable1.aspx?username=Guest">XSS1</a>
+                           <li><a href="Vulnerable1.aspx?username=Guest">XSS1</a>
                         </li>
-                        <li><a href="Vulnerable2.aspx">XSS2</a>
+                           <li><a href="Vulnerable2.aspx">XSS2</a>
                         </li>
-                        <li><a href="Vulnerable3.aspx?">SQLi1</a>
-                        </li>
-                          <li><a href="Vulnerable4.aspx?">SQLi2</a>
+                               <li><a href="Vulnerable3.aspx?">SQLi1</a>
                         </li>
 
 
@@ -81,39 +53,50 @@
             </div>
         </div>
     </div>
-    <div class="page-wrap">
-        <form id="form1" runat="server">
+</body>
 
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+        .background_color {
+            background-color: #EBEBEB;
+        }
+
+    </style>
+<body class="background_color">
+    <form id="form1" runat="server">
+        <div>
             <div class="row-fluid heading">
-
-                <asp:ContentPlaceHolder ID="head" runat="server">
-                </asp:ContentPlaceHolder>
-
+                <div class="span12">
+                    <asp:ContentPlaceHolder ID="head" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
             </div>
             <div class="row-fluid subheading">
+                <div class="span12">
+                    <p class="lead"></p>
 
-                <p class="lead"></p>
-
-
+                </div>
 
                 <asp:ContentPlaceHolder ID="body" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
 
-            <%--footer--%>
-        </form>
-
-
-
-    </div>
-    <footer class="row-fluid footer site-footer">
-        <div class="span12">
-            <p>Information Security Club | <a href="http://www.sjsu.edu">San Jose State University</a> | One Washington Square, San Jose, CA 95192</p>
         </div>
-    </footer>
+    </form>
 </body>
+</html>
 
 </html>
 
 
+<%--footer--%>
+<div class="row-fluid footer">
+    <div class="span12">
+        <p>Information Security Club | <a href="http://www.sjsu.edu">San Jose State University</a> | One Washington Square, San Jose, CA 95192</p>
+    </div>
+</div>
 

@@ -1,25 +1,23 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" ValidateRequest="false" CodeBehind="Vulnerable1.aspx.cs" Inherits="WebApplication5.Vulnerable1" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true"  ValidateRequest="false" CodeBehind="Vulnerable1.aspx.cs" Inherits="WebApplication5.Vulnerable1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <h1>Cross Site Scripting Module 1</h1>
-    <h3>Warning: This page is vulnerable to XSS!</h3>
-
-    <p class="span9 offset1">The Information Security club does not claim any damage caused by this website. This module is to be used simply for education purposes. By using this site you are abiding by these conditions and will not in anyway use the module for malicious use</p>
+    <h1>Warning: This page is vulnerable to XSS!</h1>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-
+  
     <style>
-        .extra_edit {
-            text-align: left;
-            vertical-align: top;
-        }
 
-        .text_big {
-            font-size: 50px;
+          .extra_edit {
+            text-align: left;
+             vertical-align:top;
         }
+          .text_big
+          {
+              font-size: 50px;
+          }
+
     </style>
     <div class="span5">
-        <asp:Label ID="Label4" CssClass="bold" runat="server" Text="
+    <asp:Label ID="Label4" CssClass="bold" runat="server" Text="
         Please fill out the form to submit the comment
 "></asp:Label>
         <br />
@@ -28,7 +26,7 @@
 
             <tr>
                 <td class="auto-extra_edit">
-
+          
                     <asp:Label ID="lblName" runat="server" Text="Name: "></asp:Label>
                 </td>
                 <td>
@@ -36,9 +34,9 @@
                     <asp:Label ID="Label1" ForeColor="red" runat="server" Text="*"></asp:Label>
                     <asp:RequiredFieldValidator CssClass="required" ID="RequiredFieldValidator1" ControlToValidate="txtName" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
                 </td>
-
+                
             </tr>
-
+        
             <tr>
                 <td class="auto-style1">
                     <asp:Label ID="lblComment" runat="server" Text="Comment: "></asp:Label>
@@ -54,13 +52,11 @@
         <asp:Button ID="Button1" runat="server" Text="Submit" />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
+       <br /><br /><br />
         <br />
         <br />
 
-    </div>
+        </div>
     <div>
         <br />
         <br />
@@ -68,11 +64,11 @@
         <br />
         <br />
         <br />
-
+        
         <asp:Label class="text_big" ID="lblsubmitComment" Visible="false" runat="server" Text=""></asp:Label>
         <br />
-        <asp:Label class="text_big" ID="lbltest" Visible="false" runat="server" Text="-"></asp:Label>
-        <asp:Label class="text_big" ID="lblsubmitName" Visible="false" runat="server" Text=""></asp:Label>
+        <asp:Label class="text_big" ID="lbltest"  Visible= "false"  runat="server" Text="-"></asp:Label>
+        <asp:Label class="text_big"  ID="lblsubmitName" Visible ="false" runat="server" Text=""></asp:Label>
 
     </div>
 </asp:Content>

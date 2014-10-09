@@ -13,5 +13,9 @@ namespace WebApplication5
         {
 
         }
+        protected void redirect(object sender, EventArgs e)
+        {
+            Response.Redirect("https://www.facebook.com/groups/725725020776252");
+        }
     }
 }

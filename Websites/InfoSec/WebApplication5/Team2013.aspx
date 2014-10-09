@@ -72,16 +72,17 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Anthony Langga"></asp:Label>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="http://localhost:1440/images/Poochy.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Anthony.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label5" runat="server" Text="The founding president of the club, and now the CTF Lead. If you meet him, you won't know it. He is a super underground hacker with no face, although somehow has some cononection to the club. No has ever seen his face. At Defcon, he gets all the love :3"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Anthony Langga is currently in his 4th year studying Computer Science. He is the current Web Developer and Web Admin for the club. His main skills are mainly backend Web Developement and Python scripting although his current interests include Reverse Engineering and Exploitation. He likes to practice his Social Engineering Skills so you get confused if you know him by a different name and background."></asp:Label>
 
 
                     </td>
@@ -123,17 +124,17 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Joshua Wang"></asp:Label>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/joshwang7" data-related="false"></script>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="http://localhost:1440/images/Josh.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Josh2.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label2" runat="server" Text="Joshua was one of the founding fathers of the club and was the club's first CTF Lead. He is now the President hoping to lead the club through many heights. He is an expert at Penetration testing because he works at some Brony Company. All the LGBT people love him, despite him not being a homosexual. We all have our doubts though. At Defcon, he apparantly likes to put condoms on everyone's bed and break people's toes.
-"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="Josh is a 4th year undergraduate studying MIS and Computer Science. His current interests include exploiting memory corruption vulnerabilities, kernel module development and hacking embedded systems. He also has some experience pentesting for iSEC Partners. Currently, he looks forward to the release of “Blackhat” which is an upcoming cinematographic masterpiece based loosely on his life."></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -153,7 +154,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="http://localhost:1440/images/Anony.png" height="200" width="100">
+                        <img class="img-polaroid" src="images/Anony.png" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>

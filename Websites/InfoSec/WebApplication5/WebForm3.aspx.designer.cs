@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication5.images
+namespace WebApplication5
 {
 
 
-    public partial class WebForm1
+    public partial class WebForm3
     {
     }
 }
