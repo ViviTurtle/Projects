@@ -230,4 +230,4 @@ UpgradeLog*.htm
 *.bim_*.settings
 # Microsoft Fakes
 FakesAssemblies/
-web.config
+Web.config
