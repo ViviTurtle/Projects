@@ -185,8 +185,7 @@
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label11" runat="server" Text="Matt is hoping to become the best hacker in the world. He legitly announced he was eventually going to be a dictator of the internet and take on Anonymous and every world leader with just his laptop. Its ok though, he's a noob.
-"></asp:Label>
+                        <asp:Label ID="Label11" runat="server" Text="Matt is a 3rd year undergraduate studying Computer Science. He is also an Army ROTC cadet, and will commission as a 2nd Lieutenant upon graduation. His background includes mobile programming for both iOS and Android, system administration, and project/team management. Currently he has no focus in information security but is looking more towards network security and systems administration, while having some understanding of other fields in security."></asp:Label>
                     </td>
                 </tr>
             </table>
