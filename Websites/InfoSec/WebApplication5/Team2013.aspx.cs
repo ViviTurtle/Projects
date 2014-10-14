@@ -13,5 +13,13 @@ namespace WebApplication5
         {
 
         }
+        protected void GH_ANTHONY(object sender, EventArgs e)
+        {
+            Response.Redirect("https://github.com/Flippinunit");
+        }
+        protected void GH_JOSH(object sender, EventArgs e)
+        {
+            Response.Redirect("https://github.com/conceptofproof");
+        }
     }
 }

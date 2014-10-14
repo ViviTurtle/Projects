@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebApplication5.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <asp:Image ID="Banner" ImageUrl="~/images/InfoBanner2.jpg" runat="server" Height="125" Width="600" />
+    <asp:Image ID="Banner" ImageUrl="~/images/10582969_10203971090171936_1600147872448650832_o.jpg" runat="server" Height="140" Width="600" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
@@ -38,16 +38,11 @@
         <div class="coolbox">
             <h1>Annoucements</h1>
             <p>
-                Officially Launched website
-
+                "Please Doctor, Don't SQL inject me" on 10/16
             </p>
             <br />
             <p>
-                Virtual Box Networking on 10/9
-            </p>
-            <br />
-            <p>
-                CCDC Season starts, Please contact Anthony.Langga@sjsu.edu if you have Sys Admin Experience or want to learn           
+                Cyber Collegiate Cyber Defense Season starts. We are in need of people interested in System/Network Adminstration. Please contact Anthony.Langga@sjsu.edu.
             </p>
             <br />
             <p>
@@ -55,7 +50,7 @@
             </p>
             <br />
             <p>
-                If you have a blog post you want to share, please me an email Anthony.Langga@sjsu.edu
+                If you have a blog post you want to share, please send me an email Anthony.Langga@sjsu.edu
             </p>
         </div>
         <div class="coolbox">
@@ -65,14 +60,20 @@
            
 
             </script>
-            <ul>
-                <li>
-                    <asp:ImageButton ID="ImageButton1" runat="server" OnClick="redirect" ImageUrl="~/images/FB_FindUsOnFacebook-1024.png" Height="35" Width="150" />
-                </li>
-                <li><a href="https://www.linkedin.com/groups?home=&gid=6689971&trk=anet_ug_hm">LinkedIn</a>
-                </li>
-
-            </ul>
+            
+                 
+                <%--<li>--%>
+                    <asp:ImageButton ID="ImageButton1" runat="server" OnClick="redirect_fb" ImageUrl="~/images/facebook_icon.png" Height="32" Width="32" />
+                <%--</li>--%>
+                 
+                &nbsp;
+                <%--<li>--%>
+                    <asp:ImageButton ID="ImageButton2" runat="server" OnClick="redirect_gh" ImageUrl="~/images/GitHub-Mark-64px.png" Height="32" Width="32" />
+                <%--</li>--%>
+                 &nbsp;
+                    <asp:ImageButton ID="ImageButton3" runat="server" OnClick="redirect_li" ImageUrl="~/images/LinkedIn_logo_initials.png" Height="32" Width="32" />
+                
+            
         </div>
     </div>
 

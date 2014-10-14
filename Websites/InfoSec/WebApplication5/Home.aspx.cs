@@ -13,9 +13,17 @@ namespace WebApplication5
         {
 
         }
-        protected void redirect(object sender, EventArgs e)
+        protected void redirect_fb(object sender, EventArgs e)
         {
             Response.Redirect("https://www.facebook.com/groups/725725020776252");
+        }
+        protected void redirect_gh(object sender, EventArgs e)
+        {
+            Response.Redirect("https://github.com/spartansecurity");
+        }
+        protected void redirect_li(object sender, EventArgs e)
+        {
+            Response.Redirect("https://www.linkedin.com/groups/InfoSec-Club-6689971");
         }
     }
 }

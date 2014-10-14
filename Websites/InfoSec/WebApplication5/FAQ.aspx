@@ -15,7 +15,7 @@
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        This club aims to teach students and its community about Information Security, especially on the technical level. We are also a competition teach and eventually hope to compete at the national level.
+                        This club aims to teach students and our local community about Information Security, especially on a technical level. We also have a competition team that participates in numerous CTFs such as PlaidCTF, CSAW Quals, DEFCON Prelims, Codegate CTF and more. 
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        Any SJSU student can join the club regardless of your experience in the field or major.
+                        Any SJSU student can join the club regardless of their experience in the field or major.
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 </div>
                 <div id="collapseThree" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        Contact any officer of the club or just email the club's email at sjsu.infosec@gmail.com. The best bet would be to go directly to Duncan Hall 8 ask the people there.
+                        Contact any officer of the club or just send us an e-mail at sjsu.infosec@gmail.com. Your best bet would be to go directly to Duncan Hall 8 during one of our meeting times and ask the people there.
                     </div>
                 </div>
             </div>
@@ -48,7 +48,9 @@
                 </div>
                 <div id="collapseFour" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        Anywhere between general IT to the Physical Layer of security such as picklocking and social engineering. We are currently focused on Reverse Engineering, although our team is interested in a broad view of the field.
+                        We teach all aspects of computer security. We cover everything from general IT security to physical security, such as picklocking, to social engineering, and everything in between. In the past we've also given talks on exploitation and reverse engineering as well.
+                        Check out our <a href="https://github.com/spartansecurity">GitHub page</a> to view past presentations given by students.
+                  
                     </div>
                 </div>
             </div>
@@ -59,18 +61,18 @@
                 </div>
                 <div id="collapseFive" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        Yes, we try to go to Defcon together as a club and participate and learn over there. 
+                        Yes, we try to go to Defcon, a security conference in Las Vegas, together every year as a club and attend the talks and participate in the various events. 
                     </div>
                 </div>
             </div>
             <div class="accordion-group">
                 <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapseSix">I'm not a student but I want to help your club
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapseSix">I'm not a student. Can I still help the club?
                     </a>
                 </div>
                 <div id="collapseSix" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        Great! We can use all the help we can get. We are currently looking for sponsors to help the club out. Feel free to email the club at sjsu.infosec@gmail.com. Thanks again, and of course general donations are always welcome.
+                        Great! We can use all the help we can get. We are currently looking for sponsors to help fund some of the activities our club does. Feel free to email the club at sjsu.infosec@gmail.com. Thanks again, and of course general donations are always welcome.
                     </div>
                 </div>
             </div>
@@ -81,7 +83,7 @@
                 </div>
                 <div id="collapseSeven" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        The club generally has meetings every Thursday at 5pm. Although because school jsut started we will be adjusting the times accordingly. We are located at Duncan Hall 8.
+                        The club has meetings every Monday and Thursday at 4:30 pm. We are located in Duncan Hall 8.
                     </div>
                 </div>
             </div>

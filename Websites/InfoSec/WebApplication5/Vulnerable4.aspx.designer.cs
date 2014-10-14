@@ -31,6 +31,15 @@ namespace WebApplication5 {
         protected global::System.Web.UI.WebControls.TextBox tbNAME;
         
         /// <summary>
+        /// tbNAME_VALIDATOR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator tbNAME_VALIDATOR;
+        
+        /// <summary>
         /// ddlRATE control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace WebApplication5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlRATE;
+        
+        /// <summary>
+        /// ddlRATE_VALIDATOR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ddlRATE_VALIDATOR;
         
         /// <summary>
         /// tbFAVORITE control.
@@ -49,6 +67,15 @@ namespace WebApplication5 {
         protected global::System.Web.UI.WebControls.TextBox tbFAVORITE;
         
         /// <summary>
+        /// tbFAVORITE_VALIDATOR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator tbFAVORITE_VALIDATOR;
+        
+        /// <summary>
         /// tbLEAST control.
         /// </summary>
         /// <remarks>
@@ -56,6 +83,15 @@ namespace WebApplication5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbLEAST;
+        
+        /// <summary>
+        /// tbLEAST_VALIDATOR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator tbLEAST_VALIDATOR;
         
         /// <summary>
         /// ddlOFFICER control.
@@ -67,6 +103,15 @@ namespace WebApplication5 {
         protected global::System.Web.UI.WebControls.DropDownList ddlOFFICER;
         
         /// <summary>
+        /// ddlOFFICER_VALIDATOR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ddlOFFICER_VALIDATOR;
+        
+        /// <summary>
         /// tbWHY control.
         /// </summary>
         /// <remarks>
@@ -74,6 +119,15 @@ namespace WebApplication5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbWHY;
+        
+        /// <summary>
+        /// tbWHY_VALIDATOR control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator tbWHY_VALIDATOR;
         
         /// <summary>
         /// btnSubmit control.

@@ -63,7 +63,7 @@ namespace WebApplication5
         protected Boolean validAuthentication(String username, String password)
         {
             string response;
-            String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString"].ConnectionString;
+            String connection = ConfigurationManager.ConnectionStrings["SQLi1"].ConnectionString;
             SqlConnection sqlConnection1 = new SqlConnection(connection);
             SqlCommand cmd = new SqlCommand();
 

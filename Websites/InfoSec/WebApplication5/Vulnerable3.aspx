@@ -27,7 +27,7 @@
             width: 112px;
         }
     </style>
-    <div class="span6">
+    <div class="span6 offset1">
          <asp:UpdatePanel runat="server">
         <ContentTemplate>
         <asp:Image ID="Image1" runat="server"  ImageUrl="~/images/error.jpg" Visible="false"/>
@@ -41,7 +41,7 @@
                 <td>
                     <asp:TextBox ID="tb_USRNAME" runat="server"></asp:TextBox>
                     <asp:Label Text="* " CssClass="red" runat="server"></asp:Label>
-                    <asp:RequiredFieldValidator CssClass="red" ID="RequiredFieldValidator1" ControlToValidate="tb_USRNAME" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator CssClass="red" ID="RequiredFieldValidator1" ControlToValidate="tb_USRNAME" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
 
                 </td>
 
@@ -60,7 +60,7 @@
                 <td>
                     <asp:TextBox ID="tb_FNAME" runat="server"></asp:TextBox>
                     <asp:Label Text="* " CssClass="red" runat="server"></asp:Label>
-                    <asp:RequiredFieldValidator CssClass="red" ID="tb_FNAME_VALIDATOR" ControlToValidate="tb_FNAME" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator CssClass="red" ID="tb_FNAME_VALIDATOR" ControlToValidate="tb_FNAME" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
 
                 </td>
 
@@ -71,7 +71,7 @@
                 <td>
                     <asp:TextBox ID="tb_LNAME" runat="server"></asp:TextBox>
                     <asp:Label Text="* " CssClass="red" runat="server"></asp:Label>
-                    <asp:RequiredFieldValidator CssClass="red" ID="tb_LNAME_VALIDATOR" ControlToValidate="tb_LNAME" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator CssClass="red" ID="tb_LNAME_VALIDATOR" ControlToValidate="tb_LNAME" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
 
                 </td>
 
@@ -82,7 +82,7 @@
                 <td>
                     <asp:TextBox ID="tb_SID" runat="server" MaxLength="9"></asp:TextBox>
                     <asp:Label Text="* " CssClass="red" runat="server"></asp:Label>
-                    <asp:RequiredFieldValidator CssClass="red" ID="tb_SID_VALIDATOR" ControlToValidate="tb_SID" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator CssClass="red" ID="tb_SID_VALIDATOR" ControlToValidate="tb_SID" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
                 </td>
 
             </tr>
@@ -115,7 +115,7 @@
                     <asp:SqlDataSource ID="InfosecConnectionString" runat="server" ConnectionString="<%$ ConnectionStrings:InfosecConnectionString %>" SelectCommand="SP_GET_MAJORS" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     <asp:Label Text="* " CssClass="red" runat="server"></asp:Label>
                  
-                    <asp:RequiredFieldValidator CssClass="red" ID="ddlMAJOR_VALIDATOR" InitialValue="0" ControlToValidate="ddlMAJOR" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator CssClass="red" ID="ddlMAJOR_VALIDATOR" InitialValue="0" ControlToValidate="ddlMAJOR" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
                 </td>
 
             </tr>
@@ -124,6 +124,7 @@
         </ContentTemplate>
     </asp:UpdatePanel>
     </div>
+
     <asp:UpdatePanel runat="server">
         <ContentTemplate>
             <asp:Panel DefaultButton="Button2" runat="server">

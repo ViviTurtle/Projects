@@ -17,8 +17,17 @@
         .text_big {
             font-size: 50px;
         }
+
+        .left {
+            text-align: left;
+            ;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
     </style>
-    <div class="span5">
+    <div class="span5 offset1 left">
         <asp:Label ID="Label4" CssClass="bold" runat="server" Text="
         Please fill out the form to submit the comment
 "></asp:Label>
@@ -38,7 +47,7 @@
                 </td>
 
             </tr>
-
+         
             <tr>
                 <td class="auto-style1">
                     <asp:Label ID="lblComment" runat="server" Text="Comment: "></asp:Label>
@@ -61,17 +70,21 @@
         <br />
 
     </div>
-    <div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    <div class="span4 offset1 left">
+      <br />
+           <br />
 
         <asp:Label class="text_big" ID="lblsubmitComment" Visible="false" runat="server" Text=""></asp:Label>
         <br />
+           <br />
+           <br />
+           <br />
+           <br />
+           <br />
+           <br />
         <asp:Label class="text_big" ID="lbltest" Visible="false" runat="server" Text="-"></asp:Label>
+     
+
         <asp:Label class="text_big" ID="lblsubmitName" Visible="false" runat="server" Text=""></asp:Label>
 
     </div>

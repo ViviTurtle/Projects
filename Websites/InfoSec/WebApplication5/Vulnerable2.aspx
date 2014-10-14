@@ -18,7 +18,7 @@
           }
 
     </style>
-    <div class ="span5">
+    <div class ="span5 offset1">
     <asp:Label ID="Label1" runat="server" Text="Please select a comment: "></asp:Label>
     <asp:DropDownList ID="ddlComments"   runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlComments_SelectedIndexChanged" ></asp:DropDownList>
          <br />

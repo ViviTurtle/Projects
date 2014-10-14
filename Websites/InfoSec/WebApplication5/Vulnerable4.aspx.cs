@@ -14,21 +14,25 @@ namespace WebApplication5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.IsPostBack)
-            {
-                lblTITLE.Text = "Thank you for your submission ";
-                insertData();
-            }
+       
         }
-        protected void insertData()
+        protected void insertData(object sender, EventArgs e)
         {
-             String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString"].ConnectionString;
-                string command = @"INSERT INTO T_SURVEY VALUES '" + tbNAME.Text + "', '" + ddlRATE.SelectedValue + "', '" + tbFAVORITE + "', '" + tbLEAST + "', '" + ddlOFFICER.SelectedValue + "', '" +tbWHY + "'";
+            String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString2"].ConnectionString;
+             string command = @"INSERT INTO T_SURVEY VALUES ('" + tbNAME.Text + "', '" + ddlRATE.SelectedValue + "', '" + tbFAVORITE.Text + "', '" + tbLEAST.Text + "', '" + ddlOFFICER.SelectedValue + "', '" + tbWHY.Text + "')";
                 SqlDataAdapter objDA = new SqlDataAdapter(command, connection);
                 DataSet objDS = new DataSet();
                 SqlCommandBuilder cmdBuilder;
                 cmdBuilder = new SqlCommandBuilder(objDA);
                 objDA.Fill(objDS);
+                tbNAME.Text = "";
+                ddlRATE.SelectedValue = "THE CAKE WAS A LIE";
+                tbFAVORITE.Text = "";
+                tbLEAST.Text = "";
+                ddlOFFICER.SelectedValue = "ITS A TRAP";
+                tbWHY.Text = "";
+                Image1.ImageUrl = "~/images/Thankyou.jpg";
+                lblTITLE.Text = "Thank you for your submission ";
         }
     }
 }

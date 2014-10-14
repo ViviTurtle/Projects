@@ -67,6 +67,7 @@
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Joshua Wang"></asp:Label>
                         <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/joshwang7" data-related="false"></script>
+                           <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_JOSH" />
                     </td>
 
                 </tr>
@@ -96,7 +97,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/baby-squirrel.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/matt.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
@@ -119,8 +120,9 @@
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Anthony Langga"></asp:Label>
                   <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
                           </td>
-
+                 
                 </tr>
                 <tr>
                     <td>
@@ -128,7 +130,7 @@
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label5" runat="server" Text="Anthony Langga is currently in his 4th year studying Computer Science. He is the current Web Developer and Web Admin for the club. His main skills are mainly backend Web Developement and Python scripting although his current interests include Reverse Engineering and Exploitation. He likes to practice his Social Engineering Skills so you get confused if you know him by a different name and background."></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Anthony Langga is currently in his 4th year studying Computer Science. He is the current Web Developer and Web Admin for the club. His main skills are mainly backend Web Developement and Python scripting although his current interests include Reverse Engineering and Exploitation. He likes to practice his Social Engineering Skills so don't get confused if you know him by a different name and background."></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -142,18 +144,17 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
-                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label6" runat="server" Text="Treasurer: Armen Boursllia"></asp:Label>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label6" runat="server" Text="Treasurer: Armen Boursalian"></asp:Label>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Anony.png" height="200" width="100">
+                        <img class="img-polaroid" src="images/armen.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label7" runat="server" Text="Armen is one of our best Reverse Engineer's hoping own it up at in the Malware. He is currently working on a super virus he is required to make for one of his classes at SJSU. If the world gets hit by the next big virus, it was probaly this guy. :D
-"></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text="Armen is a graduate student studying Computer Science with a focus on security.  He also works at HP Enterprise Security for ArcSight's Content Development/Security Intelligence Research team.  His specialty is reverse engineering anything including Windows and Mac OS X applications to malware and more.  In August 2014, Armen became one of 226 people to complete the FLARE On reverse engineering challenge held by the FireEye Labs Advanced Reverse Engineering team. "></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -168,18 +169,45 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
-                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label10" runat="server" Text="Public Relations: Calvin Nixon"></asp:Label>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label10" runat="server" Text="Director of Public Relations: Calvin Nixon"></asp:Label>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/profile/view?id=122460456" data-related="false"></script>
+                     
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Friendly.png" height="200" width="100">
+                        <img class="img-polaroid" src="images/Calvin.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
                         <asp:Label ID="Label11" runat="server" Text="Going for this masters in Computer Science, Calvin joined the club to expand his experience in the field. He is one of the most honest and sincere guys in the club. If you need a friend, you can go to this guy.
 "></asp:Label>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+        
+     
+            <%--VP of Marketing--%>
+           <div class="span9 offset1 copy copy-right">
+            <table>
+                <tr>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label4" runat="server" Text="VP of Marketing: None"></asp:Label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img class="img-polaroid" src="images/Shirt Logo.jpg"height="200" width="100">
+                    </td>
+                    <td class="auto-style3"></td>
+                    <td>
+                        <asp:Label ID="Label8" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -204,7 +232,7 @@
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label9" runat="server" Text="Apparantly no one wants to be the horse
+                        <asp:Label ID="Label9" runat="server" Text="
 "></asp:Label>
                     </td>
                 </tr>
@@ -226,6 +254,15 @@
                 </li>
                 <li><a href="Team2013.aspx">~ Class of 2013</a>
                 </li>
+            </ul>
+        </div>
+
+          <div class="coolbox">
+            <h1 class="">Meet sure to check out our Coaches and Advisors</h1>
+            <ul>
+                <li><a href="Advisors.aspx">The people the club couldn't be without</a>
+                </li>
+               
             </ul>
         </div>
     </div>

@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Advisors.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\bootstrap-combined.no-icons.min.css" />
     <Content Include="css\font-awesome.css" />
@@ -68,12 +69,23 @@
     <Content Include="css\Ubuntu.css" />
     <Content Include="Events.aspx" />
     <Content Include="FAQ.aspx" />
+    <Content Include="images\Calvin.jpg" />
+    <Content Include="images\Mail.png" />
+    <Content Include="images\GitHub-Mark-120px-plus.png" />
+    <Content Include="images\Thankyou.jpg" />
+    <Content Include="images\Virginia.jpg" />
+    <Content Include="images\matt.jpg" />
+    <Content Include="images\armen.jpg" />
+    <Content Include="images\10582969_10203971090171936_1600147872448650832_o.jpg" />
     <Content Include="images\Anthony.jpg" />
     <Content Include="images\Anony.png" />
     <Content Include="images\baby-squirrel.jpg" />
     <Content Include="images\error.jpg" />
+    <Content Include="images\facebook_badge.png" />
+    <Content Include="images\facebook_icon.png" />
     <Content Include="images\FB_FindUsOnFacebook-1024.png" />
     <Content Include="images\Friendly.png" />
+    <Content Include="images\GitHub-Mark-64px.png" />
     <Content Include="images\golden_sparkly_panda_forest_by_azurespiritwolf-d3b3unr.png" />
     <Content Include="images\Josh2.jpg" />
     <Content Include="images\Club Logo.jpg" />
@@ -84,6 +96,7 @@
     <Content Include="images\InfoSec Flyer.jpg" />
     <Content Include="images\InfoSec FlyerBW.jpg" />
     <Content Include="images\InfoSec FlyerBW2.jpg" />
+    <Content Include="images\LinkedIn_logo_initials.png" />
     <Content Include="images\Poochy.jpg" />
     <Content Include="images\Shirt Logo.jpg" />
     <Content Include="images\Shirt Logo2.jpg" />
@@ -104,7 +117,6 @@
     <Content Include="Home.aspx" />
     <Content Include="Team2013.aspx" />
     <Content Include="Resources.aspx" />
-    <Content Include="WebForm3.aspx" />
     <Content Include="XSS.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +126,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advisors.aspx.cs">
+      <DependentUpon>Advisors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advisors.aspx.designer.cs">
+      <DependentUpon>Advisors.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -220,13 +239,6 @@
     </Compile>
     <Compile Include="Vulnerable4.aspx.designer.cs">
       <DependentUpon>Vulnerable4.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
     <Compile Include="XSS.aspx.cs">
       <DependentUpon>XSS.aspx</DependentUpon>

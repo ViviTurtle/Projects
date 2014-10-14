@@ -72,7 +72,8 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Anthony Langga"></asp:Label>
-                        <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
+<script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
                     </td>
 
                 </tr>
@@ -82,7 +83,7 @@
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label5" runat="server" Text="Anthony Langga is currently in his 4th year studying Computer Science. He is the current Web Developer and Web Admin for the club. His main skills are mainly backend Web Developement and Python scripting although his current interests include Reverse Engineering and Exploitation. He likes to practice his Social Engineering Skills so you get confused if you know him by a different name and background."></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Anthony Langga is currently in his 4th year studying Computer Science. He is the current Web Developer and Web Admin for the club. His main skills are mainly backend Web Developement and Python scripting although his current interests include Reverse Engineering and Exploitation. He likes to practice his Social Engineering Skills so don't get confused if you know him by a different name and background."></asp:Label>
 
 
                     </td>
@@ -104,7 +105,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/baby-squirrel.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Shirt Logo.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
@@ -124,7 +125,8 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Joshua Wang"></asp:Label>
-                        <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/joshwang7" data-related="false"></script>
+                         <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/joshwang7" data-related="false"></script>
+                           <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_JOSH" />
                     </td>
 
                 </tr>
@@ -154,11 +156,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Anony.png" height="200" width="100">
+                        <img class="img-polaroid" src="images/Shirt Logo.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label7" runat="server" Text="We had too many of these guys. None stayed. "></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text="We had too many of these guys. None stayed."></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -173,17 +175,42 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
-                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label10" runat="server" Text="Public Relations: Flora Lee"></asp:Label>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label10" runat="server" Text="Public Relations: Matt Chi"></asp:Label>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Friendly.png" height="200" width="100">
+                        <img class="img-polaroid" src="images/matt.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label11" runat="server" Text="She joined the club in the Spring and she quickly whipped up the club to active condition. She also did logistcal work for all our presentations. THe club wouldn't be alive without her today"></asp:Label>
+                        <asp:Label ID="Label11" runat="server" Text="Matt is hoping to become the best hacker in the world. He legitly announced he was eventually going to be a dictator of the internet and take on Anonymous and every world leader with just his laptop. Its ok though, he's a noob.
+"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <%--VP of Marketing--%>
+        <div class="span9 offset1 copy copy-right">
+            <table>
+                <tr>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label4" runat="server" Text="VP of Marketing: Flora Lee"></asp:Label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img class="img-polaroid" src="images/Shirt Logo.jpg"height="200" width="100">
+                    </td>
+                    <td class="auto-style3"></td>
+                    <td>
+                        <asp:Label ID="Label8" runat="server" Text="She joined the club in the Spring and she quickly whipped up the club to active condition. She also did logistcal work for all our presentations. THe club wouldn't be alive without her today"></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -208,8 +235,7 @@
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label9" runat="server" Text="He did nothing
-"></asp:Label>
+                        <asp:Label ID="Label9" runat="server" Text="N/A"></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -230,6 +256,15 @@
                 </li>
                 <li><a href="Team2013.aspx">~ Class of 2013</a>
                 </li>
+            </ul>
+        </div>
+
+          <div class="coolbox">
+            <h1 class="">Meet sure to check out our Coaches and Advisors</h1>
+            <ul>
+                <li><a href="Advisors.aspx">The people the club couldn't be without</a>
+                </li>
+               
             </ul>
         </div>
     </div>

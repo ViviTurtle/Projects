@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="WebApplication5.Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <h1>Contact (Under Construction)</h1>
+    <h1>Contact</h1>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">"
@@ -27,7 +27,7 @@
     </style>
     
 
-    <div class="span5">
+    <div class="span5 offset1">
         <asp:Label ID="Label4" CssClass="bold" runat="server" Text="Please fill out the form below and an administrator will contact you within the next 48 hours.
 "></asp:Label>
         <br />
@@ -74,25 +74,14 @@
                 </td>
             </tr>
         </table>
-        <asp:Button ID="Button1" runat="server" Text="Submit" />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Email" />
+      
     </div>
 
     <div class="span5">
-        <img class="img-polaroid" src="images/Shit Back.png" height="480" width="300">
+        <asp:Image ID="Image1" runat="server" ImageUrl="/images/Mail.png" height="300" width="300" />
     </div>
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+   
 
 </asp:Content>
