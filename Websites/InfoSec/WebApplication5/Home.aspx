@@ -80,6 +80,8 @@
     <div class="span6 offset1">
         <h2>InfoSec Blog Posts</h2>
 
+        
+
         <div class="align_left hotbox">
             <%--THE HACKERS WEAPON--%>
             <h5>Friday, May 9, 2014</h5>
@@ -138,9 +140,9 @@
         </div>
         <br />
         <br />
-
-
-        <%--  CTF COMPETITIONS--%>
+      
+        
+      <%--  CTF COMPETITIONS--%>
         <div class="align_left hotbox">
             <h5>Wednesday, May 7, 2014</h5>
             <h3>Capture the Flag Competitions</h3>
@@ -186,11 +188,9 @@
         </div>
         <br />
         <br />
-
-      
-
-
-        <%--   TECH BLOGS TO FOLLOW--%>
+   
+        
+     <%--   TECH BLOGS TO FOLLOW--%>
         <div class="align_left hotbox">
             <h5>Tuesday, April 1, 2014</h5>
             <h3>Tech Blogs we must follow</h3>
@@ -228,8 +228,8 @@
         </div>
         <br />
         <br />
-
-        <%--  PORTS OF CYBER_SECURITY--%>
+ 
+      <%--  PORTS OF CYBER_SECURITY--%>
         <div class="align_left hotbox">
             <h5>Tuesday, March 11, 2014</h5>
             <h3>The Ports of Cyber-Security</h3>
@@ -260,7 +260,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Anthony Langga</asp:HyperLink>
         </div>
 
-
+        
 
     </div>
 
