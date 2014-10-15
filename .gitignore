@@ -231,3 +231,7 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 Web.config
+Websites/InfoSec/WebApplication5/Contact.aspx.cs
+Websites/InfoSec/WebApplication5/Web.config
+Web.config
+Contact.aspx.cs
