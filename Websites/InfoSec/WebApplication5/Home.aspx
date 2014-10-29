@@ -38,7 +38,7 @@
         <div class="coolbox">
             <h1>Annoucements</h1>
             <p>
-                "Please Doctor, Don't SQL inject me" on 10/16
+                "CMU's Bomb Lab pt 2" on 10/30
             </p>
             <br />
             <p>
@@ -50,7 +50,7 @@
             </p>
             <br />
             <p>
-                If you have a blog post you want to share, please send me an email Anthony.Langga@sjsu.edu
+                Please save Nov. 6th to come to the club room. We will need as many people as possible. More details will be added later
             </p>
         </div>
         <div class="coolbox">

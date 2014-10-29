@@ -70,7 +70,7 @@
                         </li>
                         <li><a href="Vulnerable1.aspx?username=Guest">XSS1</a>
                         </li>
-                        <li><a href="Vulnerable2.aspx">XSS2</a>
+                        <li><a href="Apologies.aspx">XSS2</a>
                         </li>
                         <li><a href="Vulnerable3.aspx?">SQLi1</a>
                         </li>

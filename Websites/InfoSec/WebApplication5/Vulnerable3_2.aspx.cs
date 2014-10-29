@@ -22,7 +22,7 @@ namespace WebApplication5
         {
             //if (validAuthentication(username, password))
             //{
-                String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString"].ConnectionString;
+                String connection = ConfigurationManager.ConnectionStrings["SQLi1"].ConnectionString;
                 string command = @"SELECT * FROM T_MEMBERS WHERE USERNAME='" + username + "' AND PASSWORD='" + password + "'";
                 SqlDataAdapter objDA = new SqlDataAdapter(command, connection);
                 DataSet objDS = new DataSet();

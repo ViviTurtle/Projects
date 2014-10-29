@@ -15,7 +15,7 @@ namespace WebApplication5
         }
         protected void redirect_fb(object sender, EventArgs e)
         {
-            Response.Redirect("https://www.facebook.com/groups/725725020776252");
+            Response.Redirect("https://www.facebook.com/groups/1481343968813096/");
         }
         protected void redirect_gh(object sender, EventArgs e)
         {

@@ -18,8 +18,8 @@ namespace WebApplication5
         }
         protected void insertData(object sender, EventArgs e)
         {
-            String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString2"].ConnectionString;
-             string command = @"INSERT INTO T_SURVEY VALUES ('" + tbNAME.Text + "', '" + ddlRATE.SelectedValue + "', '" + tbFAVORITE.Text + "', '" + tbLEAST.Text + "', '" + ddlOFFICER.SelectedValue + "', '" + tbWHY.Text + "')";
+            String connection = ConfigurationManager.ConnectionStrings["SQLi2"].ConnectionString;
+            string command = @"INSERT INTO T_SURVEY (NAME,RATING, FAVORITE, LEAST,OFFICER, WHY) VALUES ('" + tbNAME.Text + "', '" + ddlRATE.SelectedValue + "', '" + tbFAVORITE.Text + "', '" + tbLEAST.Text + "', '" + ddlOFFICER.SelectedValue + "', '" + tbWHY.Text + "')";
                 SqlDataAdapter objDA = new SqlDataAdapter(command, connection);
                 DataSet objDS = new DataSet();
                 SqlCommandBuilder cmdBuilder;

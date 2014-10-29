@@ -60,6 +60,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Advisors.aspx" />
+    <Content Include="Apologies.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\bootstrap-combined.no-icons.min.css" />
     <Content Include="css\font-awesome.css" />
@@ -105,7 +106,6 @@
     <Content Include="js\jquery.js" />
     <Content Include="Team2014.aspx" />
     <Content Include="Vulnerable1.aspx" />
-    <Content Include="Vulnerable2.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Vulnerable3.aspx" />
     <Content Include="Vulnerable3_2.aspx" />
@@ -133,6 +133,13 @@
     </Compile>
     <Compile Include="Advisors.aspx.designer.cs">
       <DependentUpon>Advisors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Apologies.aspx.cs">
+      <DependentUpon>Apologies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Apologies.aspx.designer.cs">
+      <DependentUpon>Apologies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -204,13 +211,6 @@
     </Compile>
     <Compile Include="Vulnerable1.aspx.designer.cs">
       <DependentUpon>Vulnerable1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vulnerable2.aspx.cs">
-      <DependentUpon>Vulnerable2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vulnerable2.aspx.designer.cs">
-      <DependentUpon>Vulnerable2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
