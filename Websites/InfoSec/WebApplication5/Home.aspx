@@ -38,20 +38,16 @@
         <div class="coolbox">
             <h1>Annoucements</h1>
             <p>
-                "CMU's Bomb Lab pt 2" on 10/30
+               Engineering Malware/ FlARE-ON Challenge pt/2 by Armen on 11/13
             </p>
             <br />
             <p>
-                Cyber Collegiate Cyber Defense Season starts. We are in need of people interested in System/Network Adminstration. Please contact Anthony.Langga@sjsu.edu.
+    We still need more CCDC People. Please email me Anthony.Langga@sjsu.edu if you are interested.
             </p>
-            <br />
-            <p>
-                In search for a new T-shirt design, or a self-created spartan logo to update our current. Please submit your designs to sjsu.infosec@gmail.com
+                   <p>
+    Shirts will be coming in soon. We will have a poll up soon asking for your shirt size.
             </p>
-            <br />
-            <p>
-                Please save Nov. 6th to come to the club room. We will need as many people as possible. More details will be added later
-            </p>
+ 
         </div>
         <div class="coolbox">
             <h1>Social media</h1>

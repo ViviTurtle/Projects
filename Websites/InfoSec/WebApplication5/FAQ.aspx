@@ -83,7 +83,7 @@
                 </div>
                 <div id="collapseSeven" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        The club has meetings every Monday and Thursday at 4:30 pm. We are located in Duncan Hall 8.
+                        The club has meetings every Thursday at 4:30 pm. We are located in Duncan Hall 8.
                     </div>
                 </div>
             </div>
