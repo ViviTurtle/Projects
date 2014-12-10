@@ -20,7 +20,7 @@
 
         .left {
             text-align: left;
-            ;
+            
         }
 
         .bold {

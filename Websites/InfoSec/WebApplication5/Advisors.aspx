@@ -94,17 +94,17 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
-                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label12" runat="server" Text="SJSU Staff: Tom Austin"></asp:Label>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label12" runat="server" Text="SJSU Faculty: Tom Austin"></asp:Label>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Club Logo.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Austin.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label3" runat="server" Text="Tom Austin has been the club's advisor since 2013. He represents us in every major CTF and competitions. He has also been teaching Information Security at SJSU"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Prof. Austin earned his Master's degree from San Jose State before getting his PhD from UC Santa Cruz. He has worked with Mozilla's Research group, ESIEA Ouest's Cryptology and Operational Virology lab, and CloudFlare CDN. His interests are in web security, language-based security, and malware analysis."></asp:Label>
                     </td>
                 </tr>
             </table>

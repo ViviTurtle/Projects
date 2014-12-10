@@ -68,9 +68,14 @@
     <Content Include="css\Open_Sans.css" />
     <Content Include="css\social-buttons.css" />
     <Content Include="css\Ubuntu.css" />
+    <Content Include="Error.aspx" />
     <Content Include="Events.aspx" />
     <Content Include="FAQ.aspx" />
+    <Content Include="images\Austin.jpg" />
+    <Content Include="images\Dustin.jpeg" />
+    <Content Include="images\Flora.jpg" />
     <Content Include="images\Calvin.jpg" />
+    <Content Include="images\Hansen.jpg" />
     <Content Include="images\Mail.png" />
     <Content Include="images\GitHub-Mark-120px-plus.png" />
     <Content Include="images\Thankyou.jpg" />
@@ -104,6 +109,8 @@
     <Content Include="images\Shit Back.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery.js" />
+    <Content Include="js\LinkedIn.js" />
+    <Content Include="Pass.aspx" />
     <Content Include="Team2014.aspx" />
     <Content Include="Vulnerable1.aspx" />
     <Content Include="Register.aspx" />
@@ -113,10 +120,11 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Login.aspx" />
+    <Content Include="Vulnerable5.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Team2013.aspx" />
     <Content Include="Resources.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="XSS.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +156,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,6 +177,13 @@
     <Compile Include="FAQ.aspx.designer.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pass.aspx.cs">
+      <DependentUpon>Pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pass.aspx.designer.cs">
+      <DependentUpon>Pass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -170,12 +192,12 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Vulnerable5.aspx.cs">
+      <DependentUpon>Vulnerable5.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Vulnerable5.aspx.designer.cs">
+      <DependentUpon>Vulnerable5.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -239,6 +261,13 @@
     </Compile>
     <Compile Include="Vulnerable4.aspx.designer.cs">
       <DependentUpon>Vulnerable4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="XSS.aspx.cs">
       <DependentUpon>XSS.aspx</DependentUpon>

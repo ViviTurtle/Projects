@@ -36,16 +36,22 @@
 
     <div class="span2">
         <div class="coolbox">
+             
             <h1>Annoucements</h1>
             <p>
-               Engineering Malware/ FlARE-ON Challenge pt/2 by Armen on 11/13
+              Last meeting of the school year this week! Todd said he would bring pizza. We'll just hangout and discuss how were going to take over the school's intranet.
             </p>
             <br />
             <p>
     We still need more CCDC People. Please email me Anthony.Langga@sjsu.edu if you are interested.
             </p>
+               <br />
                    <p>
-    Shirts will be coming in soon. We will have a poll up soon asking for your shirt size.
+    Facebook meeting has been rescheduled to February 5th. Please save the date.
+            </p>
+               <br />
+                          <p>
+  This site will be going through some major construction in December. If you have any suggested changes please use the contact page to send me your advice.
             </p>
  
         </div>

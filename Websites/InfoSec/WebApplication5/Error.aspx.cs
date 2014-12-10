@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication5
 {
-    public partial class Resources : System.Web.UI.Page
+    public partial class Error : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-        protected void rebind(object sender, EventArgs e)
-        {
-            gvRESOURCES.DataBind();
         }
     }
 }

@@ -52,7 +52,7 @@ p {
 
 /* Video pitch and Action */
 .pitch {
-    padding 2.5% 0%;
+    padding: 2.5% 0%;
 }
 
 .order {
@@ -111,3 +111,5 @@ div.addthis_toolbox {
     margin: 0 auto;
 }
 
+
+}

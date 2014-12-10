@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" validateRequest="false" AutoEventWireup="True" CodeBehind="Team2013.aspx.cs" Inherits="WebApplication5.Team2013" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" ValidateRequest="false" AutoEventWireup="True" CodeBehind="Team2013.aspx.cs" Inherits="WebApplication5.Team2013" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <h1>Meet the Team!</h1>
@@ -55,10 +55,17 @@
             height: 37px;
         }
 
-       .hotbox {
+        .hotbox {
             background-color: #FFFFFF;
             border: 2px solid #808080;
             padding: 10px;
+        }
+        .box_header {
+            font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #808080;
+            font-weight: 700;
+            font-size: 15px;
         }
     </style>
 
@@ -71,8 +78,10 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
-                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Anthony Langga"></asp:Label>
-<script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
+                    <td class="auto-style6">&nbsp;
+                        <asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Anthony Langga"></asp:Label>
+
+                        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/anthonylangga" data-format="hover" data-related="false"></script>
                         <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
                     </td>
 
@@ -125,8 +134,8 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Joshua Wang"></asp:Label>
-                         <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/joshwang7" data-related="false"></script>
-                           <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_JOSH" />
+                        <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/joshwang7" data-related="false"></script>
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_JOSH" />
                     </td>
 
                 </tr>
@@ -160,7 +169,7 @@
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label7" runat="server" Text="We had too many of these guys. None stayed."></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text="Credits to Justin Tieu and Amy Kreiger for volunteering, although they couldn't stay."></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -176,6 +185,7 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label10" runat="server" Text="Public Relations: Matt Chi"></asp:Label>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/mattchi" data-related="false"></script>
                     </td>
 
                 </tr>
@@ -205,11 +215,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Shirt Logo.jpg"height="200" width="100">
+                        <img class="img-polaroid" src="images/Flora.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label8" runat="server" Text="She joined the club in the Spring and she quickly whipped up the club to active condition. She also did logistcal work for all our presentations. THe club wouldn't be alive without her today"></asp:Label>
+                        <asp:Label ID="Label8" runat="server" Text="Flora Lee graduated in Spring 2014 with a Bachelor of Science degree in Business Administration with a concentration in Management Information Systems, being the first alumni of the Information Security Club in San Jose State University. She previously worked for cyber initiatives on campus including outreach programs and cyber camps where she assisted in coordinating the events. For the club, she performed logistics for all the presentations and used marketing skills to scout for potential new members. She currently works for Workopia as a consultant specializing in Microsoft Dynamics CRM."></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -225,24 +235,23 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label14" runat="server" Text="Secretary: Dustin Tran"></asp:Label>
+                          <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/pub/dustin-tran/52/a0a/830" data-related="false"></script>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Shirt Logo.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Dustin.jpeg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label9" runat="server" Text="N/A"></asp:Label>
+                        <asp:Label ID="Label9" runat="server" Text="Dustin is a undergraduate student studying Software Engineering. He is currently interning at Cisco Systems, Inc. He works side by side with engineers on the ASR 9k routers. Outside of work and school, he enjoys spending a majority of his time studying security topics or gaming."></asp:Label>
                     </td>
                 </tr>
             </table>
 
 
         </div>
-
-
 
 
     </div>
@@ -258,12 +267,14 @@
             </ul>
         </div>
 
-          <div class="coolbox">
-            <h1 class="">Meet sure to check out our Coaches and Advisors</h1>
+        <div class="coolbox">
+            <asp:Label runat="server" class="box_header">Meet sure to check out our Advisors</asp:Label>
+            <br />
+             <br />
             <ul>
                 <li><a href="Advisors.aspx">The people the club couldn't be without</a>
                 </li>
-               
+
             </ul>
         </div>
     </div>

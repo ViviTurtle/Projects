@@ -54,6 +54,13 @@
         .auto-style6 {
             height: 37px;
         }
+
+        .box_header {
+            font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #808080;
+            font-weight: 700;
+            font-size: 15px;
     </style>
 
 
@@ -67,7 +74,7 @@
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Joshua Wang"></asp:Label>
                         <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/joshwang7" data-related="false"></script>
-                           <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_JOSH" />
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_JOSH" />
                     </td>
 
                 </tr>
@@ -92,6 +99,7 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label12" runat="server" Text="Vice President: Matt Chi"></asp:Label>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/mattchi" data-related="false"></script>
                     </td>
 
                 </tr>
@@ -117,11 +125,10 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Anthony Langga"></asp:Label>
-                  <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
                         <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
-                          </td>
-                 
+                    </td>
+
                 </tr>
                 <tr>
                     <td>
@@ -144,6 +151,7 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label6" runat="server" Text="Treasurer: Armen Boursalian"></asp:Label>
+                        <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ARMEN" />
                     </td>
 
                 </tr>
@@ -170,7 +178,7 @@
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label10" runat="server" Text="Director of Public Relations: Calvin Nixon"></asp:Label>
                         <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/profile/view?id=122460456" data-related="false"></script>
-                     
+
                     </td>
 
                 </tr>
@@ -188,10 +196,36 @@
 
 
         </div>
-        
-     
-            <%--VP of Marketing--%>
-           <div class="span9 offset1 copy copy-right">
+
+        <%--SECRETARY--%>
+        <div class="span9 offset1 copy copy-right">
+            <table>
+                <tr>
+                    <td class="auto-style4"></td>
+                    <td class="auto-style5"></td>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label14" runat="server" Text="Secretary: Hansen Wu"></asp:Label>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="https://www.linkedin.com/in/hansenwu" data-related="false"></script>
+                        <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_HANSEN" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <img class="img-polaroid" src="images/Hansen.jpg" height="200" width="100">
+                    </td>
+                    <td class="auto-style3"></td>
+                    <td>
+                        <asp:Label ID="Label9" runat="server" Text="
+Hansen Wu is a first year undergraduate student at SJSU majoring in CS and taking upper division CS courses in his second semester. He has interests in all things computer with an emphasis on programming and networking. His primary languages are Java, Bash, and MIPS. He has also set up an externally accessible Linux HTTP, FTP, and SSH server used to SOCKS proxy through school firewall for fun.
+"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+        <%--VP of Marketing--%>
+        <div class="span9 offset1 copy copy-right">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -202,7 +236,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Shirt Logo.jpg"height="200" width="100">
+                        <img class="img-polaroid" src="images/Shirt Logo.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
@@ -215,34 +249,6 @@
         </div>
 
 
-        <%--SECRETARY--%>
-        <div class="span9 offset1 copy copy-right">
-            <table>
-                <tr>
-                    <td class="auto-style4"></td>
-                    <td class="auto-style5"></td>
-                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label14" runat="server" Text="Secretary: None"></asp:Label>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <img class="img-polaroid" src="images/Shirt Logo.jpg" height="200" width="100">
-                    </td>
-                    <td class="auto-style3"></td>
-                    <td>
-                        <asp:Label ID="Label9" runat="server" Text="
-"></asp:Label>
-                    </td>
-                </tr>
-            </table>
-
-
-        </div>
-
-
-      
-       
     </div>
     <div class="span2">
 
@@ -256,12 +262,14 @@
             </ul>
         </div>
 
-          <div class="coolbox">
-            <h1 class="">Meet sure to check out our Coaches and Advisors</h1>
+        <div class="coolbox">
+            <asp:Label runat="server" class="box_header">Meet sure to check out our Advisors</asp:Label>
+            <br />
+            <br />
             <ul>
                 <li><a href="Advisors.aspx">The people the club couldn't be without</a>
                 </li>
-               
+
             </ul>
         </div>
     </div>

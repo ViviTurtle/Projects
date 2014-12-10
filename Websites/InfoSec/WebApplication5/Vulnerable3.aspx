@@ -112,7 +112,7 @@
                     <asp:DropDownList ID="ddlMAJOR" runat="server"  AppendDataBoundItems="True" DataSourceID="InfosecConnectionString" DataTextField="MAJOR" DataValueField="VALUE">
                         <asp:ListItem Text="Please Select a Major" Value="0"> </asp:ListItem>
                     </asp:DropDownList>
-                    <asp:SqlDataSource ID="InfosecConnectionString" runat="server" ConnectionString="<%$ ConnectionStrings:InfosecConnectionString %>" SelectCommand="SP_GET_MAJORS" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="InfosecConnectionString" runat="server" ConnectionString="<%$ ConnectionStrings:InfoGuest %>" SelectCommand="SP_GET_MAJORS" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
                     <asp:Label Text="* " CssClass="red" runat="server"></asp:Label>
                  
                     <asp:RequiredFieldValidator CssClass="red" ID="ddlMAJOR_VALIDATOR" InitialValue="0" ControlToValidate="ddlMAJOR" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>

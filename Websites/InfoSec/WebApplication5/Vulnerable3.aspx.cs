@@ -96,7 +96,7 @@ namespace WebApplication5
         {
             string response;
             String redirection = "/Vulnerable3_2.aspx?";
-            String connection = ConfigurationManager.ConnectionStrings["InfosecConnectionString"].ConnectionString;
+            String connection = ConfigurationManager.ConnectionStrings["SQLi1"].ConnectionString;
             SqlConnection sqlConnection1 = new SqlConnection(connection);
             SqlCommand cmd = new SqlCommand();
 

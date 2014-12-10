@@ -21,6 +21,13 @@ namespace WebApplication5
         {
             Response.Redirect("https://github.com/conceptofproof");
         }
-          
+           protected void GH_HANSEN(object sender, EventArgs e)
+           {
+               Response.Redirect("https://github.com/hansenwu");
+           }
+           protected void GH_ARMEN(object sender, EventArgs e)
+           {
+               Response.Redirect("https://github.com/Northern-Lights");
+           }
     }
 }
