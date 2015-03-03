@@ -79,7 +79,7 @@
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;
-                        <asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Anthony Langga"></asp:Label>
+                        <asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Vivi Langga"></asp:Label>
 
                         <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/anthonylangga" data-format="hover" data-related="false"></script>
                         <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
@@ -88,11 +88,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Anthony.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Club Logo.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label5" runat="server" Text="Anthony Langga is currently in his 4th year studying Computer Science. He is the current Web Developer and Web Admin for the club. His main skills are mainly backend Web Developement and Python scripting although his current interests include Reverse Engineering and Exploitation. He likes to practice his Social Engineering Skills so don't get confused if you know him by a different name and background."></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Vivi Langga is currently in her 4th year studying Computer Science. She is the current Web Developer and Web Admin for the club. Her main skills are mainly backend Web Developement and Python scripting although her current interests include Reverse Engineering and Exploitation. She likes to practice her Social Engineering Skills so don't get confused if you know her by a different name and background."></asp:Label>
 
 
                     </td>

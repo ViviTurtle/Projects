@@ -124,7 +124,7 @@
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
-                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Anthony Langga"></asp:Label>
+                    <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Vivi Langga"></asp:Label>
                         <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
                         <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
                     </td>
@@ -132,11 +132,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Anthony.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Club Logo.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
-                        <asp:Label ID="Label5" runat="server" Text="Anthony Langga is currently in his 4th year studying Computer Science. He is the current Web Developer and Web Admin for the club. His main skills are mainly backend Web Developement and Python scripting although his current interests include Reverse Engineering and Exploitation. He likes to practice his Social Engineering Skills so don't get confused if you know him by a different name and background."></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text="Vivi Langga is currently in her 4th year studying Computer Science. She is the current Web Developer and Web Admin for the club. Her main skills are mainly backend Web Developement and Python scripting although her current interests include Reverse Engineering and Exploitation. She likes to practice her Social Engineering Skills so don't get confused if you know her by a different name and background."></asp:Label>
                     </td>
                 </tr>
             </table>

@@ -36,24 +36,31 @@
 
     <div class="span2">
         <div class="coolbox">
-             
+
             <h1>Annoucements</h1>
             <p>
-              Last meeting of the school year this week! Todd said he would bring pizza. We'll just hangout and discuss how were going to take over the school's intranet.
+                Cisco Meeting was wonderful! Should be in the blog soon.
             </p>
             <br />
             <p>
-    We still need more CCDC People. Please email me Anthony.Langga@sjsu.edu if you are interested.
+                Boston Key Party CTF this weekend. Please check our facebook for more information
             </p>
-               <br />
-                   <p>
-    Facebook meeting has been rescheduled to February 5th. Please save the date.
+            <br />
+            <p>
+               ITUS Networks is coming on 2/26 looking for volunteer internships for blackbox pentesting.
             </p>
-               <br />
-                          <p>
-  This site will be going through some major construction in December. If you have any suggested changes please use the contact page to send me your advice.
+              <br />
+              <p>
+               InfoSec Club is going to DefCon this summer. Please email: Anthony.Langga@sjsu.edu for more information
             </p>
- 
+
+              <br />
+              <p>
+              I have been notified that some of the BreakMe Practices are literally broken. It will be fixed soon.
+            </p>
+
+
+
         </div>
         <div class="coolbox">
             <h1>Social media</h1>
@@ -82,7 +89,96 @@
     <div class="span6 offset1">
         <h2>InfoSec Blog Posts</h2>
 
-        
+      
+          <div class="align_left hotbox">
+            <%--Facebook meeting--%>
+            <h5>Thursday, February 26, 2015</h5>
+            <h3>Cisco</h3>
+            <div style="text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-RilWZwnjTw?list=PLn6B36nIjoxRy3bVWxKY8a5YqdPQ9mSce" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br />
+            <br />
+              Last Thursday we were able to get Ms. Guel, a distinguised IT Engineer at Cisco to talk about her journey through cyber-security as one of few females in the field. We'd like to thank her again for volunteering her time to talk about for the club.
+              <br />
+        <br />
+               <div style="text-align: right;">
+                
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/2015/02/cisco-security-w-infosec-club.html"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+        </div>
+        <br />
+        <br />
+
+
+     
+
+        <br />
+        <br />
+        <div class="align_left hotbox">
+            <%--Cisco meeting--%>
+            <h5>Wednesday, February 11, 2015</h5>
+            <h3>Facebook</h3>
+            <div style="text-align: center;">
+                <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/EWKG9gcC7dA" width="560"></iframe>
+            </div>
+            <br />
+            <br />
+            The club has been starting to expand. With the help of Calvin, our External Relations Director, we were able to have the Director of Facebook Security (In which Ted Reed came in her presence) come to the Information Security club to talk about Facebook Security and the beginnings of our collaboration with them. Calvin has a big plan to get this club to be the next big thing. With that in mind, I hope you enjoy the talk and look forward to even more. We would like to thank Facebook for taking some of their time to speak with the club.
+              <br />
+        <br />
+               <div style="text-align: right;">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/2015/02/facebook.html"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+        </div>
+        <br />
+        <br />
+
+
+     
+
+        <br />
+        <br />
+        <div class="align_left hotbox">
+            <%--New Beginnings--%>
+            <h5>Sunday, December 21, 2014</h5>
+            <h3>New beginnings</h3>
+            <div class="separator" style="clear: both; text-align: center;">
+                <a href="http://1.bp.blogspot.com/-wOJ-bHz2KZg/VJa0FRw6_5I/AAAAAAAABmY/fXsWNnOp8yU/s1600/unnamed.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+                    <img border="0" src="http://1.bp.blogspot.com/-wOJ-bHz2KZg/VJa0FRw6_5I/AAAAAAAABmY/fXsWNnOp8yU/s1600/unnamed.png" height="200" width="200" /></a>
+            </div>
+            The<a href="http://sjsuinfosecurity.com/" target="_blank"> InfoSec club</a> has been reaching new heights this semester. Calvin has been doing a lot networking for the club. As such we have many companies interested in our vision of putting San Jose State as the InfoSec University of the Silicon Valley. Within the next semester, we are hoping establish a sponsorship from these companies fund and teach our club. We are about to reach new heights. Instead of following the path of self-learning and CTF's to improve our skills, we going to be taught directly from organizations with their own security protocols. Its a win-win for both of us because we receive training, sponsorships, and funding and the organizations have the best of the best graduates coming to work for them after graduation.<br />
+            <br />
+            Until this happens, the club will be particularly busy. We have meetings every Thursday and we spend those meetings teaching each other new Information Security concepts. I have been working and teaching on web application exploits. I HIGHLY recommend people sign up to teach a concept in the class because it forces you to actively learn new skills throughout the year. Not only that, but you get real world experience making modules to put on your resume. Once organizations start coming in, what better way is there to show off you skills than show them the modules and concepts you have personally taught? This year we mainly went through web application exploits and Reverse Engineering. This coming year were hopefully going to go into more advanced concepts of exploitation.<br />
+            <br />
+            <a href="http://1.bp.blogspot.com/-dRlCAFbewLM/VJaz5NfYLQI/AAAAAAAABmQ/XV5YRMEBEMs/s1600/ruCTFE.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+                <img border="0" src="http://1.bp.blogspot.com/-dRlCAFbewLM/VJaz5NfYLQI/AAAAAAAABmQ/XV5YRMEBEMs/s1600/ruCTFE.png" /></a><a href="http://4.bp.blogspot.com/-A3XFG061f3Q/VJawoBfonQI/AAAAAAAABmE/E011mEqC0wM/s1600/150x150x3e3c03228d6e1cded08d1331e1d29558.png.pagespeed.ic.wNRxEEuBON.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-A3XFG061f3Q/VJawoBfonQI/AAAAAAAABmE/E011mEqC0wM/s1600/150x150x3e3c03228d6e1cded08d1331e1d29558.png.pagespeed.ic.wNRxEEuBON.png" /></a>The club has been actively participating in many Capture the Flag Competitions. Are most recent one was 9447 CTF where the team placed 186/988. Not bad for a new team if I say so myself. This competition was an advanced Jeopardy style CTF where we got all our points in Reverse Engineering. Next up is the Collegiate Cyber Defense Competition. Although it is not our expertise we are always excited to be a part of such a prestige competition. Down the line after the club has established with seniors and juniors, it would then only be a matter of time until we reach the top for each competition. I have high hopes for this club and we are about to take the InfoSec world by storm. We will be posting more this coming semester as I kick all the officers off their lazy bums. See you guys at the end of the stack<br />
+            <br />
+
+            <br />
+            <div id="export-html">
+                <div class="mla7">
+                    &nbsp;
+                </div>
+                <div class="mla7">
+                    &nbsp;<div class="hang">
+                        "Facebook Logo." <i>Facebook</i>. N.p., n.d. Web. 18 Dec. 2014.                   
+                    </div>
+                    <div class="hang">
+                        "Home : 9447 CTF - A Competition by the 9447 Internet Plumbers." <i>Home : 9447 CTF - A Competition by the 9447 Internet Plumbers</i>. N.p., n.d. Web. 21 Dec. 2014.                   
+                    </div>
+                    <div class="hang">
+                        "RuCTFE 2014." <i>RuCTFE 2014 Index</i>. N.p., n.d. Web. 21 Dec. 2014.                   
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+
+
+            <div style="text-align: right;">
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+        </div>
+        <br />
+        <br />
 
         <div class="align_left hotbox">
             <%--THE HACKERS WEAPON--%>
@@ -138,13 +234,14 @@
             <br />
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Anthony Langga</asp:HyperLink>
+            <div style="text-align: right;">
+                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
         </div>
         <br />
         <br />
-      
-        
-      <%--  CTF COMPETITIONS--%>
+
+
+        <%--  CTF COMPETITIONS--%>
         <div class="align_left hotbox">
             <h5>Wednesday, May 7, 2014</h5>
             <h3>Capture the Flag Competitions</h3>
@@ -186,13 +283,14 @@
             <br />
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Anthony Langga</asp:HyperLink>
+            <div style="text-align: right;">
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
         </div>
         <br />
         <br />
-   
-        
-     <%--   TECH BLOGS TO FOLLOW--%>
+
+
+        <%--   TECH BLOGS TO FOLLOW--%>
         <div class="align_left hotbox">
             <h5>Tuesday, April 1, 2014</h5>
             <h3>Tech Blogs we must follow</h3>
@@ -226,12 +324,13 @@
             <br />
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Anthony Langga</asp:HyperLink>
+            <div style="text-align: right;">
+                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
         </div>
         <br />
         <br />
- 
-      <%--  PORTS OF CYBER_SECURITY--%>
+
+        <%--  PORTS OF CYBER_SECURITY--%>
         <div class="align_left hotbox">
             <h5>Tuesday, March 11, 2014</h5>
             <h3>The Ports of Cyber-Security</h3>
@@ -259,10 +358,11 @@
             <br />
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Anthony Langga</asp:HyperLink>
+            <div style="text-align: right;">
+                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
         </div>
 
-        
+
 
     </div>
 

