@@ -1,0 +1,74 @@
+/lib64/ld-linux-x86-64.so.2
+SbxV
+libc.so.6
+fflush
+shmget
+exit
+sprintf
+perror
+shmat
+semctl
+signal
+strncpy
+puts
+shmctl
+stdin
+__assert_fail
+strtol
+feof
+getpwnam
+getppid
+chdir
+read
+getgrnam
+stdout
+setresgid
+setresuid
+alarm
+fwrite
+errx
+__libc_start_main
+semop
+semget
+__gmon_start__
+GLIBC_2.2.5
+fffff.
+AVAUI
+ATUHc
+[]A\A]A^
+ATUH
+[]A\
+fffff.
+AUATA
+[]A\A]
+fffff.
+fffff.
+ATUS
+[]A\
+AWAVA
+AUATL
+[]A\A]A^A_
+Invalid arguments!
+bksh> 
+exit
+sleep
+create
+uspace
+Couldn't read from standard input. End of file? Exiting ...
+Unable to find group
+Unable to find user
+Unable to change GID
+Unable to change UID
+shmget
+zenhv
+shmctl perm
+Invalid id!
+shmat
+common.c
+n > 0
+vals != ((void *)0)
+semctl perm
+Error releasing semaphore!
+Unable to change current directory
+create_sem_set
+;*3$"
