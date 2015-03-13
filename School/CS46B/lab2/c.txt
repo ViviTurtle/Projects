@@ -1,4 +1,0 @@
-for f in *.txt
-do
-   echo Found $f
-done

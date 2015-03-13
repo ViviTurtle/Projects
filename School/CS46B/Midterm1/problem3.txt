@@ -1,5 +1,0 @@
-1) Student one out get output 1 to print by default by using polymorphism. If he didn't override methods from the Bank acocunt using the Savings Account class, then it would print out Bank Account.
-
-2) Student two would get output two if he/she overidded a method in the Bank acount class as such that when ba.testMethod(sa) is called, it called a method in the Savings Account method.
-
-3) Student three wouldn't compile if they used they the methods in the bankAcount class were final, as such it wouldn't be able to override the select method form the savings account class that is similar to the bank account class/

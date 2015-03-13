@@ -1,7 +1,0 @@
-a) The code won't compile because taking the words abstract means your making it an actual class rather then a predefined outline/reference for other codes. The actual code itself extComparable, in which it is missing the method int number()
-
-b) It is valid. You may have a a class be converted to an interface if the object itself is not an interface. Meaning this is a legal arguement because University extends another class that uses the Comparable class. the actual class is concrete.
-
-c) the word final means that it cannot be overidden in its subclasses.
-
-d) It is bad that it extneds the AbstractFinieClass becuase its methods in the abstract class cannot be overidden because it has the word final. Also because it the ckass it extends is abstract, it is more of an outline rather then an actual class, in this regard it is would be better to simply make it implement directly to the comparable class because the actual abstract class is redundant in that its methods cannot be overidden.
