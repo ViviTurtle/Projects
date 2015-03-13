@@ -1,9 +1,0 @@
--K secret -T 0 -A -E John log1.txt
--K secret -T 2 -A -R 0 -E John log1.txt
--K secret -T 2 -A -G James log1.txt
--K secret -T 3 -A -R 12 -G James log1.txt
--K secret -T 4 -A  -G William log1.txt
--K secret -T 5 -A -R 6 -G William log1.txt
--K secret -T 7 -A  -G Bob log1.txt
--K secret -T 8 -A -R 6 -G Bob log1.txt
--K secret -T 9 -L -R 12 -G James log1.txt
