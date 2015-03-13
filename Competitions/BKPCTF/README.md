@@ -6,16 +6,17 @@ Haymarket
 
 **Category:** Reversing **Points:** 150 **Solves:** 216 **Description:**
 ```
-This challenge was a fairly easy Reversing challenge. In simple terms all you had to do was read a a set of punch cards. We were first given this description. Monty Hall wrote a script of how 
-he was supposed to run one of his game shows for his trusty accounting computer 
-some time ago, but hes not really sure what the punch cards mean any more. I mean, 
-that was a while ago. Only, hes sure his key is hidden somewhere in these punch-cards,
-if he could figure out how to run them...
+This challenge was a fairly easy Reversing challenge. In simple terms all you had 
+to do was read a a set of punch cards. We were first given this description. Monty
+Hall wrote a script of how he was supposed to run one of his game shows for his 
+trusty accounting computer some time ago, but hes not really sure what the punch 
+cards mean any more. I mean,that was a while ago. Only, hes sure his key is 
+hidden somewhere in these punch-cards,if he could figure out how to run them...
 ```
 
- BKPCTF_INTRO
- ------------
- Simple Binary the SJSU: InfoSec Club president put together to let us know the location of our meeting for BKPCTF
+BKPCTF_INTRO
+----------------
+ Simple binary the SJSU: InfoSec Club president put together to let us know the location of our meeting for BKPCTF
  
  I ran strings against it, and it gave me a bunch of text with one area of interest
   ```
