@@ -17,8 +17,9 @@ Now that I had the translation of bullets to ASCII, I just had to write a progra
 
 In conclusion, I would like to thank Boston Key Party 2015 for this great challenge. It was a great way for me to refresh my Python programming while learning about punch cards. Again I look forward for next years competition.
 
+
 Punchcard.py
-~~python
+```python
 Note: I ignored the numbers and just went from 1-13 rows with zero's as the default value.
 
 #!/usr/bin/env python
@@ -202,4 +203,4 @@ for x in range (1,TOTAL_COLUMNS+1):
  #builds the string
  stringbuilder = stringbuilder + getASCII(bulletedindex[0],bulletedindex[1],bulletedindex[2])
 print stringbuilder
-~~
+```
