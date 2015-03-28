@@ -31,7 +31,8 @@ Key = Flag{erinsersmusicalmasterpiece}
 #1234567
 
 '''python
-at first tried printing every iteration
+
+#at first tried printing every iteration
 flag_encrypted = 'EDINEDEMGEKEALMAEFEDBIECE'
 A = ['A','O','V']
 B = ['B','P','W']
