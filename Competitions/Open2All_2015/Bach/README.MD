@@ -1,38 +1,38 @@
-CTF OPEN TO ALL 2015
-=======================
-
-
 BACH: CRYPTO 150
----------------------------
+============================
 
-#Well, not quite...
+>Well, not quite...
 
-#Author: Eriner
+>Author: Eriner
 
-#Note: the format is flag{secret_goes_here}
-#8aec78b8dca5541b69d07404f1a6be68.tar.bz2
+Note: the format is flag{secret_goes_here}
+8aec78b8dca5541b69d07404f1a6be68.tar.bz2
 
-#Sight reading decoded
-#FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
+Sight reading decoded
+FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
 
-#Possible translation?
-#The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
+Possible translation?
+The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
 
-#Possible Combinations, Tried iterating everyone.
-#Later saw the use for naturals in the png, and solved the code.
+Possible Combinations, Tried iterating everyone.
+Later saw the use for naturals in the png, and solved the code.
 
-#ABCDEFG NORMALS
-#HIJKLMN SHARPS
-#OPQRSTU NATURALS
-#VWXYZ   FLATS
+ABCDEFG NORMALS
+HIJKLMN SHARPS
+OPQRSTU NATURALS
+VWXYZ   FLATS
 
-#Looking at the PNG and this key
-#ERINERS MUSICAL MASTERPIECE! <- Omg it worked
-#Key = Flag{erinsersmusicalmasterpiece}
+Looking at the PNG and this key
+ERINERS MUSICAL MASTERPIECE! <- Omg it worked
+Key = Flag{erinsersmusicalmasterpiece}
+#ABCDEFG
+#HIJKLMN
+#OPQRSTU
+#VWXYZ
+#1234567
 
-
-
-##at first tried printing every iteration
+'''python
+at first tried printing every iteration
 flag_encrypted = 'EDINEDEMGEKEALMAEFEDBIECE'
 A = ['A','O','V']
 B = ['B','P','W']
@@ -79,8 +79,5 @@ while not done():
 		stringbuilder = stringbuilder  + getLetter(flag_encrypted[x],permutations[x])
 	print 'The Flag is ' + stringbuilder
 	next(0);
-#ABCDEFG
-#HIJKLMN
-#OPQRSTU
-#VWXYZ
-#1234567
+'''python
+
