@@ -1,9 +1,9 @@
-#!/usr/bin/env python
-#
+CTF OPEN TO ALL 2015
+=======================
 
-#CTF OPEN TO ALL 2015
-#BACH
-#CRYPTO 150
+
+BACH: CRYPTO 150
+---------------------------
 
 #Well, not quite...
 
