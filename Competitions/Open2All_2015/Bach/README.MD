@@ -1,9 +1,8 @@
 BACH: CRYPTO 150
-============================
+----------------------
 
 >Well, not quite...
-
->Author: Eriner
+Author: Eriner
 
 Note: the format is flag{secret_goes_here}
 8aec78b8dca5541b69d07404f1a6be68.tar.bz2
