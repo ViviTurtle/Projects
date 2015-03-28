@@ -28,14 +28,9 @@ Key = Flag{erinsersmusicalmasterpiece}
 
 |Normal|A|B|C|D|E|F|G|
 |------|-----|----|-----|-----|-----|-----|-----|
-|Sharps|H|I|J|K|L|M|N|
-|Naturals|O|P|Q|R|S|T|U|
-|Flats|V|W|X|Y|Z|
-#ABCDEFG
-#HIJKLMN
-#OPQRSTU
-#VWXYZ
-#1234567
+|**Sharps**|H|I|J|K|L|M|N|
+|**Naturals**|O|P|Q|R|S|T|U|
+|**Flats**|V|W|X|Y|Z|
 
 Bruteforce.py
  ~ I had tried to brute force every possible iteration the code could become, but then I dropped this as it took too long.
