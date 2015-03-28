@@ -31,7 +31,6 @@ Key = Flag{erinsersmusicalmasterpiece}
 #1234567
 
 '''python
-
 #at first tried printing every iteration
 flag_encrypted = 'EDINEDEMGEKEALMAEFEDBIECE'
 A = ['A','O','V']
@@ -42,7 +41,6 @@ E = ['E','S','Z']
 F = ['F','T','T']
 G = ['N','U','U']
 permutations=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-
 def getLetter(letter,index):
 	if letter == 'A':
 		return A[index]
@@ -65,14 +63,11 @@ def done():
 		if not permutations[x] == 2:
 			return False
 	return True
-
 def next(index):
 	if permutations[index] == 2:
 		permutations[index] = 0
 		next(index + 1)
 	else: permutations[index] = permutations[index] + 1
-	
-
 while not done():
 	stringbuilder = ''
 	for x in range (0,len(flag_encrypted)):
