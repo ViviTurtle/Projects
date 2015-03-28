@@ -30,7 +30,8 @@ Key = Flag{erinsersmusicalmasterpiece}
 #VWXYZ
 #1234567
 
-'''python
+```python
+
 #at first tried printing every iteration
 flag_encrypted = 'EDINEDEMGEKEALMAEFEDBIECE'
 A = ['A','O','V']
@@ -74,5 +75,5 @@ while not done():
 		stringbuilder = stringbuilder  + getLetter(flag_encrypted[x],permutations[x])
 	print 'The Flag is ' + stringbuilder
 	next(0);
-'''python
+'''
 
