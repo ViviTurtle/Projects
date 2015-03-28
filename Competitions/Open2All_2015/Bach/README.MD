@@ -24,12 +24,16 @@ VWXYZ   FLATS
 Looking at the PNG and this key
 ERINERS MUSICAL MASTERPIECE! <- Omg it worked
 Key = Flag{erinsersmusicalmasterpiece}
+
+-Normal|Sharps|Naturals|Flats-A|B|C|D|E|F|G-H|I|J|K|L|M|N-O|P|Q|R|S|T|U-V|W|X|Y|Z
 #ABCDEFG
 #HIJKLMN
 #OPQRSTU
 #VWXYZ
 #1234567
 
+Bruteforce.py
+ ~ I had tried to brute force every possible iteration the code could become, but then I dropped this as it took too long.
 ```python
 
 #at first tried printing every iteration
