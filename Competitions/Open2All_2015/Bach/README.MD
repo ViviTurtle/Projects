@@ -27,7 +27,7 @@ Key = Flag{erinsersmusicalmasterpiece}
 
 
 |Normal|A|B|C|D|E|F|G|
-|------|-----|----|-----|-----|
+|------|-----|----|-----|-----|-----|-----|-----|
 |Sharps|H|I|J|K|L|M|N|
 |Naturals|O|P|Q|R|S|T|U|
 |Flats|V|W|X|Y|Z|
