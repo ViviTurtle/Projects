@@ -5,12 +5,12 @@ Haymarket
 ---------
 
 **Category:** Reversing **Points:** 150 **Solves:** 216 **Description:**
-```
-Monty Hall wrote a script of how he was supposed to run one of his game shows for his 
-trusty accounting computer some time ago, but hes not really sure what the punch 
-cards mean any more. I mean,that was a while ago. Only, hes sure his key is 
-hidden somewhere in these punch-cards,if he could figure out how to run them...
-```
+
+>Monty Hall wrote a script of how he was supposed to run one of his game shows for his 
+>trusty accounting computer some time ago, but hes not really sure what the punch 
+>cards mean any more. I mean,that was a while ago. Only, hes sure his key is 
+>hidden somewhere in these punch-cards,if he could figure out how to run them...
+
 
 BKPCTF_INTRO
 ----------------
