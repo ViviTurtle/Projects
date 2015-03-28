@@ -25,7 +25,12 @@ Looking at the PNG and this key
 ERINERS MUSICAL MASTERPIECE! <- Omg it worked
 Key = Flag{erinsersmusicalmasterpiece}
 
--Normal|Sharps|Naturals|Flats-A|B|C|D|E|F|G-H|I|J|K|L|M|N-O|P|Q|R|S|T|U-V|W|X|Y|Z
+|Normal|Sharps|Naturals|Flats|
+|-----|----|-----|-----
+|A|B|C|D|E|F|G|
+|H|I|J|K|L|M|N|
+|O|P|Q|R|S|T|U|
+|V|W|X|Y|Z|
 #ABCDEFG
 #HIJKLMN
 #OPQRSTU
