@@ -79,5 +79,4 @@ while not done():
 		stringbuilder = stringbuilder  + getLetter(flag_encrypted[x],permutations[x])
 	print 'The Flag is ' + stringbuilder
 	next(0);
-'''
 
