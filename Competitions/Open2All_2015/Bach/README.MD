@@ -19,7 +19,7 @@ Given that that there are four words my guess would be that it would contain som
 
 >The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
 
-I then wrote a script called bruteforce.py to bruteforce the last word because I had thought it would take too long to guess every possible combination if I tried guessing that "E" can be "L", "S" or "Z" and "A" can be "H "O" and "V". After about 5 minutes, I canceed the script because I realized it would take too long. I looked back at the image and was curious about why the naturals were there.I then saw the pattern!
+I then wrote a script called bruteforce.py to bruteforce the last word because I had thought it would take too long to guess every possible combination if I tried guessing that "E" can be "L", "S" or "Z" and "A" can be "H "O" and "V". After about 5 minutes, I canceled the script because I realized it would take too long. I looked back at the image and was curious about why the naturals were there.I then saw the pattern!
 
 |Normal|A|B|C|D|E|F|G|
 |------|-----|----|-----|-----|-----|-----|-----|
@@ -31,7 +31,6 @@ Deciphering the image, the sentence says, the flag is erinsersmusicalmasterpiece
 
 Bruteforce.py
 
- ~ I had tried to brute force every possible iteration the code could become, but then I dropped this as it took too long.
 ```python
 
 #at first tried printing every iteration
