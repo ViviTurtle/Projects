@@ -15,7 +15,7 @@ Inserting the answers to these questions greets us with another question (The in
 
 >You have 6.666667 seconds to solve this problem: -823 + -777
 
-From this we can assume two things. This problem is only going to get harder and harder as time goes on, and we will have to do this in an impossible time. In fact it did, towards the end I had to do Linear Equations in half a second. So what do we do? We pull out Python and make a script. If you guys know python you should know you can make socket connections using python like the code below.
+From this we can assume two things. This problem is only going to get harder and harder as time goes on, and we will have to do this in an impossible time. In fact it did, towards the end I had to do Linear Equations in half a second. So what do we do? We pull out Python and make a script. If you guys know python you should know you can make socket connections using python similar code below.
 
 
 ```python
