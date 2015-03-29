@@ -7,6 +7,8 @@ BACH: CRYPTO 150
 Note: the format is flag{secret_goes_here}
 8aec78b8dca5541b69d07404f1a6be68.tar.bz2
 
+![GitHub Logo](https://github.com/Flippinunit/Programming/blob/master/Competitions/Open2All_2015/Bach/f4923a0aa2a3cc07026e38f41b3cd673.png)
+
 Sight reading decoded
 FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
 
