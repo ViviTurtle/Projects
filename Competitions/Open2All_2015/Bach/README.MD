@@ -4,29 +4,23 @@ BACH: CRYPTO 150
 >Well, not quite...
 >Author: Eriner
 
-Note: the format is flag{secret_goes_here}
-8aec78b8dca5541b69d07404f1a6be68.tar.bz2
+This challenge was quite a simple Cryptography challenge given that it requires zero knowledge of ciphers or anything else related to cryptopgrahy. We were given a link to download the file : 8aec78b8dca5541b69d07404f1a6be68.tar.bz2 which contained a single image.
 
 ![GitHub Logo](https://github.com/Flippinunit/Programming/blob/master/Competitions/Open2All_2015/Bach/f4923a0aa2a3cc07026e38f41b3cd673.png)
 
-Sight reading decoded
+Given my piano background, I began to read the notes for what they were ignoring all the naturals thinking they had nothing to do with the code.
+
+Sight reading decoded (where '_' are rests)
+'''
 FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
+'''
+Given that that there are four words my guess would be that it would contain some kind of sentence. If you look at the second word, F-E#-A-G, it almost makes out to the word "FLAG". I began looking for a pattern noticed the "E#" would be considered an "L" which is one full cycle of 7 notes after "E". I looked further into this and tried deciphering the rest of the words.In other words my possible guess for this was
 
-Possible translation?
+'''
 The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
+'''
 
-Possible Combinations, Tried iterating everyone.
-Later saw the use for naturals in the png, and solved the code.
-
-ABCDEFG NORMALS
-HIJKLMN SHARPS
-OPQRSTU NATURALS
-VWXYZ   FLATS
-
-Looking at the PNG and this key
-ERINERS MUSICAL MASTERPIECE! <- Omg it worked
-Key = Flag{erinsersmusicalmasterpiece}
-
+I then wrote a script called bruteforce.py to bruteforce the last word because I had thought it would take too long to guess every possible combination if I tried guessing that "E" can be "L", "S" or "Z" and "A" can be "H "O" and "V". After about 5 minutes, I canceed the script because I realized it would take too long. I looked back at the image and was curious about why the naturals were there.I then saw the pattern!
 
 |Normal|A|B|C|D|E|F|G|
 |------|-----|----|-----|-----|-----|-----|-----|
@@ -34,7 +28,10 @@ Key = Flag{erinsersmusicalmasterpiece}
 |**Naturals**|O|P|Q|R|S|T|U|
 |**Flats**|V|W|X|Y|Z|
 
+Deciphering the image, the sentence says, the flag is erinsersmusicalmasterpiece. I inserted "Flag{erinsersmusicalmasterpiece}" to score my club another 150 points in the CTF.
+
 Bruteforce.py
+
  ~ I had tried to brute force every possible iteration the code could become, but then I dropped this as it took too long.
 ```python
 
