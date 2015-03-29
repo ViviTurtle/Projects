@@ -17,8 +17,8 @@ Inserting the answers to this greets us with another question (The integers were
 
 From this we can assume two things. This problem is going to get harder and harder as time goes on, and we well have almost to do this at an impossible time. So what do we do? We pull out Python and make a script. If you guys know python you should know you can make socket connections using python.
 
-'''
 
+'''
 #!/usr/bin/env python
 import time
 import socket
