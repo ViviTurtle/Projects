@@ -12,14 +12,12 @@ Given my piano background, I began to read the notes for what they were ignoring
 
 Sight reading:
 
-'''
-FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
-'''
+>FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
+
 Given that that there are four words my guess would be that it would contain some kind of sentence. If you look at the second word, F-E#-A-G, it almost makes out to the word "FLAG". I began looking for a pattern and I noticed the "E#" would be considered an "L" which is one full cycle of 7 notes after "E". I looked further into this and tried deciphering the rest of the words.In other words my possible guess for this was
 
-'''
-The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
-'''
+
+>The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
 
 I then wrote a script called bruteforce.py to bruteforce the last word because I had thought it would take too long to guess every possible combination if I tried guessing that "E" can be "L", "S" or "Z" and "A" can be "H "O" and "V". After about 5 minutes, I canceed the script because I realized it would take too long. I looked back at the image and was curious about why the naturals were there.I then saw the pattern!
 
