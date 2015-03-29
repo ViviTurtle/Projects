@@ -32,7 +32,9 @@ Deciphering the image, the sentence says, the flag is erinsersmusicalmasterpiece
 Bruteforce.py
 
 ```python
+#!/usr/bin/env python
 
+import sys
 #at first tried printing every iteration
 flag_encrypted = 'EDINEDEMGEKEALMAEFEDBIECE'
 A = ['A','O','V']
