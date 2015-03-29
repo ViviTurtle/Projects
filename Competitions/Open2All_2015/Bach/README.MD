@@ -10,11 +10,12 @@ This challenge was quite a simple Cryptography challenge given that it requires 
 
 Given my piano background, I began to read the notes for what they were ignoring all the naturals thinking they had nothing to do with the code.
 
-Sight reading decoded (where '_' are rests)
+Sight reading:
+
 '''
 FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
 '''
-Given that that there are four words my guess would be that it would contain some kind of sentence. If you look at the second word, F-E#-A-G, it almost makes out to the word "FLAG". I began looking for a pattern noticed the "E#" would be considered an "L" which is one full cycle of 7 notes after "E". I looked further into this and tried deciphering the rest of the words.In other words my possible guess for this was
+Given that that there are four words my guess would be that it would contain some kind of sentence. If you look at the second word, F-E#-A-G, it almost makes out to the word "FLAG". I began looking for a pattern and I noticed the "E#" would be considered an "L" which is one full cycle of 7 notes after "E". I looked further into this and tried deciphering the rest of the words.In other words my possible guess for this was
 
 '''
 The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
