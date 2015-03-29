@@ -8,7 +8,7 @@ Haymarket: Reversing 150 Writeup ~ BKPCTF 2015
 
 http://poopooturtle.blogspot.com/2015/03/haymarket-reversing-150-writeup-bkpctf.html
 
-Note: This is below copied from my blogspot, and fixed for github
+Note: Below was copied from my blogspot, and fixed for github
 
 This challenge was a fairly easy Reversing challenge. In simple terms all you had to do was read a a set of punch cards. We were first given this description. Monty Hall wrote a script of how he was supposed to run one of his game shows for his trusty accounting computer some time ago, but hes not really sure what the punch cards mean any more. I mean, that was a while ago. Only, hes sure his key is hidden somewhere in these punch-cards, if he could figure out how to run them...*
 
