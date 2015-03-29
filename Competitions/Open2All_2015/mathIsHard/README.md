@@ -5,17 +5,17 @@ Math is Hard: MISC 200
 
 >Author: gaffe
 
-This was a time consuming socket programming challenge. Given we were only given an IP and a port, I had assumed we should netcat into it. When you netcat into 104.131.107.153 on port 12121 we are greeted with a message.
+This was a time consuming socket programming challenge. Given we were only given an IP and a port, I assumed we should netcat into it. When you netcat into 104.131.107.153 on port 12121 we are greeted with a message.
 
 >Hey dude, can you help me with my math homework? I have a few addition problems to do...
 
 >You have 10.000000 seconds to solve this problem: 389 + -40
 
-Inserting the answers to this greets us with another question (The integers were always random).
+Inserting the answers to these questions greets us with another question (The integers were always random).
 
 >You have 6.666667 seconds to solve this problem: -823 + -777
 
-From this we can assume two things. This problem is going to get harder and harder as time goes on, and we well have almost to do this at an impossible time. In fact it did, towards the end I had to do Linear Equations in half a second. So what do we do? We pull out Python and make a script. If you guys know python you should know you can make socket connections using python like the code below.
+From this we can assume two things. This problem is only going to get harder and harder as time goes on, and we will to do this in an impossible time. In fact it did, towards the end I had to do Linear Equations in half a second. So what do we do? We pull out Python and make a script. If you guys know python you should know you can make socket connections using python like the code below.
 
 
 ```python
@@ -51,7 +51,6 @@ s.send(str(answer) + '\n')
 ```
 
 >...
->-1194551
 >You have 0.585277 seconds to solve this problem: -3680552 + -4035312
 >-7715864
 >Hey, nice job! Okay, we're done with the addition part, now it's going to get harder:
@@ -63,16 +62,24 @@ The next eight problems were Linear Equations.
 >734x + -737y = -293023
 >Enter the value of x:
 
-Given I am a Math minor, I made a function to solve linear equations using things substrings to pull out the digits using a similar function like addition. I pulled each digit out, and solved for x and y using multiplcation, addition, subtraction etc.... 
+Given I am a Math minor, I made a function to solve linear equations using substrings to pull out the digits and using a similar function like addition. I pulled each digit out, and solved for x and y using multiplcation, addition, subtraction etc.... 
 
+>You have 0.585277 seconds to solve the following system of equations:
+>-925x + -670y = -105565
+>734x + -737y = -293023
+>Enter the value of x:
+>2287667
+>Enter the value of y:
+>546000
 
 Lastly they gave me Calculus problems to solve. 
+
 >Thanks man. Hey uh, also, how much do you know about calculus?
 >You have 10.000000 seconds to calculate the derivative of the following equation for x = 6:
 >f(x) = 7x^4
 >Enter the value of f'(x):
 
-Again I made a script to pull the the digits from the numbers and solved the each question. After the final iteration, we are greeted with a message 
+Again I made a script to pull out digits from the numbers and solved each question. After the final iteration, we are greeted with a message 
 
 >Hey, thanks buddy! Here's a little somethin' for your trouble: flag{l3ts_g0_shOpP1ng}
 
