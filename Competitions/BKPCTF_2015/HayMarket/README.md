@@ -4,23 +4,35 @@ Haymarket: Reversing 150 Writeup ~ BKPCTF 2015
 >Monty Hall wrote a script of how he was supposed to run one of his game shows for his trusty accounting computer some time ago, but hes not really sure what the punch cards mean any more. I mean,that was a while ago. Only, hes sure his key is hidden somewhere in these punch-cards,if he could figure out how to run them...
 
 
-**Please refer to following link for my writeup**
+**Please refer to following link for my original writeup**
 
 http://poopooturtle.blogspot.com/2015/03/haymarket-reversing-150-writeup-bkpctf.html
 
+Note: This is below copied from my blogspot, and fixed for github
 
-
-
-Note below is copied and pasted from my actual blog. 
-
-*This challenge was a fairly easy Reversing challenge. In simple terms all you had to do was read a a set of punch cards. We were first given this description. Monty Hall wrote a script of how he was supposed to run one of his game shows for his trusty accounting computer some time ago, but hes not really sure what the punch cards mean any more. I mean, that was a while ago. Only, hes sure his key is hidden somewhere in these punch-cards, if he could figure out how to run them...*
+This challenge was a fairly easy Reversing challenge. In simple terms all you had to do was read a a set of punch cards. We were first given this description. Monty Hall wrote a script of how he was supposed to run one of his game shows for his trusty accounting computer some time ago, but hes not really sure what the punch cards mean any more. I mean, that was a while ago. Only, hes sure his key is hidden somewhere in these punch-cards, if he could figure out how to run them...*
 
 Along with a link to  
 http://bostonkeyparty.net/haymarket.tar.gz.fe35f59bfa869a0555e9972efa3ddd2d.
 
-If the above link is down, you can probably get it at my own GitHub so, after renaming the file to haymarket.tar.gz and extracting it via cmd line with "tar -zxvf haymarket.tar.gz" We were given 32 PNG's of punch cards. Doing what we hackers do best, I went and Googled how to read Punch Cards. I eventually found this fairly descriptive History of Punchcards (http://www.masswerk.at/keypunch/) . Sorry, but I have no time to read history. After more Googling, I found this virtual keyboard (http://www.masswerk.at/keypunch/). I figured I take my chances here and quickly learn the translation of keys to bullet points. Indeed, the translation went well. I quickly typed out every letter and every available punctuation to get a quick translation. 
+If the above link is down, you can probably get it at https://github.com/Flippinunit/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/haymarket.tar. 
 
-Now that I had the translation of bullets to ASCII, I just had to write a program. I Googled how to read images from Python and it was fairly simple. Using that code I got to business. I was of course missing things like rows, columns, RGB color, and pixel offesets. Most of these I was able to get looking at each image in GIMP's (a very bad free Linux version of Photoshop in my opinion) color picker and image properties. The hosts were kind enough to provide us with a uniform size and offset for each row and column. The first bullet was at (17,24), the next column was 7 pixels across, and the next row was 20 pixels down. The color of the bullets were RGB (20,20,20). All that was left was a simple nested for loop of recording RGB's and translating their row locations to ASCII. If you want to see the output for all the PNG's you can find it at My GitHub. After running my script on all the PNGs you get to a line that says display key(set alextrebekisasocialengineer) and indeed "alextrebekisasocialengineer" is the flag. Congratulations! I did it.
+So, after renaming the file to haymarket.tar.gz and extracting it via cmd line with "tar -zxvf haymarket.tar.gz" We were given 32 PNG's of punch cards. ![Punchcard 1](https://github.com/Flippinunit/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/L1.png)
+
+![Punchcard 20](https://github.com/Flippinunit/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/L20.png)
+
+Doing what we hackers do best, I went and Googled how to read Punch Cards. I eventually found this fairly descriptive History of Punchcards (http://www.masswerk.at/keypunch/) . Sorry, but I have no time to read history. After more Googling, I found this virtual keyboard (http://www.masswerk.at/keypunch/). I figured I take my chances here and quickly learn the translation of keys to bullet points. Indeed, the translation went well. I quickly typed out every letter and every available punctuation to get a quick translation. 
+
+
+![Virtual Keyboard](https://github.com/Flippinunit/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/Keyboard.png)
+
+
+Now that I had the translation of bullets to ASCII, I just had to write a program. I Googled how to read images from Python and it was fairly simple. Using that code I got to business. I was of course missing things like rows, columns, RGB color, and pixel offesets. Most of these I was able to get looking at each image in GIMP's (a very bad free Linux version of Photoshop in my opinion) color picker and image properties. 
+
+
+![Virtual Keyboard](https://github.com/Flippinunit/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/GIMP.png)
+
+The hosts were kind enough to provide us with a uniform size and offset for each row and column. The first bullet was at (17,24), the next column was 7 pixels across, and the next row was 20 pixels down. The color of the bullets were RGB (20,20,20). All that was left was a simple nested for loop of recording RGB's and translating their row locations to ASCII. If you want to see the output for all the PNG's you can find it at My GitHub. After running my script on all the PNGs you get to a line that says display key(set alextrebekisasocialengineer) and indeed "alextrebekisasocialengineer" is the flag. Congratulations! I did it.
 
 In conclusion, I would like to thank Boston Key Party 2015 for this great challenge. It was a great way for me to refresh my Python programming while learning about punch cards. Again I look forward for next years competition.
 
