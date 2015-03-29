@@ -14,7 +14,7 @@ Sight reading:
 
 >FA#E _FE#AG_B#E _ EDB#G#EDEF#GED#EAE#F#AEFEDBB#ECE
 
-Given that that there are four words my guess would be that it would contain some kind of sentence. If you look at the second word, F-E#-A-G, it almost makes out to the word "FLAG". I began looking for a pattern and I noticed the "E#" would be considered an "L" which is one full cycle of 7 notes after "E". I looked further into this and tried deciphering the rest of the words.In other words my possible guess for this was
+Given that that there are four words my guess would be that it would contain some kind of sentence. If you look at the second word, F-E#-A-G, it almost makes out to the word "FLAG". I began looking for a pattern and I noticed the "E#" would be considered an "L" which is one full cycle of 7 notes after "E". In other words, given that A-G were given, than "A" can also be "H", and "B" can be "I" and so forth. I looked further into this and tried deciphering the rest of the words.My possible guess for this was
 
 
 >The Flag is .... EDINEDEMGEKEALMAEFEDBIECE
