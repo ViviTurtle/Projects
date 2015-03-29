@@ -51,32 +51,47 @@ s.send(str(answer) + '\n')
 ```
 
 >...
+
 >You have 0.585277 seconds to solve this problem: -3680552 + -4035312
+
 >-7715864
+
 >Hey, nice job! Okay, we're done with the addition part, now it's going to get harder:
 
 The next eight problems were Linear Equations. 
 
 >You have 10.000000 seconds to solve the following system of equations:
+
 >-925x + -670y = -105565
+
 >734x + -737y = -293023
+
 >Enter the value of x:
 
 Given I am a Math minor, I made a function to solve linear equations using substrings to pull out the digits and using a similar function like addition. I pulled each digit out, and solved for x and y using multiplcation, addition, subtraction etc.... 
 
 >You have 0.585277 seconds to solve the following system of equations:
+
 >-925x + -670y = -105565
+
 >734x + -737y = -293023
+
 >Enter the value of x:
+
 >2287667
+
 >Enter the value of y:
+
 >546000
 
 Lastly they gave me Calculus problems to solve. 
 
 >Thanks man. Hey uh, also, how much do you know about calculus?
+
 >You have 10.000000 seconds to calculate the derivative of the following equation for x = 6:
+
 >f(x) = 7x^4
+
 >Enter the value of f'(x):
 
 Again I made a script to pull out digits from the numbers and solved each question. After the final iteration, we are greeted with a message 
