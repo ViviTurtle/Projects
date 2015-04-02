@@ -27,7 +27,7 @@ So, after renaming the file to haymarket.tar.gz and extracting it via cmd line w
 Doing what we hackers do best, I went and Googled how to read Punch Cards. I eventually found this fairly descriptive History of Punchcards (http://www.masswerk.at/keypunch/) . Sorry, but I have no time to read history. After more Googling, I found this virtual keyboard (http://www.masswerk.at/keypunch/). I figured I take my chances here and quickly learn the translation of keys to bullet points. Indeed, the translation went well. I quickly typed out every letter and every available punctuation to get a quick translation. 
 
 
-![Virtual Keyboard](https://github.com/FViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/Keyboard.png)
+![Virtual Keyboard](https://github.com/ViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/Keyboard.png)
 
 
 Now that I had the translation of bullets to ASCII, I just had to write a program. I Googled how to read images from Python and it was fairly simple. Using that code I got to business. I was of course missing things like rows, columns, RGB color, and pixel offesets. Most of these I was able to get looking at each image in GIMP's (a very bad free Linux version of Photoshop in my opinion) color picker and image properties. 
