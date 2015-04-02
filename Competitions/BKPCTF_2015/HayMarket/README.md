@@ -16,7 +16,7 @@ This challenge was a fairly easy Reversing challenge. In simple terms all you ha
 Along with a link to  
 http://bostonkeyparty.net/haymarket.tar.gz.fe35f59bfa869a0555e9972efa3ddd2d.
 
-If the above link is down, you can probably get it at https://github.com/Flippinunit/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/haymarket.tar. 
+If the above link is down, you can probably get it at https://github.com/ViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/haymarket.tar. 
 
 So, after renaming the file to haymarket.tar.gz and extracting it via cmd line with "tar -zxvf haymarket.tar.gz" We were given 32 PNG's of punch cards. 
 
