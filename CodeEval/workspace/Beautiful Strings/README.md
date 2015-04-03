@@ -42,7 +42,7 @@ Print out the maximum beauty for the string. E.g.
 
 >729
 
->>646
+>646
 
 Main.java
 ```java
