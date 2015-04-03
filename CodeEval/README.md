@@ -5,7 +5,7 @@ CodeEval
 
 **Current Profile:** http://www.codeeval.com/profile/ViviTurtle/
 
-**Past Achievements: **
+**Past Achievements:**
       
       Top 20% Overall
       
@@ -13,13 +13,13 @@ CodeEval
 
 **Current Rankings:**
       
-      **Code rank:** 2884/6K +3274in the last 30 days
+      Code rank: 2884/6K +3274in the last 30 days
 
-      **Completions:** 31/189 
+      Completions: 31/189 
 
-      **Memory usage rank:** 2865/6158 
+      Memory usage rank: 2865/6158 
 
-      **Code speed rank:** 1359/6158 
+      Code speed rank: 1359/6158 
 
 
 **Personal Choice of Showcase:**
