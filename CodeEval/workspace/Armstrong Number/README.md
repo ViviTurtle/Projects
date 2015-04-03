@@ -27,9 +27,13 @@ Print out True/False if the number is an Armstrong number or not. E.g.
 >False
 
 1) Scanned each digit and saved them as an int
+
 2) Counted how many digits there
+
 3) Took each individual digit and did a power to the answer  to step 2
+
 4) Added all then numbers from step 3 together
+
 
 Main.java
 ```java
