@@ -1,4 +1,4 @@
-Armstrong Numbers
+Armstrong Numbers (**Solved**)
 --------------------
 
 CodeEval: https://www.codeeval.com/open_challenges/82/
