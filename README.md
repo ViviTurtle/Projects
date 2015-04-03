@@ -11,7 +11,7 @@ CodeEval is "The worlds most advanced code evaluation platform is also a treasur
 
 InfoSec
 -----------
-Personal Project of mine where I created https://www.sjsufinfosecurity.com. It is was written in .NET, C#, and SQL and implements samples of Cross Site Scripting, Brute Forcing passwords, and SQL injections
+Personal Project of mine where I created http://www.sjsufinfosecurity.com. It is was written in .NET, C#, and SQL and implements samples of Cross Site Scripting, Brute Forcing passwords, and SQL injections
 
 OverTheWire
 -----------
