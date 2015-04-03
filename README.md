@@ -6,7 +6,7 @@ All my personal home projects
 CodeEval/Workspace
 -----------
 CodeEval is "The worlds most advanced code evaluation platform is also a treasure trove of hacker deals, job offers, and networking. This is what a programmer community feels like when the leash breaks."
-**Profile:** https://www.codeeval.com/profile/Flippinunit/
+**Profile:** https://www.codeeval.com/profile/ViviTurtle/
 
 InfoSec
 -----------
