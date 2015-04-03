@@ -1,6 +1,9 @@
-Calculate Distance
+Calculate Distance :
 -------------------
+ **Solved**
 https://www.codeeval.com/open_challenges/99/
+
+
 
 **Challenge Description:**
 
