@@ -1,22 +1,26 @@
 CodeEval
 ===========
 
+>CodeEval is a platform used by developers to showcase their skills. Developers can participate in app building competitions and win cash/prizes. They can also solve programming challenges as a way to impress employers with their technical skills. Employers can use CodeEval as a way to enhance their brand by launching competitions/programming challenges and as a means to get introduced to the best developers.
+
 Current Profile:  http://www.codeeval.com/profile/ViviTurtle/
 
-Past Achievements: Top 20% Overall, Top 15% Java
+Past Achievements: 
+      
+      Top 20% Overall 
+      
+      Top 15% Java
 
-Current Rankings
+Current Rankings:
 
-Code rank:
-2884/6K +3274in the last 30 days
+  Code rank: 2884/6K +3274in the last 30 days
 
-31/189 completions
-2865/6158 memory usage
-1359/6158 code speed
+  completions: 31/189 
 
+  memory usage rank: 2865/6158 
 
+  Code speed rank: 1359/6158 
 
->CodeEval is a platform used by developers to showcase their skills. Developers can participate in app building competitions and win cash/prizes. They can also solve programming challenges as a way to impress employers with their technical skills. Employers can use CodeEval as a way to enhance their brand by launching competitions/programming challenges and as a means to get introduced to the best developers.
 
 Personal Choice of Showcase:
 
