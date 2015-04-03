@@ -1,4 +1,4 @@
-Capitalize Words(**Solved**)
+Capitalize Words (**Solved**)
 -----------------------------
 https://www.codeeval.com/open_challenges/93/
 
