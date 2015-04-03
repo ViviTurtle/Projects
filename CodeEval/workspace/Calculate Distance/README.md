@@ -1,4 +1,4 @@
-Calculate Distance ( **Solved**):
+Calculate Distance (**Solved**):
 -------------------
 
  
