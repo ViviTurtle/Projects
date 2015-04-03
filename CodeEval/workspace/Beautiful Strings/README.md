@@ -5,7 +5,7 @@ Link: https://www.codeeval.com/open_challenges/83/
 
 Note: Attempted, still needs to finish
 
-Challange Description:
+**Challange Description:**
 
 >Credits: This problem appeared in the Facebook Hacker Cup 2013 Hackathon.
 
