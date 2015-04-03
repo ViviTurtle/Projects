@@ -6,7 +6,7 @@ https://www.codeeval.com/open_challenges/93/
 
 >Write a program which capitalizes the first letter of each word in a sentence.
 
-Input sample:
+**Input sample:**
 
 Your program should accept as its first argument a path to a filename. Input example is the following
 
@@ -18,7 +18,7 @@ Your program should accept as its first argument a path to a filename. Input exa
 
 >1st thing
 
-Output sample:
+**Output sample:**
 
 Print capitalized words in the following way.
 
@@ -30,6 +30,7 @@ Print capitalized words in the following way.
 
 >1st Thing
 
+Main.java
 ```java
 import java.io.File;
 import java.io.FileNotFoundException;
