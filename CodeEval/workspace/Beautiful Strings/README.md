@@ -1,9 +1,8 @@
-Challenge Description:
+Challenge Description: (***Currently Working on it***)
 -------------------------
 
 Link: https://www.codeeval.com/open_challenges/83/
 
-Note: Attempted, still needs to finish
 
 **Challange Description:**
 
