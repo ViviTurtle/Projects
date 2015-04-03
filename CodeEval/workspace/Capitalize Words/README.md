@@ -2,7 +2,7 @@ Capitalize Words(**Solved**)
 -----------------------------
 https://www.codeeval.com/open_challenges/93/
 
-**Challenge Description:*
+**Challenge Description:**
 
 >Write a program which capitalizes the first letter of each word in a sentence.
 
