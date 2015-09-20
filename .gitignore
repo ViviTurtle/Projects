@@ -240,3 +240,4 @@ Logon.aspx.cs
 ReCaptchaClass.cs
 Register.aspx.cs
 *.cs
+*.img
