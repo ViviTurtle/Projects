@@ -1,7 +1,7 @@
 CSAW 2015
 =========================
 
-[Transfer](Transfer).
+[Transfer](Transfer)
 ---------
 
 **Category:** Forensics **Points:** 100 **Solves:** 545 **Description:**
@@ -13,7 +13,7 @@ CSAW 2015
 
 
 
-[Flash](Flash).
+[Flash](Flash)
 ---------
 
 **Category:** Forensics **Points:** 100 **Solves:** 800 **Description:**
@@ -25,7 +25,7 @@ CSAW 2015
 
 
 
-[Keep Calm and CTF](Keep Calm and CTF).
+[Keep Calm and CTF](Keep Calm and CTF)
 ---------
 
 **Category:** Forensics **Points:** 100 **Solves:** 1060 **Description:**
@@ -38,7 +38,7 @@ CSAW 2015
 
 
 
-[Alexander Cohen](Alexander Cohen).
+[Alexander Cohen](Alexander Cohen)
 ---------
 
 **Category:** Recon **Points:** 100 **Solves:** 420 **Description:**
@@ -47,7 +47,7 @@ CSAW 2015
 
 
 
-[Julian Cohen](Julian Cohen).
+[Julian Cohen](Julian Cohen)
 ---------
 
 **Category:** Recon **Points:** 100 **Solves:** 880 **Description:**
