@@ -10,6 +10,7 @@ Keep Calm and CTF: Forensics 100
 
 This one had a super easy solution. First it gave us a jpg. 
 ![img.jpg](img.jpg)
+
 First thing I always do is run strings
 
 >strings img.jpg | grep flag
