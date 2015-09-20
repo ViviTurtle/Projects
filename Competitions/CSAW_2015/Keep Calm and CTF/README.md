@@ -6,9 +6,11 @@ Keep Calm and CTF: Forensics 100
 
 >Note: this flag doesn't follow the "flag{}" format
 
->![img.jpg](img.jpg)
+>[img.jpg](img.jpg)
 
-This one had a super easy solution. First it gave us a jpg. First thing I always do is run strings
+This one had a super easy solution. First it gave us a jpg. 
+![img.jpg](img.jpg)
+First thing I always do is run strings
 
 >strings img.jpg | grep flag
 
