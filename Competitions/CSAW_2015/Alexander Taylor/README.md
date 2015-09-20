@@ -3,7 +3,7 @@ Alexander Taylor: Recon 100
 
 > [http://fuzyll.com/csaw2015/start](http://fuzyll.com/csaw2015/start)
 
-Yay more Recon. For those that don't know what recon is, it is pretty much what you would call information gathering. You always do recon when you first do a pentest to get a scope of your target. In that way, the more information you have, the better ways you can exploit weaknesses, whether the weakness is a phishing attack or some physical penetration test. In this question we have to do some Reconnaissance on Alexander Taylor. 
+Yay more Recon. For those that don't know what recon is, it is pretty much what you would call information gathering. You always first do recon when you do a pentest to get a scope of your target. In that way, the more information you have, the better ways you develop weaknesses, whether the weakness is a phishing attack or some physical penetration test. In this question we have to do some Reconnaissance on Alexander Taylor. 
 
 This time around we are given a link. 
 
@@ -13,7 +13,10 @@ This time around we are given a link.
 
 Upon entering link we are greeted with just a few lines of text:
 
-> CSAW 2015 FUZYLL RECON PART 1 OF ?: Oh, good, you can use HTTP! The next part is at /csaw2015/<the acronym for my university's hacking club>.
+```
+ CSAW 2015 FUZYLL RECON PART 1 OF ?: Oh, good, you can use HTTP! The next part is at /csaw2015/<the acronym for my universitys hacking club>
+```
+
 
 From here we can google "Alexander Taylor" After looking through some github pages, twitter, and possible facebook, I started thinking, where is a sure place for Mr. Taylor to have his school? !! **HIS LINKEDIN**
 
@@ -29,7 +32,7 @@ Previous:	The Brand Book, Sypris Electronics, LLC, University of South Florida
 Education: 	University of South Florida
 ```
 
-Aftet which we can google "University of south florida hacking club" which brings us to:
+After which we can google "University of south florida hacking club" which brings us to:
 
 [Whitehatters Computer Security Club](http://www.wcsc.usf.edu/)
 ![wcsc](wcsc.png)
@@ -42,8 +45,9 @@ Moving onto [http://fuzyll.com/csaw2015/wcsc](http://fuzyll.com/csaw2015/wcsc) W
 
 This is obviously Base64 encoding so putting that into an online decoder such as [https://www.base64decode.org/](https://www.base64decode.org/) we get:
 
->Nice work! The next part is at /csaw2015/<my super smash brothers main>.
-
+```
+Nice work! The next part is at /csaw2015/<my super smash brothers main>.
+```
 I googled "Fuzyll Smash" and arrived at a few [YouTube](https://www.youtube.com/watch?v=59QQ9UevSuE) Pages.
 
 ![youtube](youtube.png)
@@ -53,7 +57,7 @@ The answer here is from the title is Yoshi:
 		> Smash 4 Weekly (2015-08-07) - Fuzyll (Yoshi) vs. Stiitch (Ike)
 
 
-One step closer, we move on to the next page. [http://fuzyll.com/csaw2015/yoshi](http://fuzyll.com/csaw2015/yoshi) We see a picture of yoshi here. 
+One step closer, we move on to the next page: [http://fuzyll.com/csaw2015/yoshi](http://fuzyll.com/csaw2015/yoshi). We see a picture of yoshi here. 
 ![Yoshi](yoshi.txt)
 
 Noticing we have a picture, a good step would probably be to look at the metadeta. After downloading the picture, you can either upload it to [Jeffrey's Exif viewer](http://regex.info/exif.cgi) or run exiftool, a tool to look at metadeta for like everything.
@@ -89,12 +93,14 @@ Image Size                      : 500x537
 ```
 
 Looking at the comment we need to find the cryptosystem he did in his first defcon.:
+```
+Comment: CSAW 2015 FUZYLL RECON PART 3 OF ?: Isn't Yoshi the best?! The next egg in your hunt can be found at /csaw2015/<the cryptosystem I had to break in my first defcon qualifier>.
+```
 
-> Comment: CSAW 2015 FUZYLL RECON PART 3 OF ?: Isn't Yoshi the best?! The next egg in your hunt can be found at /csaw2015/<the cryptosystem I had to break in my first defcon qualifier>.
-
-From here I googled every iteration with words like fuzyll, decon, qualifier, cryptography, writeups, cryptosystem, but nothing showed up.I then started to guess since they isn't that many to guess with.
+From here I googled every iteration with words like fuzyll, decon, qualifier, cryptography, writeups, and cryptosystem, but nothing showed up.I then started to guess since they isn't that many to guess with. Some examples include:
 
 >http://fuzyll.com/csaw2015/rsa
+
 >http://fuzyll.com/csaw2015/enigma
 
 Enigma somehow worked. Going on to [http://fuzyll.com/csaw2015/enigma](http://fuzyll.com/csaw2015/enigma). We are greeted with another text.
@@ -110,7 +116,7 @@ Enigma somehow worked. Going on to [http://fuzyll.com/csaw2015/enigma](http://fu
 		console.log(c);
 ```
 
-Looks like he took some input and xor'd with the hex character '0x4'. If you guys know your cryptography you can xor with '0x4 again to get the original text'(Crpypto 101)
+Looks like he took some input and xor'd it with the hex character '0x4'. If you guys know your cryptography you can xor with '0x4 again to get the original text'(Crpypto 101)
 
 I modified the js to pretty much do the same exact thing, but with the string given.
 
@@ -125,7 +131,7 @@ for (i = 0; i < s.length; i++)
 alert(c);
 ```
 
-I put this code into [An online javascript interpreter](http://www.webtoolkitonline.com/javascript-tester.html) and was given the string
+I put this code into [an online javascript interpreter](http://www.webtoolkitonline.com/javascript-tester.html) and was given the string
 
 > The next stop on your quest is: /csaw2015/they_see_me_rollin
 
