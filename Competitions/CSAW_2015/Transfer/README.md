@@ -19,7 +19,7 @@ All we got was
 
 >flag{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
 
-After that didn't work, I inspected it in wireshark, our great packet inspection tool, and was given a huge list packets(2000 to be exact).I spent some time following several TCP streams (right click packet -> Follow TCP Stream) and we can see the packets included traffic from reddit, facebook and symantec to name a few. 
+After that didn't work, I inspected it in wireshark, our great packet inspection tool, and was given a huge list of packets(2000 to be exact).I spent some time following several TCP streams (right click packet -> Follow TCP Stream) and we can see the packets included traffic from reddit, facebook and symantec to name a few. 
 
 ![Example](Example.png)
 
@@ -28,7 +28,7 @@ When we get to packets 150-300ish, we see something very interesting.
 ![Python](Python.png)
 
 We can clearly see the flag is somewhere in there, so I saved the file on my pc.
-After dissecting what this it is clearly python code in which some "flag" was encrypted with caesar ciphers, rot13, and base64, all of which are broken.
+After dissecting what this is it clearly python code in which some "flag" was encrypted with caesar ciphers, rot13, and base64, all of which are broken.
 
 ```python
 import string
@@ -81,7 +81,7 @@ for cnt in xrange(cnt):
 _tmp = globals()[c](tmp)
 ```
 
-For those of you new to cryptography, caesar cipher is simple a shift of characters. In this case the default value was 3, so "A" would become "D" and "B" would be come "E". Rot13 is pretty much the same thing but with 13 letters. Lastly, Base64 is just a way of encoding data to use the full alphabet from a-z, A-Z and 0-1, and a few punctuations. In this way data can be represented not just with A-Z and A-F (Hexadecmial) or just ASCII.
+For those of you new to cryptography, caesar cipher is a simple shift of characters. In this case the default value was 3, so "A" would become "D" and "B" would be come "E". Rot13 is pretty much the same thing but with 13 letters. Lastly, Base64 is just a way of encoding data to use the full alphabet from a-z, A-Z and 0-1, and a few punctuations. In this way data can be represented not just with A-Z and A-F (Hexadecmial) or just ASCII.
 
 After it was applied, it appended the index+1 of the cipher in enc_ciphers to signify which cipher was done 
 
