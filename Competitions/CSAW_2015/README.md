@@ -1,7 +1,7 @@
 CSAW 2015
 =========================
 
-[a relative link](Transfer). Upon inspection we were given a huge list
+[Transfer](). Upon inspection we were given a huge list
 ---------
 
 **Category:** Forensics **Points:** 100 **Solves:** 545 **Description:**
