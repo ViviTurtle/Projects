@@ -17,7 +17,7 @@ First thing I always do is run strings
 
 Nothing popped up.
 
-Next thing you always do for any kind of picture, well any forensics for that matter is look at metadeta. Simply upload the data to [Jeffrey's Exif viewer](http://regex.info/exif.cgi) or we can use some tools we gathered over years of experience (LOL) such as "exiftool", a tool to look at metadeta for everything.
+Next thing you always do for any kind of picture, well any forensics for that matter is look at metadeta. Simply upload the data to [Jeffrey's Exif viewer](http://regex.info/exif.cgi) or use some tools we gathered over years of experience (LOL) such as "exiftool", a tool to look at metadeta for everything.
 
 >exiftool img.jpg
 
