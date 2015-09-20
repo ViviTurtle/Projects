@@ -2,9 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <h1>Contact</h1>
+     <script src='https://www.google.com/recaptcha/api.js'></script>
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">"
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <style>
         .required {
         }
@@ -13,9 +14,7 @@
             width: 112px;
         }
 
-        .extra_edit {
-            text-align: left;
-        }
+      
 
         .required {
             color: red;
@@ -35,7 +34,7 @@
         <table class="extra_edit">
 
             <tr>
-                <td class="auto-extra_edit">
+                <td class="auto-style1">
                     <asp:Label ID="lblName" runat="server" Text="Name: "></asp:Label>
                 </td>
                 <td>
@@ -68,18 +67,21 @@
                     <asp:Label ID="lblComment" runat="server" Text="Comment: "></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="txtComment" runat="server" Height="102px" Width="265px"></asp:TextBox>
+                    <textarea runat="server" id="txtComment2" style="width: 240px; height: 102px;"></textarea>
+                 
                     <asp:Label ID="Label2" ForeColor="red" runat="server" Text="*"></asp:Label>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="required" ControlToValidate="txtComment" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="required" ControlToValidate="txtComment2" runat="server" ErrorMessage="Required"></asp:RequiredFieldValidator>
                 </td>
             </tr>
         </table>
+           <div class="g-recaptcha offset1" data-sitekey="6LfF5AUTAAAAACnlxGweotO7HMXx2kbyE-j-P9CT"></div>
+        <br />
         <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Email" />
       
     </div>
 
     <div class="span5">
-        <asp:Image ID="Image1" runat="server" ImageUrl="/images/Mail.png" height="300" width="300" />
+        <asp:Image ID="Image1" runat="server" ImageUrl="/images/Mail.png" height="300" width="300"  CssClass="mobileHide"/>
     </div>
 
    

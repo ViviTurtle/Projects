@@ -67,7 +67,7 @@
     <div class="span8">
         <div></div>
         <%--PRESIDENT--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -93,7 +93,7 @@
         </div>
         <%--Vice President--%>
 
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -119,20 +119,20 @@
 
 
         <%--CTF LEAD--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
                     <td class="auto-style5"></td>
                     <td class="auto-style6">&nbsp;<asp:Label Font-Bold="true" Font-Size="Larger" ID="Label1" runat="server" Text="CTF Lead: Vivi Langga"></asp:Label>
-                        <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/anthonylangga" data-related="false"></script>
+                        <script type="IN/MemberProfile" data-format="hover" data-id="http://www.linkedin.com/in/vivilangga" data-related="false"></script>
                         <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Club Logo.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Vivi.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
@@ -145,7 +145,7 @@
         </div>
 
         <%--Treasurer--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -171,7 +171,7 @@
 
 
         <%--Public Relations--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -198,7 +198,7 @@
         </div>
 
         <%--SECRETARY--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -225,7 +225,7 @@ Hansen Wu is a first year undergraduate student at SJSU majoring in CS and takin
 
         </div>
         <%--VP of Marketing--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>

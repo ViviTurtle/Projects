@@ -36,6 +36,11 @@ namespace WebApplication5
                 Label5.Text = "Email Address: " + objDS.Tables[0].Rows[0]["EMAIL"].ToString();
                 Label6.Text = "Phone Number: " + objDS.Tables[0].Rows[0]["PHONE_NUMBER"].ToString();
                 Label7.Text = "Major: " + objDS.Tables[0].Rows[0]["MAJOR"].ToString();
+
+                if (Label1.Text == "Username: Admin")
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "congrats", "alert('Congratulations, You got it!');", true);
+                }
             //}
             //else
             //{

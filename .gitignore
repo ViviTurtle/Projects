@@ -230,6 +230,12 @@ UpgradeLog*.htm
 FakesAssemblies/
 Web.config
 Websites/InfoSec/WebApplication5/Contact.aspx.cs
+Websites/InfoSec/WebApplication5/Logon.aspx.cs
+Websites/InfoSec/WebApplication5/Register.aspx.cs
+Websites/InfoSec/WebApplication5/ReCaptchaClass.cs
 Websites/InfoSec/WebApplication5/Web.config
 Web.config
 Contact.aspx.cs
+Logon.aspx.cs
+ReCaptchaClass.cs
+Register.aspx.cs

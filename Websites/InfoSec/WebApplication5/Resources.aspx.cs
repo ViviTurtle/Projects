@@ -16,6 +16,7 @@ namespace WebApplication5
         protected void rebind(object sender, EventArgs e)
         {
             gvRESOURCES.DataBind();
+            gvResources_mobile.DataBind();
         }
     }
 }

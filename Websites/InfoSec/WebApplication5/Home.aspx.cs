@@ -25,5 +25,10 @@ namespace WebApplication5
         {
             Response.Redirect("https://www.linkedin.com/groups/InfoSec-Club-6689971");
         }
+        protected void redirect_yt(object sender, EventArgs e)
+        {
+            Response.Redirect("https://www.youtube.com/channel/UCDNzNvZlYK8jZLsUbdiGrsQ");
+        }
+        
     }
 }

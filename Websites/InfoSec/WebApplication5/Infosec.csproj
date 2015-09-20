@@ -39,6 +39,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Services" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -59,18 +63,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Account.aspx" />
     <Content Include="Advisors.aspx" />
     <Content Include="Apologies.aspx" />
+    <Content Include="Confirmation.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\bootstrap-combined.no-icons.min.css" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\main.css" />
     <Content Include="css\Open_Sans.css" />
+    <Content Include="css\slicknav.css" />
     <Content Include="css\social-buttons.css" />
     <Content Include="css\Ubuntu.css" />
     <Content Include="Error.aspx" />
     <Content Include="Events.aspx" />
     <Content Include="FAQ.aspx" />
+    <Content Include="images\Vivi.jpg" />
     <Content Include="images\Austin.jpg" />
     <Content Include="images\Dustin.jpeg" />
     <Content Include="images\Flora.jpg" />
@@ -107,14 +115,17 @@
     <Content Include="images\Shirt Logo.jpg" />
     <Content Include="images\Shirt Logo2.jpg" />
     <Content Include="images\Shit Back.png" />
+    <Content Include="images\Youtube_logo.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.slicknav.min.js" />
     <Content Include="js\LinkedIn.js" />
+    <Content Include="OfficerPages\MemberList.aspx" />
     <Content Include="Pass.aspx" />
     <Content Include="Team2014.aspx" />
+    <Content Include="test.aspx" />
     <Content Include="Vulnerable1.aspx" />
     <Content Include="Register.aspx" />
-    <Content Include="Vulnerable3.aspx" />
     <Content Include="Vulnerable3_2.aspx" />
     <Content Include="Vulnerable4.aspx" />
     <Content Include="Web.config">
@@ -124,7 +135,7 @@
     <Content Include="Home.aspx" />
     <Content Include="Team2013.aspx" />
     <Content Include="Resources.aspx" />
-    <Content Include="Login.aspx" />
+    <Content Include="Logon.aspx" />
     <Content Include="XSS.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +145,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
     </Compile>
     <Compile Include="Advisors.aspx.cs">
       <DependentUpon>Advisors.aspx</DependentUpon>
@@ -148,6 +166,13 @@
     </Compile>
     <Compile Include="Apologies.aspx.designer.cs">
       <DependentUpon>Apologies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.aspx.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation.aspx.designer.cs">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -177,6 +202,13 @@
     <Compile Include="FAQ.aspx.designer.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OfficerPages\MemberList.aspx.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OfficerPages\MemberList.aspx.designer.cs">
+      <DependentUpon>MemberList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pass.aspx.cs">
       <DependentUpon>Pass.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,12 +217,20 @@
       <DependentUpon>Pass.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReCaptchaClass.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vulnerable5.aspx.cs">
       <DependentUpon>Vulnerable5.aspx</DependentUpon>
@@ -241,13 +281,6 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vulnerable3.aspx.cs">
-      <DependentUpon>Vulnerable3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vulnerable3.aspx.designer.cs">
-      <DependentUpon>Vulnerable3.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Vulnerable3_2.aspx.cs">
       <DependentUpon>Vulnerable3_2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -262,12 +295,12 @@
     <Compile Include="Vulnerable4.aspx.designer.cs">
       <DependentUpon>Vulnerable4.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Logon.aspx.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Logon.aspx.designer.cs">
+      <DependentUpon>Logon.aspx</DependentUpon>
     </Compile>
     <Compile Include="XSS.aspx.cs">
       <DependentUpon>XSS.aspx</DependentUpon>
@@ -279,6 +312,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site1.Master" />
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\lol.pubxml" />
     <None Include="Properties\PublishProfiles\Test.pubxml" />
     <None Include="Web.Debug.config">

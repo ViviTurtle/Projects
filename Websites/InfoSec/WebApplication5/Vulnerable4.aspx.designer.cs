@@ -58,13 +58,13 @@ namespace WebApplication5 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ddlRATE_VALIDATOR;
         
         /// <summary>
-        /// tbFAVORITE control.
+        /// tbFAVORITE2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbFAVORITE;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbFAVORITE2;
         
         /// <summary>
         /// tbFAVORITE_VALIDATOR control.
@@ -112,13 +112,13 @@ namespace WebApplication5 {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ddlOFFICER_VALIDATOR;
         
         /// <summary>
-        /// tbWHY control.
+        /// tbWHY2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbWHY;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbWHY2;
         
         /// <summary>
         /// tbWHY_VALIDATOR control.

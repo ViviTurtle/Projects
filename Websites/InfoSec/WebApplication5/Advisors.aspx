@@ -62,8 +62,8 @@
 
     <div class="span8">
         <div></div>
- 
-        <div class="span9 offset1 copy copy-right">
+ <%--Virginia--%>
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -88,8 +88,8 @@
 
 
         </div>
-        <%--Vice President--%>
-        <div class="span9 offset1 copy copy-right">
+        <%--Tom Austin--%>
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>

@@ -32,6 +32,21 @@
             border: 2px solid #808080;
             padding: 10px;
         }
+
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+        }
+
+            .videoWrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
     </style>
 
     <div class="span2">
@@ -39,25 +54,23 @@
 
             <h1>Annoucements</h1>
             <p>
-                Cisco Meeting was wonderful! Should be in the blog soon.
+                The club is attending STEM's CyberGirlz Silicon Valley on May 2nd at the Student Union Ballroom. We will be networking with industry representives and supporting middle school students do there first CTF.
             </p>
             <br />
             <p>
-                Boston Key Party CTF this weekend. Please check our facebook for more information
+                Modules have been updated to require a Login. Please register an account. (Passwords are securely hashed don't worry)
             </p>
             <br />
             <p>
-               ITUS Networks is coming on 2/26 looking for volunteer internships for blackbox pentesting.
-            </p>
-              <br />
-              <p>
-               InfoSec Club is going to DefCon this summer. Please email: Anthony.Langga@sjsu.edu for more information
+                New Officers! Please check the blog for more info
             </p>
 
-              <br />
-              <p>
-              I have been notified that some of the BreakMe Practices are literally broken. It will be fixed soon.
+            <br />
+            <p>
+                Officially funded for Def Con 23. Please email Vivi.Langga@gmail.com for more info.
             </p>
+
+
 
 
 
@@ -66,22 +79,25 @@
             <h1>Social media</h1>
             <script type="text/javascript">
 
-           
+   
 
             </script>
 
 
             <%--<li>--%>
-            <asp:ImageButton ID="ImageButton1" runat="server" OnClick="redirect_fb" ImageUrl="~/images/facebook_icon.png" Height="32" Width="32" />
+            <asp:ImageButton ID="ImageButton1" runat="server" OnClick="redirect_fb" ImageUrl="~/images/facebook_icon.png" Height="32" Width="32" AlternateText="Facebook" />
             <%--</li>--%>
                  
                 &nbsp;
                 <%--<li>--%>
-            <asp:ImageButton ID="ImageButton2" runat="server" OnClick="redirect_gh" ImageUrl="~/images/GitHub-Mark-64px.png" Height="32" Width="32" />
+            <asp:ImageButton ID="ImageButton2" runat="server" OnClick="redirect_gh" ImageUrl="~/images/GitHub-Mark-64px.png" Height="32" Width="32" AlternateText="GitHub" />
             <%--</li>--%>
                  &nbsp;
-                    <asp:ImageButton ID="ImageButton3" runat="server" OnClick="redirect_li" ImageUrl="~/images/LinkedIn_logo_initials.png" Height="32" Width="32" />
+                    <asp:ImageButton ID="ImageButton3" runat="server" OnClick="redirect_li" ImageUrl="~/images/LinkedIn_logo_initials.png" Height="32" Width="32" AlternateText="LinkedIn" />
 
+            <%--https://www.youtube.com/yt/brand/using-logo.html--%>
+                 &nbsp;
+                    <asp:ImageButton ID="ImageButton4" runat="server" OnClick="redirect_yt" ImageUrl="~/images/YouTube_logo.png" Height="32" Width="32" AlternateText="Youtube" />
 
         </div>
     </div>
@@ -89,28 +105,126 @@
     <div class="span6 offset1">
         <h2>InfoSec Blog Posts</h2>
 
-      
-          <div class="align_left hotbox">
+
+        <div class="align_left hotbox">
+            <%--New Officers--%>
+            <h5>Tuesday, April 21, 2015</h5>
+            <h3>New Officers</h3>
+
+
+            This year has been a pretty good year with so many changes to come. Sadly, our term as officers are slowly coming to an end. Two weeks ago we had our officer elections. We will have to leave it up to the next batch of volunteers to carry the club to new heights. We've set the stage, Let's see how you perform. 
+               <br />
+            <br />
+            I would like to congratulate:
+              <br />
+            <br />
+            <table>
+
+                <tr>
+                    <td></td>
+                    <td>Matt Chi:&nbsp;</td>
+                    <td>President
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Calvin Nixon:&nbsp; </td>
+                    <td>Vice-President    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Christine Le:&nbsp; </td>
+                    <td>Treasurer    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Emily Dao:&nbsp; </td>
+                    <td>Secretary    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Vivi Langga:&nbsp; </td>
+                    <td>Web Administrator    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Dustin Tran:&nbsp;</td>
+                    <td>CTF Lead    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Hansen Wu: &nbsp; </td>
+                    <td>External Relations Director    </td>
+                </tr>
+                <tr>
+                    <td>
+            </table>
+            <br />
+
+            We all look forward to your great leadership.
+              <br />
+            <br />
+            <div style="text-align: right;">
+
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
+        </div>
+        <br />
+
+
+
+
+
+        <br />
+        <br />
+        <div class="align_left hotbox">
+            <%--Cisco meeting--%>
+            <h5>Thursday, April 16, 2015</h5>
+            <h3>Cisco Returns</h3>
+            <div style="text-align: center;" class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/exw6w4BiUKg" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <br />
+            <br />
+            About a month ago John Stewart, Cisco's Senior Vice President and Chief of security and Trust came to San Jose State to talk about the field. I would like to thank Mr. Stewart for volunteering his time to work with the club. Thank you
+              <br />
+            <br />
+            <div style="text-align: right;">
+
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
+        </div>
+        <br />
+
+
+
+
+
+        <br />
+        <br />
+        <div class="align_left hotbox">
             <%--Facebook meeting--%>
             <h5>Thursday, February 26, 2015</h5>
             <h3>Cisco</h3>
-            <div style="text-align: center;">
+            <div style="text-align: center;" class="videoWrapper">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-RilWZwnjTw?list=PLn6B36nIjoxRy3bVWxKY8a5YqdPQ9mSce" frameborder="0" allowfullscreen></iframe>
             </div>
             <br />
             <br />
-              Last Thursday we were able to get Ms. Guel, a distinguised IT Engineer at Cisco to talk about her journey through cyber-security as one of few females in the field. We'd like to thank her again for volunteering her time to talk about for the club.
+            Last Thursday we were able to get Ms. Guel, a distinguised IT Engineer at Cisco to talk about her journey through cyber-security as one of few females in the field. We'd like to thank her again for volunteering her time to talk about for the club.
               <br />
-        <br />
-               <div style="text-align: right;">
-                
-            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/2015/02/cisco-security-w-infosec-club.html"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+            <br />
+            <div style="text-align: right;">
+
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/2015/02/cisco-security-w-infosec-club.html"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
         </div>
         <br />
-        <br />
 
 
-     
+
+
 
         <br />
         <br />
@@ -119,21 +233,22 @@
             <h5>Wednesday, February 11, 2015</h5>
             <h3>Facebook</h3>
             <div style="text-align: center;">
-                <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/EWKG9gcC7dA" width="560"></iframe>
+                Video has been taken down because of our agreements with Facebook
             </div>
             <br />
             <br />
             The club has been starting to expand. With the help of Calvin, our External Relations Director, we were able to have the Director of Facebook Security (In which Ted Reed came in her presence) come to the Information Security club to talk about Facebook Security and the beginnings of our collaboration with them. Calvin has a big plan to get this club to be the next big thing. With that in mind, I hope you enjoy the talk and look forward to even more. We would like to thank Facebook for taking some of their time to speak with the club.
               <br />
-        <br />
-               <div style="text-align: right;">
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/2015/02/facebook.html"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+            <br />
+            <div style="text-align: right;">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/2015/02/facebook.html"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
         </div>
         <br />
-        <br />
 
 
-     
+
+
 
         <br />
         <br />
@@ -175,7 +290,8 @@
 
 
             <div style="text-align: right;">
-                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
         </div>
         <br />
         <br />
@@ -235,7 +351,8 @@
             <br />
             <br />
             <div style="text-align: right;">
-                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
         </div>
         <br />
         <br />
@@ -284,7 +401,8 @@
             <br />
             <br />
             <div style="text-align: right;">
-                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
         </div>
         <br />
         <br />
@@ -325,7 +443,8 @@
             <br />
             <br />
             <div style="text-align: right;">
-                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
         </div>
         <br />
         <br />
@@ -359,7 +478,8 @@
             <br />
             <br />
             <div style="text-align: right;">
-                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="http://anthonylangga.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink></div>
+                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="http://www.turtlesecurity.blogspot.com/"> - CTF Lead: Vivi Langga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            </div>
         </div>
 
 

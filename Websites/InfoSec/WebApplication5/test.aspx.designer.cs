@@ -11,7 +11,7 @@ namespace WebApplication5
 {
 
 
-    public partial class WebForm3
+    public partial class test
     {
     }
 }

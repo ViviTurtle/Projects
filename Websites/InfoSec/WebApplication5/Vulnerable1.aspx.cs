@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security; 
 
 namespace WebApplication5
 {
@@ -11,6 +12,7 @@ namespace WebApplication5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             String name = Request.QueryString["userName"];
             if (Page.IsPostBack)
             {
@@ -26,5 +28,6 @@ namespace WebApplication5
                 lblsubmitName.Visible = true;
             }
         }
+      
     }
 }

@@ -50,7 +50,6 @@ p {
 
 
 
-/* Video pitch and Action */
 .pitch {
     padding: 2.5% 0%;
 }
@@ -76,8 +75,40 @@ p {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     text-align: justify;
-}
 
+}
+ .extra_edit {
+            text-align: left;
+            vertical-align: top;
+        }
+ .hotbox {
+            background-color: #FFFFFF;
+            border: 2px solid #808080;
+            padding: 10px;
+        }
+ .mobileShow
+ {
+     display: none;
+ }
+  @media screen and (max-width: 40em) {
+            /* #menu is the original menu */
+            .mobileHide {
+                display: none;
+            }
+            .mobileShow
+            {
+                display:block;
+            }
+
+            
+        }
+       
+ .left-justify
+        {
+             padding-top: 2.5%;
+             padding-bottom: 2.5%;
+               text-align: left;
+        }
 .asset {
     padding: 2.5% 0%;
 }

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Website created by Anthony Langga. I would like to give a big thanks to Justin Tieu for creating the initial template for this site. Without him, our website would look so ugly.-->
+<!-- Website created by Vivi Langga. I would like to give a big thanks to Justin Tieu for creating the initial template for this site. Without him, our website would look so ugly.-->
 
 <head>
     <meta charset="utf-8">
@@ -20,6 +20,8 @@
     <link href="css/Open_Sans.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/LinkedIn.js"" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <script src="js/jquery.slicknav.min.js"></script>
     <style>
         .background_color {
             background-color: #EBEBEB;
@@ -42,7 +44,7 @@
 
             .site-footer, .page-wrap:after {
                 /* .push must be the same height as footer */
-                height: 35px;
+                height: 43px;
             }
 
 
@@ -74,20 +76,57 @@
         .horizontalmenu ul li:hover a {
             color: white;
         }
+
+        .slicknav_menu {
+            display: none;
+            background-color: #1B1B1B;
+        }
+
+        @media screen and (max-width: 40em) {
+            /* #menu is the original menu */
+            #menu {
+                display: none;
+            }
+
+            .slicknav_menu {
+                display: block;
+            }
+        }
     </style>
+    <script>
+        $(document).ready(function () {
+            $('#menu').slicknav({
+                label: 'InfoSec Club',
+                prependTo: '#navigationBar'
+            });
+        });
+
+    </script>
+     
 </head>
 
 <body class="background_color">
+   
+    <div class="page-wrap">
+    <form id="form1" runat="server">
+      
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="brand" href="Home">InfoSec</a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-
-                        <li><a href="About">About Us</a>
+        <div class="navbar-inner" id="navigationBar">
+            <div class="container" id="menu">
+                 
+                 <ul class="slicknav_menu">
+                                             <li> <a href="Home">Home</a></li>
+	                    <li><a href="About">About Us</a>
                         </li>
-                        <li><a href="Team2014">Meet the Team</a>
+                        <li class="horizontalmenu" ><a href="Team2014">Meet the Team</a>
+                            <ul>
+                                 <li><a href="Team2014">Class of 2014</a>
+                                </li>
+                                <li><a href="Team2013">Class of 2013</a>
+                                </li>
+                                <li><a href="Advisors">Advisors and Coaches </a>
+                                </li>
+                            </ul>
                         </li>
                         <li><a href="Events">Events</a>
                         </li>
@@ -97,8 +136,67 @@
                         </li>
                         <li><a href="Contact">Contact</a>
                         </li>
+                      
+                        <li class="horizontalmenu"><a href="Logon">BreakMe Practice</a>
+                            <ul>
+                                <li><a href="Vulnerable5?">Brute-Force1</a>
+                                </li>
+                                <li><a href="Vulnerable1?username=Guest">Cross Site Scripting1</a>
+                                </li>
+                                <li><a href="Apologies">Cross Site Scripting2</a>
+                                </li>
+                                <li><a href="Vulnerable3_2?username=Guest&password=password">SQL Injection1</a>
+                                </li>
+                                <li><a href="Vulnerable4">SQL Injection2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> 
+                              <asp:LoginView ID="LoginView3" runat="server" >
+                                <AnonymousTemplate>
+                                    <a href="Logon">Log In</a>
+                                </AnonymousTemplate> 
+                                <LoggedInTemplate>
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggedOut="LoginStatus1_LoggedOut"
+                                         LogoutText="Sign Out" CssClass="linkLoginControls" /> 
+                                </LoggedInTemplate>
+                                </asp:LoginView>
+                        </li>
+                         <li>
+                             <asp:LoginView ID="LoginView4" runat="server" >
+                                 <AnonymousTemplate>
+                                      <a href="Register">Register</a>
+                                 </AnonymousTemplate>
+                             </asp:LoginView>
+                         </li>
+                 </ul>
+                 
 
-                        <li class="horizontalmenu"><a href="Login">BreakMe Practice</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li> <a class="brand" href="Home">InfoSec</a></li>
+                        <li><a href="About">About Us</a>
+                        </li>
+                        <li class="horizontalmenu"><a href="Team2014">Meet the Team</a>
+                             <ul>
+                                 <li><a href="Team2014">Class of 2014</a>
+                                </li>
+                                <li><a href="Team2013">Class of 2013</a>
+                                </li>
+                                 <li><a href="Advisors">Advisors and Coaches </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Events">Events</a>
+                        </li>
+                        <li><a href="Resources">Resources</a>
+                        </li>
+                        <li><a href="FAQ">FAQ</a>
+                        </li>
+                        <li><a href="Contact">Contact</a>
+                        </li>
+                      
+                        <li class="horizontalmenu"><a href="Logon">BreakMe Practice</a>
                             <ul>
                                   <li><a href="Vulnerable5?">Brute-Force1</a>
                                 </li>
@@ -107,20 +205,48 @@
                                 </li>
                                 <li><a href="Apologies">Cross Site Scripting2</a>
                                 </li>
-                                <li><a href="Vulnerable3">SQL Injection1</a>
+                                <li><a href="Vulnerable3_2?username=Guest&password=password">SQL Injection1</a>
                                 </li>
                                 <li><a href="Vulnerable4">SQL Injection2</a>
                                 </li>
                               
                             </ul>
                         </li>
+                          <li> 
+                             
+                       <asp:LoginView ID="LoginView1" runat="server" >
+
+                                    <AnonymousTemplate>
+                                        <a href="Logon">Log In</a>
+                                     </AnonymousTemplate> 
+                               <LoggedInTemplate>
+    <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggedOut="LoginStatus1_LoggedOut"                                             
+    LogoutText="Sign Out" CssClass="linkLoginControls" />
+ </LoggedInTemplate>
+                    </asp:LoginView>
+                               
+
+                        </li>
+                         <li> 
+                             
+                       <asp:LoginView ID="LoginView2" runat="server" >
+
+                                    <AnonymousTemplate>
+                                        <a href="Register">Register</a>
+                                     </AnonymousTemplate> 
+                              
+                    </asp:LoginView>
+                               
+
+                        </li>
                     </ul>
+                  
                 </div>
             </div>
         </div>
     </div>
     <div class="page-wrap">
-        <form id="form1" runat="server">
+        
 
             <div class="row-fluid heading">
 
@@ -137,19 +263,28 @@
                 <asp:ContentPlaceHolder ID="body" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-
+            
             <%--footer--%>
-        </form>
-
-
+        
+        
 
     </div>
-    <footer class="row-fluid footer site-footer">
-        <div class="span12">
+        </form>
+        </div>
+   
+
+  <div class="navbar navbar-inverse  navbar-fixed-bottom" style="position:relative;">
+        <div class="navbar-inner">
+    <footer class="footer" style="overflow: auto;">
+
+ 
+        <div class="row-fluid site-footer container" style="left:-20px; overflow: auto;">
             <p>Information Security Club | <a href="http://www.sjsu.edu">San Jose State University</a> | One Washington Square, San Jose, CA 95192</p>
         </div>
-    </footer>
+       </footer>
+            </div></div>
 </body>
+    
 
 </html>
 

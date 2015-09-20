@@ -73,7 +73,7 @@
     <div class="span8">
         <div></div>
         <%--PRESIDENT--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -81,14 +81,14 @@
                     <td class="auto-style6">&nbsp;
                         <asp:Label Font-Bold="true" Font-Size="Larger" ID="lblPresident" runat="server" Text="President: Vivi Langga"></asp:Label>
 
-                        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/anthonylangga" data-format="hover" data-related="false"></script>
+                        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/vivilangga" data-format="hover" data-related="false"></script>
                         <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/GitHub-Mark-120px-plus.png" Height="16" Width="16" OnClick="GH_ANTHONY" />
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <img class="img-polaroid" src="images/Club Logo.jpg" height="200" width="100">
+                        <img class="img-polaroid" src="images/Vivi.jpg" height="200" width="100">
                     </td>
                     <td class="auto-style3"></td>
                     <td>
@@ -103,7 +103,7 @@
         </div>
         <%--Vice President--%>
 
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -128,7 +128,7 @@
 
 
         <%--CTF LEAD--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -154,7 +154,7 @@
         </div>
 
         <%--Treasurer--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -179,7 +179,7 @@
 
 
         <%--Public Relations--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -204,7 +204,7 @@
         </div>
 
         <%--VP of Marketing--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>
@@ -229,7 +229,7 @@
 
 
         <%--SECRETARY--%>
-        <div class="span9 offset1 copy copy-right">
+        <div class="span9 offset1 left-justify">
             <table>
                 <tr>
                     <td class="auto-style4"></td>

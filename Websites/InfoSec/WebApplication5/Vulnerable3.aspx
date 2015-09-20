@@ -3,6 +3,7 @@
     <h1>SQL Injection Module 1</h1>
      <p class="span9 offset1">The Information Security club does not claim any damage caused by this website. This module is to be used simply for education purposes. By using this site you are abiding by these conditions and will not in anyway use the module for malicious use</p>
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <style>

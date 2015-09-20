@@ -35,7 +35,8 @@
         &nbsp;&nbsp;&nbsp;&nbsp;
     <br />
         <br />
-        <asp:GridView ID="gvRESOURCES" runat="server" AutoGenerateColumns="False" DataSourceID="dsRESOURCES" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="1400px" AllowSorting="True" >
+            <div style="max-width:100%;">
+        <asp:GridView ID="gvRESOURCES" runat="server"  AutoGenerateColumns="False" DataSourceID="dsRESOURCES" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="1400px" AllowSorting="True"  CssClass="mobileHide" >
             <AlternatingRowStyle BackColor="#CCCCCC" />
             <Columns>
                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
@@ -65,6 +66,29 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#383838" />
         </asp:GridView>
+
+
+                  <asp:GridView ID="gvResources_mobile" runat="server" AutoGenerateColumns="False" DataSourceID="dsRESOURCES" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="1400px" AllowSorting="True" CssClass="mobileShow"  >
+            <AlternatingRowStyle BackColor="#CCCCCC" />
+            <Columns>
+                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+               
+                
+                <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+               
+               
+              
+            </Columns>
+            <FooterStyle BackColor="#CCCCCC" />
+            <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+            <SortedAscendingCellStyle BackColor="#F1F1F1" />
+            <SortedAscendingHeaderStyle BackColor="#808080" />
+            <SortedDescendingCellStyle BackColor="#CAC9C9" />
+            <SortedDescendingHeaderStyle BackColor="#383838" />
+        </asp:GridView>
+                </div>
            </ContentTemplate>
     </asp:UpdatePanel>
         <asp:SqlDataSource ID="dsRESOURCES" runat="server" ConnectionString="<%$ ConnectionStrings:InfoGuest %>" SelectCommand="SP_POPULATE_RESOURCES" SelectCommandType="StoredProcedure">
@@ -74,4 +98,5 @@
             </SelectParameters>
         </asp:SqlDataSource>
     </div>
+
 </asp:Content>

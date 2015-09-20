@@ -19,7 +19,7 @@ namespace WebApplication5
         protected void insertData(object sender, EventArgs e)
         {
             String connection = ConfigurationManager.ConnectionStrings["SQLi2"].ConnectionString;
-            string command = @"INSERT INTO T_SURVEY (NAME,RATING, FAVORITE, LEAST,OFFICER, WHY) VALUES ('" + tbNAME.Text + "', '" + ddlRATE.SelectedValue + "', '" + tbFAVORITE.Text + "', '" + tbLEAST.Text + "', '" + ddlOFFICER.SelectedValue + "', '" + tbWHY.Text + "')";
+            string command = @"INSERT INTO T_SURVEY (NAME,RATING, FAVORITE, LEAST,OFFICER, WHY) VALUES ('" + tbNAME.Text + "', '" + ddlRATE.SelectedValue + "', '" + tbFAVORITE2.Value + "', '" + tbLEAST.Text + "', '" + ddlOFFICER.SelectedValue + "', '" + tbWHY2.Value + "')";
                 SqlDataAdapter objDA = new SqlDataAdapter(command, connection);
                 DataSet objDS = new DataSet();
                 SqlCommandBuilder cmdBuilder;
@@ -27,10 +27,10 @@ namespace WebApplication5
                 objDA.Fill(objDS);
                 tbNAME.Text = "";
                 ddlRATE.SelectedValue = "THE CAKE WAS A LIE";
-                tbFAVORITE.Text = "";
+                tbFAVORITE2.Value = "";
                 tbLEAST.Text = "";
                 ddlOFFICER.SelectedValue = "ITS A TRAP";
-                tbWHY.Text = "";
+                tbWHY2.Value = "";
                 Image1.ImageUrl = "~/images/Thankyou.jpg";
                 lblTITLE.Text = "Thank you for your submission ";
         }

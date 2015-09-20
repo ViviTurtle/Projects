@@ -49,7 +49,7 @@
                 <div id="collapseFour" class="accordion-body collapse">
                     <div class="accordion-inner">
                         We teach all aspects of computer security. We cover everything from general IT security to physical security, such as picklocking, to social engineering, and everything in between. In the past we've also given talks on exploitation and reverse engineering as well.
-                        Check out our <a href="https://github.com/spartansecurity">GitHub page</a> to view past presentations given by students.
+                        Check out our <a href="https://www.youtube.com/channel/UCDNzNvZlYK8jZLsUbdiGrsQ">YouTube page</a> to view past presentations given by students.
                   
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                 </div>
                 <div id="collapseSeven" class="accordion-body collapse">
                     <div class="accordion-inner">
-                        The club has meetings every Thursday at 4:30 pm. We are located in Duncan Hall 8.
+                        The club has meetings every Monday and Thursday at 4:30 pm. We are located in Duncan Hall 8.
                     </div>
                 </div>
             </div>

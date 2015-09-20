@@ -49,6 +49,15 @@ namespace WebApplication5 {
         protected global::System.Web.UI.WebControls.GridView gvRESOURCES;
         
         /// <summary>
+        /// gvResources_mobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvResources_mobile;
+        
+        /// <summary>
         /// dsRESOURCES control.
         /// </summary>
         /// <remarks>
