@@ -37,7 +37,7 @@ Y Resolution                    : 72
 Exif Byte Order                 : Big-endian (Motorola, MM)
 Resolution Unit                 : inches
 Y Cb Cr Positioning             : Centered
-**Copyright                       : h1d1ng_in_4lm0st_pla1n_sigh7**
+Copyright                       : h1d1ng_in_4lm0st_pla1n_sigh7
 Image Width                     : 600
 Image Height                    : 700
 Encoding Process                : Baseline DCT, Huffman coding
@@ -47,6 +47,9 @@ Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
 Image Size                      : 600x700
 ```
 
-Looking at the copyright section, you get the flag.
+Looking at the copyright section
+>Copyright                       : h1d1ng_in_4lm0st_pla1n_sigh7
+
+you get the flag.
 
 h1d1ng_in_4lm0st_pla1n_sigh7
