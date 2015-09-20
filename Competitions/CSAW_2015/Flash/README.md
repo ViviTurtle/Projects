@@ -1,4 +1,4 @@
-[Flash](Flash) Forensics: 100
+Flash: Forensics 100
 ---------
 
 
@@ -386,6 +386,12 @@ flag{b3l0w_th3_r4dar}
 ```
 
 At the very bottom you can see the flag.
+
+```
+...against the world in arms; the black flag waved night and day from the
+Over the chair they had thrown a red flag, and to the back of it they
+flag{b3l0w_th3_r4dar}
+```
 
 flag{b3l0w_th3_r4dar}
 

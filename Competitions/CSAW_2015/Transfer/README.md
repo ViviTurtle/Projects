@@ -30,6 +30,8 @@ When we get to packets 150-300ish, we see something very interesting.
 We can clearly see the flag is somewhere in there, so I saved the file on my pc.
 After dissecting what this is, it is clearly python code in which some "flag" was encrypted with caesar ciphers, rot13, and base64, all of which are broken.
 
+
+net_original.py
 ```python
 import string
 import random
@@ -93,6 +95,7 @@ tmp = '{}{}'.format(i, _tmp)
 ```
 From this code we clearly see what we have to do is take the first integer of the output (which is the long string after the print), subtract one, and apply the decryption cipers (which we had to make) based on that integer. We can keep doing this until the final string contains the word flag. The following code is my final code to get the flag.
 
+net_solution.py
 ```python
 import string
 import random

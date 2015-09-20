@@ -1,4 +1,4 @@
-[Julian Cohen] Recon 100
+Julian Cohen: Recon 100
 ---------
 
 > No Description
