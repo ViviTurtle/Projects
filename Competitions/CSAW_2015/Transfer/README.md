@@ -15,6 +15,10 @@ We given a link to a pcap file: [net_756d631588cb0a400cc16d1848a5f0fb.pcap](net_
 
 > xxd net_756d631588cb0a400cc16d1848a5f0fb.pcap | grep flag
 
+All we got was 
+
+>flag{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
+
 After that didn't work, I inspected it in wireshark, our great packet inspection tool, and was given a huge list packets(2000 to be exact).I spent some time following several TCP streams (right click packet -> Follow TCP Stream) and we can see the packets included traffic from reddit, facebook and symantec to name a few. 
 
 ![Example](Example.png)
