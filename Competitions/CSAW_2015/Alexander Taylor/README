@@ -1,0 +1,52 @@
+Given link:
+
+http://fuzyll.com/csaw2015/start
+	> CSAW 2015 FUZYLL RECON PART 1 OF ?: Oh, good, you can use HTTP! The next part is at /csaw2015/<the acronym for my university's hacking club>.
+
+Checked LinkedIn
+	> https://www.linkedin.com/in/fuzyll
+		> 
+The Brand Book, Sypris Electronics, LLC, University of South Florida
+
+Google University of south florida hacking club
+	> http://www.wcsc.usf.edu/
+
+http://fuzyll.com/csaw2015/wcsc
+	> CSAW 2015 FUZYLL RECON PART 2 OF ?: TmljZSB3b3JrISBUaGUgbmV4dCBwYXJ0IGlzIGF0IC9jc2F3MjAxNS88bXkgc3VwZXIgc21hc2ggYnJvdGhlcnMgbWFpbj4uCg==
+
+Base64 TmljZSB3b3JrISBUaGUgbmV4dCBwYXJ0IGlzIGF0IC9jc2F3MjAxNS88bXkgc3VwZXIgc21hc2ggYnJvdGhlcnMgbWFpbj4uCg==
+	> Nice work! The next part is at /csaw2015/<my super smash brothers main>.
+
+Google fuzyll Smash
+	> Links to YouTube appeared with
+		> https://www.youtube.com/watch?v=59QQ9UevSuE
+		> Smash 4 Weekly (2015-08-07) - Fuzyll (Yoshi) vs. Stiitch (Ike)
+
+http://fuzyll.com/csaw2015/yoshi
+	> Picture of Yoshi
+	> File yoshi
+	> exiftool yoshi
+		> Comment: CSAW 2015 FUZYLL RECON PART 3 OF ?: Isn't Yoshi the best?! The next egg in your hunt can be found at /csaw2015/<the cryptosystem I had to break in my first defcon qualifier>.
+
+Googled fuzyll crptosystem/cryptography/defcon/writeups
+	> checked github, past writeups
+
+guessed http://fuzyll.com/csaw2015/rsa
+guessed http://fuzyll.com/csaw2015/enigma
+	> Worked
+	** Looking back the word "Enigma" is in descriptiption on his twitter
+			CSAW 2015 FUZYLL RECON PART 4 OF 5: Okay, okay. This isn't Engima, but the next location was "encrypted" with the JavaScript below: Pla$ja|p$wpkt$kj$}kqv$uqawp$mw>$+gwes6451+pla}[waa[ia[vkhhmj
+
+		var s = "THIS IS THE INPUT"
+		var c = ""
+		for (i = 0; i < s.length; i++) {
+		    c += String.fromCharCode((s[i]).charCodeAt(0) ^ 0x4);
+		}
+		console.log(c);
+
+inputted my javascript decode into
+	http://www.webtoolkitonline.com/javascript-tester.html
+		> The next stop on your quest is: /csaw2015/they_see_me_rollin
+
+http://fuzyll.com/csaw2015/they_see_me_rollin
+	> CSAW 2015 FUZYLL RECON PART 5 OF 5: Congratulations! Here's your flag{I_S3ARCH3D_HI6H_4ND_L0W_4ND_4LL_I_F0UND_W4S_TH1S_L0USY_FL4G}!
