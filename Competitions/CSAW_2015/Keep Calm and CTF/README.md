@@ -6,7 +6,7 @@
 
 >Note: this flag doesn't follow the "flag{}" format
 
->[img.jpg](Keep Calm and CTF/img.jpg)
+>[img.jpg](img.jpg)
 
 This one had a super easy solution. First it gave us a jpg. First thing I always do is run strings
 
@@ -14,7 +14,7 @@ This one had a super easy solution. First it gave us a jpg. First thing I always
 
 Nothing popped up.
 
-Next thing you always do for any kind of picture, well any forensics for that matter is look at metadeta. Simply upload the data to [Metadeta](http://regex.info/exif.cgi). We can also use a bunch of tools such as "exiftools", a tool to look at metadeta for like everything.
+Next thing you always do for any kind of picture, well any forensics for that matter is look at metadeta. Simply upload the data to [Jeffrey's Exif viewer](http://regex.info/exif.cgi) or we can also use a some tools we gathered over the preperation such as "exiftool", a tool to look at metadeta for everything.
 
 >exiftool img.jpg
 

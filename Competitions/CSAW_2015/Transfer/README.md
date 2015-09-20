@@ -28,7 +28,7 @@ When we get to packets 150-300ish, we see something very interesting.
 ![Python](Python.png)
 
 We can clearly see the flag is somewhere in there, so I saved the file on my pc.
-After dissecting what this is it clearly python code in which some "flag" was encrypted with caesar ciphers, rot13, and base64, all of which are broken.
+After dissecting what this is, it is clearly python code in which some "flag" was encrypted with caesar ciphers, rot13, and base64, all of which are broken.
 
 ```python
 import string
