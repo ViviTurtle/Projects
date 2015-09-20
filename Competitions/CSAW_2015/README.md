@@ -4,7 +4,7 @@ CSAW 2015
 [Transfer](Transfer)
 ---------
 
-**Category:** Forensics **Points:** 100 **Solves:** 545 **Description:**
+**Category:** Forensics **Points:** 100 **Solves:** 541 **Description:**
 
 >I was sniffing some web traffic for a while, I think i finally got something interesting. 
 >Help me find flag through all these packets.
@@ -16,7 +16,7 @@ CSAW 2015
 [Flash](Flash)
 ---------
 
-**Category:** Forensics **Points:** 100 **Solves:** 800 **Description:**
+**Category:** Forensics **Points:** 100 **Solves:** 809 **Description:**
 
 >We were able to grab an image of a harddrive. Find out what's on it.
 
@@ -28,7 +28,7 @@ CSAW 2015
 [Keep Calm and CTF](Keep Calm and CTF)
 ---------
 
-**Category:** Forensics **Points:** 100 **Solves:** 1060 **Description:**
+**Category:** Forensics **Points:** 100 **Solves:** 1064 **Description:**
 
 >My friend sends me pictures before every ctf. He told me this one was special.
 
@@ -41,7 +41,7 @@ CSAW 2015
 [Alexander Taylor](Alexander Taylor)
 ---------
 
-**Category:** Recon **Points:** 100 **Solves:** 420 **Description:**
+**Category:** Recon **Points:** 100 **Solves:** 424 **Description:**
 
 > http://fuzyll.com/csaw2015/start
 
@@ -50,7 +50,7 @@ CSAW 2015
 [Julian Cohen](Julian Cohen)
 ---------
 
-**Category:** Recon **Points:** 100 **Solves:** 880 **Description:**
+**Category:** Recon **Points:** 100 **Solves:** 883 **Description:**
 
 > No Description
 

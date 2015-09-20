@@ -1,16 +1,3 @@
-[Flash](Flash) Forensics: 100
----------
-
-
->We were able to grab an image of a harddrive. Find out what's on it.
-
->[flash_c8429a430278283c0e571baebca3d139.img](http://www.filedropper.com/flashc8429a430278283c0e571baebca3d139)
-
-This one had a super simple solution. So an image is just some snapshot of some hard drive, so you usually have to use some tool like volatility to dive into it and find flags. Before we do that make sure you always start with the basics. Lets search for the flag with strings.
-
->strings flash_c8429a430278283c0e571baebca3d139.img | grep flag
-
-```
     Like to a vagabond flag upon the stream,
     Than was his loss, to course your flying flags
     colic, you make faces like mummers, set up the bloody flag
@@ -383,9 +370,3 @@ a people, tumultuous under a red flag and with their country declared in
 against the world in arms; the black flag waved night and day from the
 Over the chair they had thrown a red flag, and to the back of it they
 flag{b3l0w_th3_r4dar}
-```
-
-At the very bottom you can see the flag.
-
-flag{b3l0w_th3_r4dar}
-
