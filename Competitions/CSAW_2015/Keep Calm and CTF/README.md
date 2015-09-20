@@ -47,6 +47,9 @@ Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
 Image Size                      : 600x700
 ```
 
-Looking at the copyright section, you get the flag.
+Looking at the copyright section
+>Copyright                       : h1d1ng_in_4lm0st_pla1n_sigh7
+
+you get the flag.
 
 h1d1ng_in_4lm0st_pla1n_sigh7
