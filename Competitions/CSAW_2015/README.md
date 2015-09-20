@@ -34,7 +34,7 @@ CSAW 2015
 
 >Note: this flag doesn't follow the "flag{}" format
 
->img.jpg
+>[img.jpg](Keep Calm and CTF/img.jpg)
 
 
 
