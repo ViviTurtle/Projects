@@ -1,7 +1,7 @@
 CSAW 2015
 =========================
 
-Transfer
+[a relative link](Transfer). Upon inspection we were given a huge list
 ---------
 
 **Category:** Forensics **Points:** 100 **Solves:** 545 **Description:**
@@ -36,7 +36,7 @@ Keep Calm and CTF
 Alexander Taylor
 ---------
 
-**Category:** Forensics **Points:** 100 **Solves:** 420 **Description:**
+**Category:** Recon **Points:** 100 **Solves:** 420 **Description:**
 
 > http://fuzyll.com/csaw2015/start
 
@@ -44,7 +44,7 @@ Alexander Taylor
 Julian Cohen
 ---------
 
-**Category:** Recond **Points:** 100 **Solves:** 880 **Description:**
+**Category:** Recon **Points:** 100 **Solves:** 880 **Description:**
 
 > No Description
 
