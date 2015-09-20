@@ -37,7 +37,7 @@ Y Resolution                    : 72
 Exif Byte Order                 : Big-endian (Motorola, MM)
 Resolution Unit                 : inches
 Y Cb Cr Positioning             : Centered
-Copyright                       : h1d1ng_in_4lm0st_pla1n_sigh7
+**Copyright                       : h1d1ng_in_4lm0st_pla1n_sigh7**
 Image Width                     : 600
 Image Height                    : 700
 Encoding Process                : Baseline DCT, Huffman coding
