@@ -1,0 +1,165 @@
+Hey dude, can you help me with my math homework? I have a few addition problems to do...
+
+You have 10.000000 seconds to solve this problem: 389 + -40
+
+349
+You have 6.666667 seconds to solve this problem: -823 + -777
+
+-1600
+You have 4.444444 seconds to solve this problem: 2106 + -423
+
+1683
+You have 2.962963 seconds to solve this problem: 285 + -8248
+
+-7963
+You have 1.975309 seconds to solve this problem: -17764 + 125595
+
+107831
+You have 1.316872 seconds to solve this problem: -240000 + -131870
+
+-371870
+You have 0.877915 seconds to solve this problem: -1209298 + 14747
+
+-1194551
+You have 0.585277 seconds to solve this problem: -3680552 + -4035312
+
+-7715864
+Hey, nice job! Okay, we're done with the addition part, now it's going to get harder:
+You have 10.000000 seconds to solve the following system of equations:
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+-101
+Enter the value of y:
+
+297
+You have 6.666667 seconds to solve the following system of equations:
+
+
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+866
+Enter the value of y:
+
+359
+You have 4.444444 seconds to solve the following system of equations:
+
+
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+-1686
+Enter the value of y:
+
+-2960
+You have 2.962963 seconds to solve the following system of equations:
+
+
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+10793
+Enter the value of y:
+
+-18293
+You have 1.975309 seconds to solve the following system of equations:
+
+
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+74520
+Enter the value of y:
+
+38749
+You have 1.316872 seconds to solve the following system of equations:
+
+
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+187317
+Enter the value of y:
+
+185288
+You have 0.877915 seconds to solve the following system of equations:
+
+
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+-741489
+Enter the value of y:
+
+-253881
+You have 0.585277 seconds to solve the following system of equations:
+
+
+-925x + -670y = -105565
+734x + -737y = -293023
+Enter the value of x:
+
+2287667
+Enter the value of y:
+
+546000
+Thanks man. Hey uh, also, how much do you know about calculus?
+
+You have 10.000000 seconds to calculate the derivative of the following equation for x = 6:
+f(x) = 7x^4
+Enter the value of f'(x):
+
+6048
+You have 6.666667 seconds to calculate the derivative of the following equation for x = 1:
+
+f(x) = 3x^1 + 8x^6 + 7x^2 + 3 + 3x^3
+Enter the value of f'(x):
+
+74
+You have 4.444444 seconds to calculate the derivative of the following equation for x = 5:
+
+f(x) = 2x^1 + 4x^8 + 7x^1 + 2x^4 + 4x^1 + 9x^1 + 8x^6
+Enter the value of f'(x):
+
+2651022
+You have 2.962963 seconds to calculate the derivative of the following equation for x = 7:
+
+f(x) = 4x^9 + 2x^6 + 4x^8 + 7x^9 + 8x^8 + 2x^4 + 5x^5 + 2x^5 + 8x^1
+Enter the value of f'(x):
+
+650063898
+You have 1.975309 seconds to calculate the derivative of the following equation for x = 8:
+
+f(x) = 1x^3 + 6x^3 + 6x^2 + 9x^6 + 1x^9 + 3x^3 + 4x^3 + 4x^3 + 3x^9 + 2x^6
+Enter the value of f'(x):
+
+606146016
+You have 1.316872 seconds to calculate the derivative of the following equation for x = 7:
+
+f(x) = 1x^5 + 9x^7 + 9x^6 + 8x^3 + 7x^1 + 3x^3 + 2 + 1x^9 + 8x^2 + 2x^4
+Enter the value of f'(x):
+
+60219159
+You have 0.877915 seconds to calculate the derivative of the following equation for x = 8:
+
+f(x) = 9 + 9x^5 + 9x^9 + 9x^9 + 7x^1 + 5 + 1x^5 + 5x^2 + 5x^6 + 1x^7 + 7
+Enter the value of f'(x):
+
+2720931927
+You have 0.585277 seconds to calculate the derivative of the following equation for x = 7:
+
+f(x) = 9x^8 + 3 + 2x^8 + 1x^3 + 4x^1 + 8x^9 + 5x^1 + 7x^4 + 2 + 6x^9 + 4x^1
+Enter the value of f'(x):
+
+798846474
+Hey, thanks buddy! Here's a little somethin' for your trouble: flag{l3ts_g0_shOpP1ng}
+
+

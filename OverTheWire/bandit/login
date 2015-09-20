@@ -1,0 +1,67 @@
+Level1:
+bandit0@melinda:~$ ls
+readme
+bandit0@melinda:~$ cat readme 
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Level2:	
+
+bandit1@melinda:~$ ls -a
+-  .  ..  .bash_logout  .bashrc  .profile
+bandit1@melinda:~$ cat ./-
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+level3:
+bandit3@melinda:~$ ls
+inhere
+bandit3@melinda:~$ cd inhere/
+bandit3@melinda:~/inhere$ ls -a
+.  ..  .hidden
+bandit3@melinda:~/inhere$ cat .hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+Level4:
+bandit4@melinda:~/inhere$ for f in `find -readable`; do cat "$f";done
+cat: .: Is a directory
+��M�����#8B0wPg�����C���@��FM���hZ����P�邚���{#��TP��6�]��X:koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+����+��5�`�R
+�1*6C�u#Nr�;�-i�(��z��У��ޘ�鑾?�@c
+                                           O8�L��c�Ч7�zb~��ף���U�����!��>P�
+#[:*���?��j���U��g�f�4�6+>"��B�Vx��d��;de�O
+
+Level5:
+bandit5@melinda:~$ for f in `find -readable -size 1033c ! -executable`; do cat "$f"; done
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Level6:
+bandit6@melinda: cd /
+bandit6@melinda:/$ for f in `find -user bandit7 -group bandit6 -size 33c`; do cat "$f"; done
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs  	
+
+Level7:
+bandit7@melinda:~$ ls
+data.txt
+bandit7@melinda:~$ cat data.txt | grep millionth
+millionth	cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+Level8:
+bandit8@melinda:~$ sort data.txt | uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+Level9:
+bandit9@melinda:~$ cat data.txt | grep "===" -a
+======= truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+Level10:
+bandit10@melinda:~$ cat data.txt 
+VGhlIHBhc3N3b3JkIGlzIElGdWt3S0dzRlc4TU9xM0lSRnFyeEUxaHhUTkViVVBSCg==
+bandit10@melinda:~$ base64 -d data.txt 
+The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Level11:
+bandit11@melinda:~$ cat data.txt | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+
+
+
