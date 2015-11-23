@@ -10,3 +10,7 @@
 [CSAW_2015](CSAW_2015)
 ------------
 [Cyber Security Awareness Week CTF @ NYU Website](https://ctf.isis.poly.edu/)
+
+[RC3_2015](RC3_2015)
+------------
+[RIT Competitive Cybersecurity Club CTF](https://ctf.rc3.club/)
