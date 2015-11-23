@@ -1,14 +1,6 @@
 v1ew-s0urce: Web 50
 ----------------------
 
-http://129.21.39.225:81/
-
-http://129.21.39.225:81/robots.txt
-http://129.21.39.225:81/secret
-
-RC3-ROBOTZ-559672
-
-
 ![Start](Start.png)
 
 This a baby CTF question. It was very simple. We are given a link: [http://129.21.39.225:81/](http://129.21.39.225:81/). Upon visiting the site we are greeted with a simple text
