@@ -11,13 +11,9 @@ Now look at the title of the web page.
 
 ![bots](bots.png)
 
-It says Go Away Botz! This means they don't want a web crawler to be at this website. If you guys know basic web, the way you keep web crawlers from visiting certain web pages is is writing it in the robots.txt file.
+It says Go away bots! This means they don't want a web crawler to be at this website. If you guys know basic web, the way you keep web crawlers from visiting certain web pages is to write it in the robots.txt file.
 
-> strings for400.pcapng | grep RC3
-
-> strings for400.pcapng | grep flag
-
-Nothing came for "RC3", however we did get a bit of information for flag. Let's visit [http://129.21.39.225:81/robots.txt](http://129.21.39.225:81/robots.txt)
+Let's visit [http://129.21.39.225:81/robots.txt](http://129.21.39.225:81/robots.txt)
 
 [robots](robots.txt)
 ```
