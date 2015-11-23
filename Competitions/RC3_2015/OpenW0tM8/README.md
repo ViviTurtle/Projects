@@ -15,6 +15,7 @@ We are given a link to a pcap file: [for400.pcapng](for400.pcapng). Whenever I d
 Nothing came for "RC3", however we did get a bit of information for flag.
 
 ```
+strings for400.pcapng | grep flag
 _drwxr-xr-x 1 ftp ftp              0 Nov 15 13:31 flag
 flag
 CWD flag
@@ -101,26 +102,26 @@ Last thing I did was binwalk -e (-e for extract)
 
 ![binwalk](binwalk.png)
 
-This gave us a bunch of files. A lot of it we can ignore. Towards the end we can see a few tar files. Upon opening this up, we get something very interesting. A read file, a key, and decme.enc.
+This gave us a bunch of files. A lot of it we can ignore. Towards the end we can see a few tar files. Upon opening the [576200.tar](576200.tar) file up, we get something very interesting. A [read](read) file, a [key](key), [decme.eng](decme.eng).
 
-read
+[read](read)
 > openssl enc -d -in {encrypted file} -out {output file} -kfile {key} -aes-256-ecb
 
-key
+[key](key)
 ```
-> 60e9 8211 8077 1fc5 69b8 29f1 3e00 d8c2
-> ce9a 7523 e8b7 44bc 48a4 3815 72b6 546a
+60e9 8211 8077 1fc5 69b8 29f1 3e00 d8c2
+ce9a 7523 e8b7 44bc 48a4 3815 72b6 546a
 ```
 
-decme.end
+[decme.eng](decme.eng)
 >Salted__vg*©ÄÛ»¡¿SÏÛÏðíïIÊÌd8³
 
 Lets try doing this in the command line with the corresponding files.
 
-> openssl enc -d -in decme.enc -out flag -kfile key -aes-256-ecb
-
-> cat flag
-
-> RC3-WOTM-8080
+```
+openssl enc -d -in decme.enc -out flag -kfile key -aes-256-ecb
+cat flag
+RC3-WOTM-8080
+```
 
 And thus, the flag is RC3-WOTM-8080. Woo.
