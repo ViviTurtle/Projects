@@ -9,23 +9,26 @@ This wasn't so bad for a 400 Forensics question. I spent a good few hours trying
 We are given a link to a pcap file: [for400.pcapng](for400.pcapng). Whenever I do any CTF, I ALWAYS strings the file. Given that the string layout is "RC3-XXXXX-XXX", I stringed the pcap file looking for "RC3" and flag" 
 
 > strings for400.pcapng | grep RC3
+
 > strings for400.pcapng | grep flag
 
 Nothing came for "RC3", however we did get a bit of information for flag.
 
->_drwxr-xr-x 1 ftp ftp              0 Nov 15 13:31 flag
->flag
->CWD flag
->250 CWD successful. "/flag" is current directory.
->257 "/flag" is current directory.
->o_150 Opening data channel for directory listing of "/flag"
->o_226 Successfully transferred "/flag"
->v4150 Opening data channel for directory listing of "/flag"
->v4226 Successfully transferred "/flag"
->150 Opening data channel for directory listing of "/flag"
->226 Successfully transferred "/flag"
->*150 Opening data channel for file download from server of "/flag/forFlag.image.tar.gz"
->+226 Successfully transferred "/flag/forFlag.image.tar.gz"
+```
+_drwxr-xr-x 1 ftp ftp              0 Nov 15 13:31 flag
+flag
+CWD flag
+250 CWD successful. "/flag" is current directory.
+257 "/flag" is current directory.
+o_150 Opening data channel for directory listing of "/flag"
+o_226 Successfully transferred "/flag"
+v4150 Opening data channel for directory listing of "/flag"
+v4226 Successfully transferred "/flag"
+150 Opening data channel for directory listing of "/flag"
+226 Successfully transferred "/flag"
+*150 Opening data channel for file download from server of "/flag/forFlag.image.tar.gz"
++226 Successfully transferred "/flag/forFlag.image.tar.gz"
+```
 
 
 Given this information, we know that the flag is in a directory called "flag" containing a file called forFlag.image.tar.gz. We can assume this tar.gz has the flag inside it.
@@ -53,28 +56,34 @@ Let's dissect what we did here.
 I used the file command to see what the data was:
 
 > file FTP_DATA
+
 > TCP_DATA: gzip compressed data, from Unix, last modified: Thu Nov 12 08:37:50 2015, max compression
 
 We were right. This is the forFlag.image.tar.gz file. I renamed it to TCP_DATA.gz and extracted it.
 
 >mv TCP_DATA TCP_DATA.gz
+
 >zip -d TCP_DATA.gz
 
 I than did another file command to check to see what resulting file was.
 
 > file FTP_DATA
+
 >CP_DATA: POSIX tar archive
 
 This only confirms that this is our file: forFlag.image.tar.gz
 I renamed it to TCP_DATA.tar and extracted it again.
 
 > mv TCP_DATA TCP_DATA.tar
+
 >tar -xvf TCP_DATA.tar 
+
 >./._OpenW0tM8.image
 
 I checked to see what file it was again to confirm it was an image: 
 
 >file OpenW0tM8.image
+
 >OpenW0tM8.image: x86 boot sector
 
 So now we have an image. When we have an image I always do the three things.
@@ -98,8 +107,10 @@ read
 > openssl enc -d -in {encrypted file} -out {output file} -kfile {key} -aes-256-ecb
 
 key
+```
 > 60e9 8211 8077 1fc5 69b8 29f1 3e00 d8c2
 > ce9a 7523 e8b7 44bc 48a4 3815 72b6 546a
+```
 
 decme.end
 >Salted__vg*©ÄÛ»¡¿SÏÛÏðíïIÊÌd8³
@@ -107,7 +118,9 @@ decme.end
 Lets try doing this in the command line with the corresponding files.
 
 > openssl enc -d -in decme.enc -out flag -kfile key -aes-256-ecb
+
 > cat flag
+
 > RC3-WOTM-8080
 
 And thus, the flag is RC3-WOTM-8080. Woo.
