@@ -43,7 +43,7 @@ RIT Competitive Cybersecurity Club CTF
 [Top Secret](Top Secret)
 ---------
 
-**Category:** Web **Points:** 400**Description:**
+**Category:** Web **Points:** 400 **Description:**
 
 > Can you figure out the admin's secret?
 
