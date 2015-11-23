@@ -102,7 +102,7 @@ Last thing I did was binwalk -e (-e for extract)
 
 ![binwalk](binwalk.png)
 
-This gave us a bunch of files. A lot of it we can ignore. Towards the end we can see a few tar files. Upon opening the [576200.tar](576200.tar) file up, we get something very interesting. A [read](read) file, a [key](key), [decme.eng](decme.eng).
+This gave us a bunch of files. A lot of it we can ignore. Towards the end we can see a few tar files. Upon opening the [576200.tar](576200.tar) file up, we get something very interesting. A [read](read) file, a [key](key), [decme.enc](decme.enc).
 
 [read](read)
 > openssl enc -d -in {encrypted file} -out {output file} -kfile {key} -aes-256-ecb
@@ -113,7 +113,7 @@ This gave us a bunch of files. A lot of it we can ignore. Towards the end we can
 ce9a 7523 e8b7 44bc 48a4 3815 72b6 546a
 ```
 
-[decme.eng](decme.eng)
+[decme.enc](decme.enc)
 >Salted__vg*©ÄÛ»¡¿SÏÛÏðíïIÊÌd8³
 
 Lets try doing this in the command line with the corresponding files.
