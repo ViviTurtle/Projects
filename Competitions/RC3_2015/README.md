@@ -27,8 +27,7 @@ CSAW 2015
 
 >A document of top secrets was extracted by your read team, see what details you can find out?
 
-
->[SECRETS.doc](SECRETS.doc)
+[SECRETS.doc](SECRETS.doc)
 
 
 
@@ -37,7 +36,7 @@ CSAW 2015
 
 **Category:** Forensics **Points:** 400 **Description:**
 
-> [for400.pcapng](OpenW0tM8/for400.pcapng)
+[for400.pcapng](OpenW0tM8/for400.pcapng)
 
 
 
