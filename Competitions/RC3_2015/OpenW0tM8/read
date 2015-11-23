@@ -1,0 +1,1 @@
+openssl enc -d -in {encrypted file} -out {output file} -kfile {key} -aes-256-ecb

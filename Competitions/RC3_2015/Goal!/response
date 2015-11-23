@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Sat, 21 Nov 2015 20:07:23 GMT
+Server: Apache
+Flag: RC3-SOCCER-8675309
+Vary: Accept-Encoding
+Content-Length: 95
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<title>GOOOOOAAAAALLLLLLLL!!!!!!!!!1</title>
+
+<img src="goal.gif" alt="goal"/>
+
+</html>

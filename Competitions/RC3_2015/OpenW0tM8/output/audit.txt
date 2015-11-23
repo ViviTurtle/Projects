@@ -1,0 +1,43 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Nov 21 12:38:35 2015
+Invocation: foremost OpenW0tM8.image 
+Output directory: /home/viviturtle/Programming/Competitions/RC3_2015/OpenW0tM8/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: OpenW0tM8.image
+Start: Sat Nov 21 12:38:35 2015
+Length: 52 MB (55008768 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00059497.jpg 	      40 KB 	   30462464 	 
+1:	00010183.gif 	      273 B 	    5213696 	  (16 x 16)
+2:	00010185.gif 	      378 B 	    5214720 	  (16 x 16)
+3:	00031635.gif 	      246 B 	   16197120 	  (16 x 16)
+4:	00031637.gif 	      189 B 	   16198144 	  (16 x 16)
+5:	00044317.gif 	      263 B 	   22690304 	  (16 x 16)
+6:	00044319.gif 	      248 B 	   22691328 	  (16 x 16)
+7:	00059491.gif 	      385 B 	   30459392 	  (16 x 16)
+8:	00059493.gif 	      280 B 	   30460416 	  (16 x 16)
+9:	00059495.gif 	      135 B 	   30461440 	  (11 x 11)
+10:	00075569.gif 	      379 B 	   38691328 	  (16 x 16)
+11:	00075571.gif 	      258 B 	   38692352 	  (16 x 16)
+12:	00075573.gif 	      266 B 	   38693376 	  (16 x 16)
+13:	00092127.gif 	      279 B 	   47169024 	  (16 x 16)
+14:	00092129.gif 	      268 B 	   47170048 	  (16 x 16)
+15:	00092131.gif 	      230 B 	   47171072 	  (16 x 16)
+16:	00009442.htm 	       2 KB 	    4834361 	 
+17:	00031649.htm 	      281 B 	   16204425 	 
+18:	00042267.htm 	     559 KB 	   21640828 	 
+Finish: Sat Nov 21 12:38:36 2015
+
+19 FILES EXTRACTED
+	
+jpg:= 1
+gif:= 15
+htm:= 3
+------------------------------------------------------------------
+
+Foremost finished at Sat Nov 21 12:38:36 2015

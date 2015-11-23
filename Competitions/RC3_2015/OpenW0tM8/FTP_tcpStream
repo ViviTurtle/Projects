@@ -1,0 +1,115 @@
+220-FileZilla Server 0.9.53 beta
+220-written by Tim Kosse (tim.kosse@filezilla-project.org)
+220 Please visit https://filezilla-project.org/
+
+USER rc3admin
+
+331 Password required for rc3admin
+
+PASS ctf2015
+
+230 Logged on
+
+SYST
+
+215 UNIX emulated by FileZilla
+
+FEAT
+
+211-Features:
+ MDTM
+ REST STREAM
+ SIZE
+ MLST type*;size*;modify*;
+ MLSD
+ UTF8
+ CLNT
+ MFMT
+ EPSV
+ EPRT
+211 End
+
+PWD
+
+257 "/" is current directory.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||58867|)
+
+LIST
+
+150 Opening data channel for directory listing of "/"
+
+226 Successfully transferred "/"
+
+EPSV
+
+229 Entering Extended Passive Mode (|||62461|)
+
+NLST
+
+150 Opening data channel for directory listing of "/"
+
+226 Successfully transferred "/"
+
+CWD flag
+
+250 CWD successful. "/flag" is current directory.
+
+PWD
+
+257 "/flag" is current directory.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||60974|)
+
+LIST
+
+150 Opening data channel for directory listing of "/flag"
+
+226 Successfully transferred "/flag"
+
+EPSV
+
+229 Entering Extended Passive Mode (|||63663|)
+
+LIST
+
+150 Opening data channel for directory listing of "/flag"
+
+226 Successfully transferred "/flag"
+
+EPSV
+
+229 Entering Extended Passive Mode (|||58677|)
+
+NLST
+
+150 Opening data channel for directory listing of "/flag"
+
+226 Successfully transferred "/flag"
+
+SIZE forFlag.image.tar.gz
+
+213 2653988
+
+EPSV
+
+229 Entering Extended Passive Mode (|||60988|)
+
+RETR forFlag.image.tar.gz
+
+150 Opening data channel for file download from server of "/flag/forFlag.image.tar.gz"
+
+226 Successfully transferred "/flag/forFlag.image.tar.gz"
+
+MDTM forFlag.image.tar.gz
+
+213 20151115183111
+
+QUIT
+
+221 Goodbye
+
