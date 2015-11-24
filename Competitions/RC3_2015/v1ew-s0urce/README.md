@@ -15,7 +15,7 @@ It says Go away bots! This means they don't want a web crawler to be at this web
 
 Let's visit [http://129.21.39.225:81/robots.txt](http://129.21.39.225:81/robots.txt)
 
-[robots](robots.txt)
+[robots.txt](robots.txt)
 ```
 #Now those silly bots can't crawl my site :3
 
@@ -24,9 +24,9 @@ Disallow: /admin/
 Disallow: /secret/
 ```
 
-This means they don't want the web page to visit /admin/ or /secret.
+This means they don't want the web page to visit /admin or /secret.
 
-Lets visit [http://129.21.39.225:81/secret](http://129.21.39.225:81/secret)
+Let's visit [http://129.21.39.225:81/secret](http://129.21.39.225:81/secret) too
 
 ![flag](flag.png)
 
