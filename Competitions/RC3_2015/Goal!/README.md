@@ -49,10 +49,10 @@ Image Size                      : 407x211
 
 Nothing showed up there either. Luckily I always keep **Burp Suite** and **Zap Proxy** up. Let's look at the [request](request). I opened my Burp, searched for the ip address, searched for the page, and looked at the [request](request).
 
-[request](request.png)
+![Request](Request.png)
 
 Everything looks normal there. Now let's look at the [response](response) from the web server.
 
-[response](response.png)
+![Response](Response.png)
 
 We see something very interesting here. There's a section called "Flag" with the value: RC3-SOCCER-8675309.  Finally we have the flag: **RC3-SOCCER-8675309**
