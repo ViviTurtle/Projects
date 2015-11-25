@@ -3,7 +3,7 @@ Goal!: 100
 
 ![Start](Start.png)
 
-Another baby CTF question. It was very simple, even though it did throw me off quite a bit.. We are given a link: [http://129.21.39.225:82/](http://129.21.39.225:82/). When visiting the site all it had was a gif of some guys playing soccor 
+Another baby CTF question. It was very simple, even though it did throw me off quite a bit... We are given a link: [http://129.21.39.225:82/](http://129.21.39.225:82/). When visiting the site all it had was a gif of some guys playing soccer 
 
 ![goal](goal.gif)
 
@@ -19,7 +19,7 @@ Maybe we should look at the [source](source.html)?
 
 ```
 
-No helpful data in there either. I tried going a quick directory search such as /flag, /.git, and /admin and none of those worked. I also tried looking at the metadeta
+No helpful data in there. I tried going a quick directory search such as /flag, /.git, and /admin and none of those worked. I also tried looking at the metadeta
 
 >exiftool goal.gif
 
@@ -47,12 +47,12 @@ Duration                        : 4.68 s
 Image Size                      : 407x211
 ```
 
-Nothing showed up there either. Luckily I always keep Burp Suite and Zap Proxy up. Lets look at the request. I opened my Burp, searched for the ip address, searched for the page, and looked at the [request](request).
+Nothing showed up there either. Luckily I always keep **Burp Suite** and **Zap Proxy** up. Let's look at the [request](request). I opened my Burp, searched for the ip address, searched for the page, and looked at the [request](request).
 
-![request](request.png)
+[request](request.png)
 
-Everything looked normal there. Now let's look at the [response](response) from the web server.
+Everything looks normal there. Now let's look at the [response](response) from the web server.
 
-![response](response.png)
+[response](response.png)
 
-We see something very interesting here. There's a section called "Flag" with the value: RC3-SOCCER-8675309.  Finally we have the flag: RC3-SOCCER-8675309
+We see something very interesting here. There's a section called "Flag" with the value: RC3-SOCCER-8675309.  Finally we have the flag: **RC3-SOCCER-8675309**
