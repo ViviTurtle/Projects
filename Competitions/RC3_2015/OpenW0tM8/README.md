@@ -79,14 +79,14 @@ CWD flag
 ...
 ```
 
-Looking inside the stream, we see that our strings data from earlier is here. Since we know the file was transferred around the 3000 mark, let's look for the actual packet transfer in this range of packets. Upon finding it (TCP_Data), we can "Follow TCP Stream" for this file transfer. (Note we cannot export objects to get FTP data)
+Looking inside the stream, we see that our strings data from earlier is here. Since we know the file was transferred around the 3000 mark, let's look for the actual packet transfer in this range of packets. After finding it (TCP_Data), we can "Follow TCP Stream" for this file transfer. (Note we cannot export objects to get FTP data)
 
 ![data_raw](data_raw.png)
 ```
 ....^.DV.....\...?.g.].qu..HR5.b.MD.."..Yb... h4.$.....L.=Q../;;Y./5...^.B.k.^.&.1..".h....!.wG.&.K....4.}..].$.s.^{.\?.W....y....<3...........mu..ba...e....[FF...s..u....5#S..9.s2.....s..[0.^.=.1w..................i.M.!.....?$._~..0_.....(...."..{....Pe2f..^..q...d..U..........5F....K..jkz........*.E.NQ[.PN?~.....[.b..2.l..+..,....wW.......}.....%...U...l..e...N....x..]...8..|2k...Gf......Z..f{.X.es..ha.......7l.F{.".7-.v.m....}.$.o.o.D.Z..._...........+.........l.rQ..h..MU;.UV.j.U....b
 ```
 
-A whole bunch of gibberish, so we can assume this is some kind of non-text fille. Since we know the flag is in this data, let's save it as raw data and see what we can do to pull the flag from here. I saved it as [FTP_DATA](FTP_DATA_ORIGINAL) (In this case it's saved as FTP_DATA_ORGINAL in this repo) and started analyzing the data.
+A whole bunch of gibberish, so we can assume this is some kind of non-ascii file. Since we know the flag is in this data, let's save it as raw data and see what we can do to pull the flag from here. I saved it as [FTP_DATA](FTP_DATA_ORIGINAL) (In this case it's saved as FTP_DATA_ORGINAL in this repo) and started analyzing the data.
 
 ![Analysis](Analysis.png)
 
