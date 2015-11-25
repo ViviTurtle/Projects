@@ -38,17 +38,55 @@ Knowing this information, it was time to enter Wireshark, our great packet analy
 
 ![Secure_chat](Secure_chat.png)
 
+```
+GET /licence/4427091/tunnel_callback.cgi?ya3hbWK4jtBrljUv0ZPN&callback=_jqjsp&command=IWCS0116C%5ES1445994676.f232961d2e%5E4427091%5E8%5E&_1447612614575= HTTP/1.1
+Host: secure.livechatinc.com
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7
+Accept-Language: en-us
+Referer: http://secure.livechatinc.com/licence/4427091/open_chat.cgi?groups=8&embedded=1&session_id=S1445994676.f232961d2e
+Accept-Encoding: gzip, deflate
+
+HTTP/1.1 200 OK
+Content-type: application/x-javascript
+P3P: CP="CAO DSP COR CURa ADMa DEVa OUR IND PHY ONL UNI COM NAV INT DEM PRE IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+Content-Encoding: gzip
+...
+```
+
 This chat is throughout the whole packet capture, although not much data can be extracted from it. I'm guessing the client was talking to someone and trying to get the flag.gz files from this website.
 
 Since we know that there was a file transfer for forFlag.image.tar.gz, we can assume the File Transfer Protocal (FTP) was used. Let's look at some FTP Data. Around the 3000 packet mark, we find some FTP stuff. 
 
 ![Flag](Flag.png)
+```
+211 End
+PWD
+257 "/" is current directory.
+EPSV
+229 Entering Extended Passive Mode (|||58867|)
+LIST
+150 Opening data channel for directory listing of "/"
+226 Successfully transferred "/"
+EPSV
+229 Entering Extended Passive Mode (|||62461|)
+NLST
+150 Opening data channel for directory listing of "/"
+226 Successfully transferred "/"
+CWD flag
+250 CWD successful. "/flag" is current directory
+...
+```
 
 Looking inside the stream, we see that our strings data from earlier is here. Since we know the file was transferred around the 3000 mark, let's look for the actual packet transfer in this range of packets. Upon finding it (TCP_Data), we can "Follow TCP Stream" for this file transfer. (Note we cannot export objects to get FTP data)
 
 ![data_raw](data_raw.png)
+```
+....^.DV.....\...?.g.].qu..HR5.b.MD.."..Yb... h4.$.....L.=Q../;;Y./5...^.B.k.^.&.1..".h....!.wG.&.K....4.}..].$.s.^{.\?.W....y....<3...........mu..ba...e....[FF...s..u....5#S..9.s2.....s..[0.^.=.1w..................i.M.!.....?$._~..0_.....(...."..{....Pe2f..^..q...d..U..........5F....K..jkz........*.E.NQ[.PN?~.....[.b..2.l..+..,....wW.......}.....%...U...l..e...N....x..]...8..|2k...Gf......Z..f{.X.es..ha.......7l.F{.".7-.v.m....}.$.o.o.D.Z..._...........+.........l.rQ..h..MU;.UV.j.U....b
+```
 
-Since we know the flag is in this data, let's save it as raw data and see what we can do to pull the flag from here. I saved it as [FTP_DATA](FTP_DATA_ORIGINAL) (In this case it's saved as FTP_DATA_ORGINAL in this repo) and started analyzing the data.
+A whole bunch of gibberish, so we can assume this is some kind of non-text fille. Since we know the flag is in this data, let's save it as raw data and see what we can do to pull the flag from here. I saved it as [FTP_DATA](FTP_DATA_ORIGINAL) (In this case it's saved as FTP_DATA_ORGINAL in this repo) and started analyzing the data.
 
 ![Analysis](Analysis.png)
 
