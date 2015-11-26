@@ -6,7 +6,7 @@ BACH: CRYPTO 150
 
 This challenge was quite a simple Cryptography challenge given that it requires zero knowledge of ciphers or anything else related to cryptopgrahy. We were given a link to download the file : 8aec78b8dca5541b69d07404f1a6be68.tar.bz2 which contained a single image.
 
-![Bach](https://github.com/ViviTurtle/Programming/blob/master/Competitions/Open2All_2015/Bach/f4923a0aa2a3cc07026e38f41b3cd673.png)
+![Bach](f4923a0aa2a3cc07026e38f41b3cd673.png)
 
 Given my piano background, I began to read the notes for what they were ignoring all the naturals thinking they had nothing to do with the code.
 
