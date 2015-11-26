@@ -22,7 +22,7 @@ From here we can google "Alexander Taylor" After looking through some github pag
 
 I found his [LinkedIn](https://www.linkedin.com/in/fuzyll) by using the same domain as his website (https://www.linkedin.com/in/fuzyll). We can assume this his online handle.
 
-![LinkedinScreen](LinkedIn.png)
+![LinkedinScreen](images/LinkedIn.png)
 
 Upon checking his LinkedIn, we see he went to the University of South Florida.
 
@@ -35,7 +35,7 @@ Education: 	University of South Florida
 After which we can google "University of south florida hacking club" which brings us to:
 
 [Whitehatters Computer Security Club](http://www.wcsc.usf.edu/)
-![wcsc](wcsc.png)
+![wcsc](images/wcsc.png)
 
 On this page we can clearly see the acronym: wcsc
 
@@ -50,7 +50,7 @@ Nice work! The next part is at /csaw2015/<my super smash brothers main>.
 ```
 I googled "Fuzyll Smash" and arrived at a few [YouTube](https://www.youtube.com/watch?v=59QQ9UevSuE) Pages.
 
-![youtube](youtube.png)
+![youtube](images/youtube.png)
 
 The answer here is from the title is Yoshi:
 
@@ -58,7 +58,7 @@ The answer here is from the title is Yoshi:
 
 
 One step closer, we move on to the next page: [http://fuzyll.com/csaw2015/yoshi](http://fuzyll.com/csaw2015/yoshi). We see a picture of yoshi here. 
-![Yoshi](yoshi.txt)
+![Yoshi](images/yoshi.txt)
 
 Noticing we have a picture, a good step would probably be to look at the metadeta. After downloading the picture, you can either upload it to [Jeffrey's Exif viewer](http://regex.info/exif.cgi) or run exiftool, a tool to look at metadeta for like everything.
 
