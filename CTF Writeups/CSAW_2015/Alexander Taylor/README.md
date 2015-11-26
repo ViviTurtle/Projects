@@ -9,7 +9,7 @@ This time around we are given a link.
 
 [http://fuzyll.com/csaw2015/start](http://fuzyll.com/csaw2015/start)
 
-![Start](step1.png)
+![Start](images/step1.png)
 
 Upon entering link we are greeted with just a few lines of text:
 
