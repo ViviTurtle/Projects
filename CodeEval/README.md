@@ -24,6 +24,6 @@ CodeEval
 
 **Personal Choice of Showcase:**
 
-https://github.com/ViviTurtle/Programming/tree/master/CodeEval/workspace/Ugly%20Numbers
+[Ugly Numbers](workspace/Ugly Numbers)
 
-https://github.com/ViviTurtle/Programming/tree/master/CodeEval/workspace/String%20Substitution
+[String Substitution](workspace/String Substitution)
