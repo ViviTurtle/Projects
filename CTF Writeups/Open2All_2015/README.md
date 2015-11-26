@@ -5,12 +5,12 @@ Open2All is a CTF hosted by Reddit's Open2All CTF team. Yes, this team is open t
 The challenges were located at http://ctf2.opentoall.net/ and contained quite a few challenges. I was able to accomplish
 a few of them.
 
-BACH: CRYPTO 150
+[Bach](Bach): Crypto 150
 ---------------------
 
     >Well, not quite... Author: Eriner
     
-Math is Hard: MISC 200
+[Math is Hard] (mathIsHard): Misc 200
 ----------------------------
 
    > 104.131.107.153:12121
