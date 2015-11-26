@@ -1,11 +1,11 @@
 Goal!: 100
 ----------------------
 
-![Start](Start.png)
+![Start](images/Start.png)
 
 Another baby CTF question. It was very simple, even though it did throw me off quite a bit... We are given a link: [http://129.21.39.225:82/](http://129.21.39.225:82/). When visiting the site all it had was a gif of some guys playing soccer 
 
-![goal](goal.gif)
+![goal](images/goal.gif)
 
 Maybe we should look at the [source](source.html)?
 
@@ -49,7 +49,7 @@ Image Size                      : 407x211
 
 Nothing showed up there either. Luckily I always keep **Burp Suite** and **Zap Proxy** up. Let's look at the [request](request). I opened my Burp, searched for the ip address, searched for the page, and looked at the [request](request).
 
-![Request](Request.png)
+![Request](images/Request.png)
 
 ```
 GET http://129.21.39.225:82/ HTTP/1.1
@@ -64,7 +64,7 @@ Connection: keep-alive
 
 Everything looks normal there. Now let's look at the [response](response) from the web server.
 
-![Response](Response.png)
+![Response](images/Response.png)
 
 ```
 HTTP/1.1 200 OK
