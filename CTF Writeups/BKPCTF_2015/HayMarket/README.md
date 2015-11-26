@@ -16,24 +16,24 @@ This challenge was a fairly easy Reversing challenge. In simple terms all you ha
 Along with a link to  
 http://bostonkeyparty.net/haymarket.tar.gz.fe35f59bfa869a0555e9972efa3ddd2d.
 
-If the above link is down, you can probably get it at https://github.com/ViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/haymarket.tar. 
+If the above link is down, you can probably get it at [haymarket.tar](haymarket.tar)
 
 So, after renaming the file to haymarket.tar.gz and extracting it via cmd line with "tar -zxvf haymarket.tar.gz" We were given 32 PNG's of punch cards. 
 
-![Punchcard 1](https://github.com/ViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/L1.png)
+![Punchcard 1](Haymarket_images/L1.png)
 
-![Punchcard 20](https://github.com/ViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/L20.png)
+![Punchcard 20](Haymarket_images/L20.png)
 
 Doing what we hackers do best, I went and Googled how to read Punch Cards. I eventually found this fairly descriptive History of Punchcards (http://www.masswerk.at/keypunch/) . Sorry, but I have no time to read history. After more Googling, I found this virtual keyboard (http://www.masswerk.at/keypunch/). I figured I take my chances here and quickly learn the translation of keys to bullet points. Indeed, the translation went well. I quickly typed out every letter and every available punctuation to get a quick translation. 
 
 
-![Virtual Keyboard](https://github.com/ViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/Keyboard.png)
+![Virtual Keyboard](Haymarket_images/Keyboard.png)
 
 
 Now that I had the translation of bullets to ASCII, I just had to write a program. I Googled how to read images from Python and it was fairly simple. Using that code I got to business. I was of course missing things like rows, columns, RGB color, and pixel offesets. Most of these I was able to get looking at each image in GIMP's (a very bad free Linux version of Photoshop in my opinion) color picker and image properties. 
 
 
-![Virtual Keyboard](https://github.com/ViviTurtle/Programming/blob/master/Competitions/BKPCTF_2015/HayMarket/Haymarket_images/GIMP.png)
+![Virtual Keyboard](Haymarket_images/GIMP.png)
 
 The hosts were kind enough to provide us with a uniform size and offset for each row and column. The first bullet was at (17,24), the next column was 7 pixels across, and the next row was 20 pixels down. The color of the bullets were RGB (20,20,20). All that was left was a simple nested for loop of recording RGB's and translating their row locations to ASCII. If you want to see the output for all the PNG's you can find it at My GitHub. After running my script on all the PNGs you get to a line that says display key(set alextrebekisasocialengineer) and indeed "alextrebekisasocialengineer" is the flag. Congratulations! I did it.
 
