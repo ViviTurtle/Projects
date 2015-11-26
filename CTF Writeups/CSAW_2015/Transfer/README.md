@@ -21,7 +21,7 @@ All we got was
 
 After that didn't work, I inspected it in wireshark, our great packet inspection tool, and was given a huge list of packets(2000 to be exact).I spent some time following several TCP streams (right click packet -> Follow TCP Stream) and we can see the packets included traffic from reddit, facebook and symantec to name a few. 
 
-![Example](images/example.png)
+![Example](images/Example.png)
 
 When we get to packets 150-300ish, we see something very interesting.
 
