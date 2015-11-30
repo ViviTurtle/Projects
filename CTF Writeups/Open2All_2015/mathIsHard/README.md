@@ -98,7 +98,7 @@ Again I made a script to pull out digits from the numbers and solved each questi
 
 >Hey, thanks buddy! Here's a little somethin' for your trouble: flag{l3ts_g0_shOpP1ng}
 
-With this we were given the flag to gain the team another 200 points! Wohoo. The final code is found below. The final ouput was also saved at [Netcat](mathIsHard/Netcat_output_Final)
+With this we were given the flag to gain the team another 200 points! Wohoo. The final code is found below. The final ouput was also saved at [Netcat](Netcat_output_Final)
 
 ```python
 #!/usr/bin/env python
