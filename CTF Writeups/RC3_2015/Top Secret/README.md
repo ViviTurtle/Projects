@@ -16,10 +16,10 @@ First thing you do for any Web Application Penetration Test is do Recon and mapp
 
 We can clearly see three other pages. Home, Find Friends, and Logout. I tried a few of the pages.
 
-Home
+**Home**
 ![home](images/home.png)
 	
-Find Friends
+**Find Friends**
 ![friends](images/friends.png)
 
 The home page involves typing in some secret to store and show it on a table. The Friends page shows other users. Trying to put it together, we need to find some way to get another person's secret using the two pages. In other words, we need to find the the admin's secrets. After figuring this out, I tried to look at the actual requests.
@@ -282,6 +282,6 @@ secret=test
 
 Now if you lookat the web application. It thinks we are the admin.
 
-![flag](flag.png)
+![flag](images/flag.png)
 
 The flag is **RC3-SECRETSS-6277598130**. Feel free to check out [sqlmap_notes.txt](sqlmap_notes.txt) to see the actual sqlmap requests.
