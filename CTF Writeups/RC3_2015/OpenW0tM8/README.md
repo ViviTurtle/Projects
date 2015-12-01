@@ -162,4 +162,4 @@ cat flag
 RC3-WOTM-8080
 ```
 
-And thus, the flag is RC3-WOTM-8080. Woo.
+And thus, the flag is **RC3-WOTM-8080**. Woo.
