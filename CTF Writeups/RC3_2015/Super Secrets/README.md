@@ -102,6 +102,6 @@ As you can see there is no simple clue for the flag. There is some upside-down t
 
 ```
 
-You can clearly see this is HTML. This was surprising for me because I didn't know LibreWriter knew how to format HTML. If you look at the bottom you can clearly see a img tag with the dimensions 1x1 with the flag. 
+You can clearly see this is HTML. This was surprising for me because I didn't know LibreWriter knew how to format HTML. If you look at the bottom you can clearly see an img tag with the dimensions 1x1 with the flag. 
 
 The flag is **RC3-RedTeamGetRekt-1010101**
