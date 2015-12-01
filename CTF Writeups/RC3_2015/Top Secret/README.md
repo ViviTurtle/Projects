@@ -10,7 +10,7 @@ We given a link http://162.243.171.85/. Upon visting the site we see a simple lo
 
 ![start_web](images/start_web.png)
 
-First thing you do for any Web Application Penetration Test is do Recon and mapping. As such I opened up Burp to record all my page visits, and used the web application normally. I registered for an account and looked at the default web page.
+First thing you do for any Web Application Penetration Test is Recon and mapping. So I opened up Burp to record all my page visits, and used the web application normally. I registered for an account and looked at the default web page.
 
 ![Default_web](images/Default_web.png)
 
@@ -22,7 +22,7 @@ We can clearly see three other pages. Home, Find Friends, and Logout. I tried a 
 **Find Friends**
 ![friends](images/friends.png)
 
-The home page involves typing in some secret to store and show it on a table. The Friends page shows other users. Trying to put it together, we need to find some way to get another person's secret using the two pages. In other words, we need to find the the admin's secrets. After figuring this out, I tried to look at the actual requests.
+The home page involves typing in some secret to store and show it on a table. The Friends page shows other users. Trying to put it together, we need to find some way to get another person's secret using the two pages. In other words, we need to find the admin's secrets. After figuring this out, I tried to look at the actual requests.
 
 [Friends Request](friend_request.txt)
 ![burp_friends](images/burp_friends.png)
@@ -61,11 +61,11 @@ Content-Length: 12
 secret=apple
 ```
 
-The only thing we should take note of, is that both of these pages use **POST** methods to retrieve data, where "secret" and "username" are the pieces of data being sent. We can also see there is a PHPSESSID to record the current user. Now let's try some exploitation. First thing I tried was SQL injection. Let's try escaping the SQL query using a ' character.
+The only thing we should take note of, is that both of these pages use **POST** methods to retrieve data, where "secret" and "username" are the pieces of data being sent. We can also see there is a **PHPSESSID** to record the current user. Now let's try some exploitation. First thing I tried was SQL injection. Let's try escaping the SQL query using a **'** character.
 
 ![sqli](images/sqli.png)
 
-This proves the Friends page is vulnerable to **SQL injection**. I right clicked the on the request in Burp: Right Click > Send to SQLMapper (a free Burp Extension by the CO2 Suite) and copied the SqlMap command. You will notice a data section for post parameters and a cookie value.
+This proves the Friends page is vulnerable to **SQL injection**. I right clicked on the request in Burp: Right Click > Send to SQLMapper (a free Burp Extension by the CO2 Suite) and copied the SqlMap command. You will notice a data section for post parameters and a cookie value.
 
 ![sqlmapper](images/sqlmapper.png)
 ```
@@ -74,9 +74,9 @@ sqlmap -u 'http://162.243.171.85:80/find.php' --data='username=admin' --cookie='
 
 Now to try the exploit.
 
-![dbs](images/dbs_output.png)
+![dbs](images/dbs.png)
 
-As you can see the application is clearly vulnerable and it works with SQLMap. First I tested for database names (--dbs flag). 
+As you can see the application is clearly vulnerable and it works with SQLMap. If you don't know what SQLmap it's pretty much an automated tool to do SQL injectons. First I tested for database names (--dbs flag). 
 
 [dbs_output.txt](dbs_output.txt)
 ```
@@ -242,9 +242,9 @@ Table: users
 [*] shutting down at 18:39:01
 
 ```
-Although it looks bad, (because my terminal isn't big enough), we are given a table with the columns, ID, admin, username, password, and session. The password is hashed somehow, so we can't use that unless we want to bruteforce the hash. The only other option is to use the session ID. As you can see it's stored in the SQL Database. This is bad practice, because session ids should be stored and randomized by the application per login and not stored in a SQL database. Since we have this session id, we can impersonate anyone on the database. Let's impersonate the admin in order to get their secrets.
+We are given a table with the columns, ID, admin, username, password, and session. The password is hashed somehow, so we can't use that unless we want to bruteforce the hash. The only other option is to use the session. As you can see it's stored in the SQL Database. This is bad practice, because session ids should be stored and randomized by the application per login and not stored in a SQL database. Since we have this session id, we can impersonate anyone on the database. Let's impersonate the admin in order to get their secrets.
 
-Let's log back into the web application and check out the home page. We can either change the cookie values in our browser or just do it through Burp. We are going to use the latter. If you recall looking at the request, it contains a PHPSESSID.
+Let's log back into the web application and check out the home page. We can either change the cookie values in our browser or just do it through Burp. We are going to use the latter. If you recall looking at the request for the Home page, it contains a PHPSESSID.
 
 ```
 POST http://162.243.171.85/ HTTP/1.1
@@ -262,7 +262,7 @@ Content-Length: 12
 secret=apple
 ```
 
-Let's change the PHPSESSID to the admin's session ID.
+Let's change the PHPSESSID to the admin's session ID (3f44e5dedf6b06b5da8c6e5ec7c0f4304f334a2ff2b1da3654942bab969e89765dae32faeabefdc0cf15d506c5146d96289dfa9929af7f60d65055d978e406ec).
 
 ```
 POST http://162.243.171.85/ HTTP/1.1
@@ -280,7 +280,7 @@ Content-Length: 11
 secret=test
 ```
 
-Now if you lookat the web application. It thinks we are the admin.
+Now look at the web application. It thinks we are the admin.
 
 ![flag](images/flag.png)
 
