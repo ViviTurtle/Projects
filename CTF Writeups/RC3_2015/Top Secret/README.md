@@ -127,7 +127,7 @@ available databases [2]:
 
 ```
 
-It gave us the default database, information_schema and one other, TopSecret. Using the Top Secret Database, I tried to see what tables were in there.
+It gave us the default database, information_schema and one other, TopSecret. Using the Top Secret Database, I tried to see what tables were in there; -D TopSecret --tables (-D to choose DB and --tables to find tables).
 
 [table_output.txt](table_output.txt)
 ```
@@ -180,7 +180,7 @@ Database: TopSecret
 
 ```
 
-It had one table, users. Let's dump this table.
+It had one table, users. Let's dump this table:  -D TopSecret -T users --dump(-D to choose DB, -T to choose table and --dump to dump the table).
 
 [dump.txt](dump.txt)
 ```
