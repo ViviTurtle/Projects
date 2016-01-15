@@ -30,13 +30,14 @@ namespace yourNameSpace
            
             try
             {
-               
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
             }
             catch (Exception ex)
             {
                 lblWarnings.Text = "Error. Please refresh the page.";
             }
         }
+        
     }
 }
 
