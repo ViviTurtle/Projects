@@ -19,7 +19,7 @@ Maybe we should look at the [source](source.html)?
 
 ```
 
-No helpful data in there. I tried going a quick directory search such as /flag, /.git, and /admin and none of those worked. I also tried looking at the metadeta
+No helpful data in there. I tried doing a quick directory search such as /flag, /.git, and /admin and none of those worked. I also tried looking at the metadeta
 
 >exiftool goal.gif
 
