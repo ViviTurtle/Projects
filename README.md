@@ -3,7 +3,7 @@ Projects
 
 All my public personal projects
 
-[CTF Writeups](CTF Writeups)
+[CTF Writeups](http://blackmagicexploits.com/)
 -----------
 A place where I store my code and possible writeups for CTF's
 

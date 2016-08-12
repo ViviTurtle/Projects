@@ -1,0 +1,366 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install pak",
+				"Package Control: Install Package"
+			],
+			[
+				"instaa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/viviturtle/Github/Projects"
+	],
+	"file_history":
+	[
+		"/home/viviturtle/Github/Projects/Queercon/Queercon.sublime-project",
+		"/home/viviturtle/Github/Projects/Queercon/Badge Contest/Chess_Config.jpg",
+		"/home/viviturtle/Github/Projects/Queercon/Badge Contest/asciifull.gif",
+		"/home/viviturtle/Github/Projects/Queercon/Badge Contest/Badge.py",
+		"/home/viviturtle/Github/Projects/Queercon/Badge Contest/Notes.txt",
+		"/home/viviturtle/Github/Projects/Queercon/Badge Contest/Vim.txt",
+		"/home/viviturtle/Github/Projects/Projects.sublime-project",
+		"/home/viviturtle/Github/Projects/Queercon/Badge Contest/Maniac.txt",
+		"/home/viviturtle/Github/Projects/.gitignore",
+		"/etc/rc.local",
+		"/etc/bluetooth/main.conf",
+		"/etc/NetworkManager/NetworkManager.conf",
+		"/home/viviturtle/Github/Projects/Queercon/Metadata.txt",
+		"/home/viviturtle/Github/blog/.gitignore",
+		"/home/viviturtle/myblog/index.html",
+		"/home/viviturtle/CrackTheClue/4.txt",
+		"/home/viviturtle/Queercon/App/tq~[j_bzgom`_bk�",
+		"/home/viviturtle/CrackTheClue/2.txt",
+		"/home/viviturtle/Queercon/App/Crpyto.txt",
+		"/home/viviturtle/CrackTheClue/3.txt",
+		"/home/viviturtle/CrackTheClue/1.txt",
+		"/mnt/HDD/Downloads/final-week.png",
+		"/mnt/HDD/Downloads/clue2.txt",
+		"/mnt/HDD/Downloads/clue.txt",
+		"/mnt/HDD/Downloads/cracktheclue",
+		"/home/viviturtle/.bashrc",
+		"/home/viviturtle/Github/myblog/_site/about/index.html",
+		"/home/viviturtle/Github/blog/_site/index.html",
+		"/home/viviturtle/Queercon/Metadata.txt",
+		"/home/viviturtle/Github/blog/_config.yml",
+		"/home/viviturtle/Github/myblog/_includes/footer.html",
+		"/home/viviturtle/myblog/_posts/2016-06-30-welcome-to-jekyll.markdown",
+		"/home/viviturtle/Queercon/spectrogram.py",
+		"/home/viviturtle/myblog/2016-06-30-welcome-to-jekyll.markdown",
+		"/home/viviturtle/Queercon/binarydata_copy.txt",
+		"/home/viviturtle/Queercon/spectrogramm.py",
+		"/home/viviturtle/Queercon/Crypto [QueerCon13].mp3",
+		"/home/viviturtle/Queercon/ls",
+		"/home/viviturtle/Queercon/spectrogram",
+		"/home/viviturtle/Queercon/binarydata.txt",
+		"/home/viviturtle/opt.txt",
+		"/home/viviturtle/Downloads/Migration/InfoSecurity_T_RESOURCES.txt",
+		"/home/viviturtle/Downloads/Migration/InfoSecurity_T_QUESTION.txt",
+		"/home/viviturtle/Downloads/Migration/nameservers_default.txt.",
+		"/media/viviturtle/Elements/Mig/InfoSecurity_T_RESOURCES.txt",
+		"/home/viviturtle/Queercon/spectrogram-110-5.png",
+		"/media/viviturtle/Elements/Mig/InfoSecurity_T_QUESTION.txt",
+		"/media/viviturtle/Elements/recoveryFinal/InfoSec/WebApplication5/Web.config",
+		"/media/viviturtle/Elements/InfoSec/WebApplication5/Web.config",
+		"/media/viviturtle/Elements/Mig/InfoSecurity_T_MAJOR.txt",
+		"/home/viviturtle/Downloads/ec2-52-53-185-98.us-west-1.compute.amazonaws.com.rdp",
+		"/mnt/HDD/steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/autoexec.cfg",
+		"/home/viviturtle/Tohou/Th8/Read me.txt",
+		"/home/viviturtle/etc/X11/xorg.conf.d/90-mouse.conf",
+		"/home/viviturtle/mydockerbuild/Dockerfile",
+		"/home/viviturtle/.local/share/applications/Eclipse.desktop",
+		"/home/viviturtle/.local/share/applications/burpsuite.desktop",
+		"/home/viviturtle/blah.sh"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"whiteMoves",
+			"149",
+			"176",
+			"161",
+			"164",
+			"a",
+			"9",
+			"170",
+			"187",
+			"155",
+			"62",
+			"137",
+			"189",
+			"140",
+			"157",
+			"147",
+			"172",
+			"142",
+			"137",
+			"152",
+			"133",
+			"179",
+			"176",
+			"161",
+			"164",
+			"149",
+			"7",
+			"6",
+			"4",
+			"'",
+			"c",
+			"a",
+			"f",
+			"14",
+			"f",
+			"c",
+			"a",
+			"a2",
+			"a",
+			"c",
+			"e",
+			"d",
+			"b",
+			",",
+			" ",
+			",",
+			"\n",
+			"1",
+			".",
+			"Nf3",
+			"2.Nf3",
+			".",
+			"H",
+			"7",
+			"G",
+			"F",
+			"E",
+			"D",
+			"C",
+			"B",
+			"A",
+			"9",
+			"8",
+			"7",
+			"D",
+			"C",
+			"B",
+			"A",
+			",",
+			"R",
+			".",
+			" ",
+			"'",
+			"|",
+			";",
+			"|",
+			"\\",
+			"burp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"8",
+			"7",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"1",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 263.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "Projects.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Github/Projects/Projects.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
